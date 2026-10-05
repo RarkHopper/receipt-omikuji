@@ -142,7 +142,7 @@ class VerticalEncoder(ImageEncoder):
         self.frame_left = width_dots // 4 + 5
         self.frame_right = width_dots - self.frame_left - 1
         with (
-            files("receipt_omikuji").joinpath("data/club-coc.png").open("rb") as source
+            files("receipt_omikuji").joinpath("asset/club-coc.png").open("rb") as source
         ):
             with Image.open(source) as logo:
                 red, green, blue = logo.convert("RGB").split()

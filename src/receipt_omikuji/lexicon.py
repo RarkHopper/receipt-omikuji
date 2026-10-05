@@ -59,7 +59,7 @@ class Lexicon:
 
     @classmethod
     def load_builtin(cls) -> "Lexicon":
-        source = files("receipt_omikuji").joinpath("data/語彙.json")
+        source = files("receipt_omikuji").joinpath("asset/語彙.json")
         return cls.from_dict(json.loads(source.read_text(encoding="utf-8")))
 
     @classmethod

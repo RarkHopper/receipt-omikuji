@@ -258,7 +258,7 @@ def dodge_semantics() -> None:
             for punctuation in ("！", "!", "。", "です")
         )
     source = json.loads(
-        files("receipt_omikuji").joinpath("data/語彙.json").read_text(encoding="utf-8")
+        files("receipt_omikuji").joinpath("asset/語彙.json").read_text(encoding="utf-8")
     )
     for premature in ("吉です。", "吉！", "吉", "【確定】吉"):
         invalid = dict(source, opening=[premature])

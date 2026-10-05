@@ -3,6 +3,7 @@ import ctypes.util
 import json
 import os
 import re
+import secrets
 import select
 import signal
 import sys
@@ -176,6 +177,8 @@ def _setting(raw: argparse.Namespace) -> Setting:
     option = cast(
         SettingOption, {key: value for key, value in vars(raw).items() if key in keys}
     )
+    if _take(raw, "command", str) in ("dry-run", "demo") and "seed" not in option:
+        option["seed"] = secrets.token_hex(16)
     if _flag(raw, "sample"):
         if "layout" in option and option["layout"] != "vertical":
             raise ValueError("試し刷りは縦書きです")

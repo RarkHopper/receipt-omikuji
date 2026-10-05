@@ -12,6 +12,8 @@ from unittest.mock import patch
 from getgauge.python import step
 from PIL import Image
 
+from receipt_omikuji.argument import DryRunArgument
+from receipt_omikuji.cli import parse_argument
 from receipt_omikuji.escpos import (
     AsciiEncoder,
     RasterEncoder,
@@ -520,6 +522,27 @@ def offline_cli() -> None:
             ]
         )
         assert missing_font.returncode == 2 and not (targets / "missing.png").exists()
+
+
+@step("ドライランはseed未指定なら毎回抽選し、指定したseedでは同じ文面を再現する")
+def dry_run_seed() -> None:
+    with patch(
+        "receipt_omikuji.cli.secrets.token_hex",
+        side_effect=("first", "second", "third", "fourth"),
+    ) as entropy:
+        for command in ("dry-run", "demo"):
+            first = parse_argument([command])
+            second = parse_argument([command])
+            assert isinstance(first, DryRunArgument) and isinstance(
+                second, DryRunArgument
+            )
+            assert first.setting.seed != second.setting.seed
+            fixed = [parse_argument([command, "--seed", "朝"]) for _ in range(2)]
+            assert all(argument.setting.seed == "朝" for argument in fixed)
+            assert generate(GRAPH, fixed[0].setting) == generate(
+                GRAPH, fixed[1].setting
+            )
+        assert entropy.call_count == 4
 
 
 @step("USB識別や印刷の明示が足りない場合は、デバイスを開く前に拒否する")

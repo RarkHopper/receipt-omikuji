@@ -11,7 +11,7 @@ make setup
 make dry-run
 ```
 
-`make dry-run`は端末へ一文字ずつ表示し、演出の停止位置でEnterを待ちます。Enterで印字済みの位置から続行し、Ctrl-Cや入力の終了で取り消します。
+`make dry-run`は実行ごとにseedを生成し、端末へ一文字ずつ表示して、演出の停止位置でEnterを待ちます。`--seed`を指定すると文面を再現できます。Enterで印字済みの位置から続行し、Ctrl-Cや入力の終了で取り消します。
 直接起動するときは、`receipt-omikuji`の後に`dry-run`、`generate`、`print`などのコマンドを指定します。
 
 即時に全文を確認する場合は、次のコマンドを使います。

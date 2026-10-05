@@ -3,7 +3,13 @@ from collections.abc import Sequence
 from dataclasses import replace
 
 from receipt_omikuji.lexicon import SpeechGraph
-from receipt_omikuji.paper import vertical_cells, vertical_events, wrap_lines
+from receipt_omikuji.paper import (
+    VERTICAL_FOOTER_LINES,
+    VERTICAL_HEADER_LINES,
+    vertical_cells,
+    vertical_events,
+    wrap_lines,
+)
 from receipt_omikuji.plan import (
     Event,
     FixedResult,
@@ -45,8 +51,10 @@ def generate(graph: SpeechGraph, setting: Setting) -> Plan:
 
     def make(node: str, kind: PrintKind, text: str, gap: int = 0) -> PrintEvent:
         if vertical:
-            frame_lines = (3 if kind == "opening" else 0) + (
-                2 + setting.tail_feed_lines if kind == "result" else 0
+            frame_lines = (VERTICAL_HEADER_LINES if kind == "opening" else 0) + (
+                VERTICAL_FOOTER_LINES + setting.tail_feed_lines
+                if kind == "result"
+                else 0
             )
             return TextEvent(
                 node,

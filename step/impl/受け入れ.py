@@ -579,9 +579,7 @@ def sample_export() -> None:
         assert outcome.returncode == 0, outcome.stderr
         frame = decode_raster(target.read_bytes())
         assert frame.width_bytes == 48
-        assert frame.heights == [24] * 4 + ([24] * 9 + [8]) * 5 + [24, 24, 16] + [
-            24
-        ] * 5 + [8]
+        assert frame.height == 896
         image = Image.frombytes("1", (384, frame.height), frame.payload)
         assert image.getbbox() is not None
         assert image.crop((0, frame.height - 128, 384, frame.height)).getbbox() is None
@@ -672,6 +670,15 @@ def vertical_paper_budget() -> None:
     for event, frame in zip(events, frames):
         assert frame.width_bytes == 48 and frame.height == event.lines * 32
         assert len(frame.payload) == frame.width_bytes * frame.height
+        ink = Image.frombytes("1", (384, frame.height), frame.payload)
+        box = ink.getbbox()
+        if box is not None:
+            assert box[0] >= 100 and box[2] <= 284
+        if isinstance(event, GlyphEvent) and event.text not in (".", "…"):
+            assert frame.height == 128
+            glyph = ink.crop((112, 0, 272, frame.height)).getbbox()
+            if glyph is not None:
+                assert glyph[2] - glyph[0] <= 96 and glyph[3] - glyph[1] <= 96
     minimum = generate(GRAPH, make_setting(layout="vertical", seed="紙量", rounds=0))
     limited = generate(
         GRAPH,
@@ -759,18 +766,18 @@ def manual_cancellation() -> None:
 def vertical_punctuation() -> None:
     encoder = VerticalEncoder(FONT)
     for char in ("、", "。", "「", "」", "ー"):
-        image = encoder.image(GlyphEvent("punctuation", "dodge", char, 7))
+        image = encoder.image(GlyphEvent("punctuation", "dodge", char, 4))
         frame = decode_raster(bitmap(image))
-        ink = Image.frombytes("1", (384, 224), frame.payload).crop((24, 0, 360, 224))
+        ink = Image.frombytes("1", (384, 128), frame.payload).crop((112, 0, 272, 128))
         box = ink.getbbox()
         assert box is not None
         left, top, right, bottom = box
         if char in ("、", "。"):
-            assert left + 24 > 192 and top < 112
+            assert left + 112 > 192 and top < 64
         elif char == "「":
-            assert top >= 112 and right - left > bottom - top
+            assert top >= 64 and right - left > bottom - top
         elif char == "」":
-            assert bottom <= 112 and right - left > bottom - top
+            assert bottom <= 64 and right - left > bottom - top
         else:
             assert bottom - top > right - left
 

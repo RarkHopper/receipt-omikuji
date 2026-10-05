@@ -135,8 +135,11 @@ class VerticalEncoder(ImageEncoder):
         if not 192 <= width_dots <= 832 or width_dots % 8:
             raise ValueError("印字幅は192〜832dotsの8の倍数にしてください")
         self.width_dots = width_dots
-        self.font = _font(font, width_dots // 2)
+        self.em = width_dots // 4
+        self.font = _font(font, self.em)
         self.heading_font = _font(font, 27)
+        self.frame_left = width_dots // 4 + 5
+        self.frame_right = width_dots - self.frame_left - 1
 
     def image(self, event: PrintEvent) -> Image.Image:
         height = event.lines * ROW_DOTS
@@ -147,18 +150,18 @@ class VerticalEncoder(ImageEncoder):
             return image
         draw = ImageDraw.Draw(image)
         top = (
-            12
+            8
             if isinstance(event, DecorationEvent) and event.decoration == "header"
             else 0
         )
         bottom = (
-            height - 13
+            height - 6
             if isinstance(event, DecorationEvent) and event.decoration == "footer"
             else height - 1
         )
-        for x in (10, self.width_dots - 11):
-            draw.line((x, top, x, bottom), fill=0, width=2)
-        for x in (17, self.width_dots - 18):
+        for x in (self.frame_left, self.frame_right):
+            draw.line((x, top, x, bottom), fill=0)
+        for x in (self.frame_left + 4, self.frame_right - 4):
             draw.line((x, top, x, bottom), fill=0)
         center = self.width_dots // 2
         if isinstance(event, DecorationEvent) and event.decoration in (
@@ -166,30 +169,30 @@ class VerticalEncoder(ImageEncoder):
             "footer",
         ):
             edge = top if event.decoration == "header" else bottom
-            inner = edge + 7 if event.decoration == "header" else edge - 7
-            draw.line((10, edge, self.width_dots - 11, edge), fill=0)
-            draw.line((17, inner, self.width_dots - 18, inner), fill=0)
-            flower_y = 40 if event.decoration == "header" else 25
-            for dx, dy in ((0, -8), (8, 0), (0, 8), (-8, 0)):
+            inner = edge + 4 if event.decoration == "header" else edge - 4
+            draw.line((self.frame_left, edge, self.frame_right, edge), fill=0)
+            draw.line((self.frame_left + 4, inner, self.frame_right - 4, inner), fill=0)
+            flower_y = 28 if event.decoration == "header" else 11
+            for dx, dy in ((0, -4), (4, 0), (0, 4), (-4, 0)):
                 draw.ellipse(
                     (
-                        center + dx - 8,
-                        flower_y + dy - 8,
-                        center + dx + 7,
-                        flower_y + dy + 7,
+                        center + dx - 3,
+                        flower_y + dy - 3,
+                        center + dx + 3,
+                        flower_y + dy + 3,
                     ),
                     outline=0,
                 )
-            draw.ellipse((center - 3, flower_y - 3, center + 2, flower_y + 2), fill=0)
+            draw.ellipse((center - 1, flower_y - 1, center + 1, flower_y + 1), fill=0)
             if event.decoration == "header":
-                _center(image, _glyph("御神籤", self.heading_font), center, 75)
+                _center(image, _glyph("御神籤", self.heading_font), center, height - 24)
             return image
         if len(event.text) != 1:
             raise ValueError("縦書きの画像には一文字を指定してください")
         char = event.text
         if char in (".", "…"):
-            for y in (16,) if char == "." else (12, 32, 52):
-                draw.ellipse((center - 3, y - 3, center + 3, y + 3), fill=0)
+            for y in (16,) if char == "." else (8, 16, 24):
+                draw.ellipse((center - 2, y - 2, center + 2, y + 2), fill=0)
             return image
         glyph = _glyph(char, self.font)
         corner = char in "、。，．"
@@ -197,7 +200,7 @@ class VerticalEncoder(ImageEncoder):
         closing = char in "」』】〕）)］]｝}〉》"
         if opening or closing or char in "ー―〜～：；":
             glyph = glyph.transpose(Image.Transpose.ROTATE_270)
-        em = self.width_dots // 2
+        em = self.em
         if glyph.width > em or glyph.height > height - 16:
             scale = min(em / glyph.width, (height - 16) / glyph.height)
             glyph = glyph.resize(

@@ -12,6 +12,8 @@ from receipt_omikuji.plan import (
 LINE_START_PROHIBITED = (
     "、。！？：；）」』】〕〉》ぁぃぅぇぉっゃゅょゎァィゥェォッャュョヮー"
 )
+VERTICAL_HEADER_LINES = 3
+VERTICAL_FOOTER_LINES = 1
 
 
 def character_width(char: str) -> int:
@@ -43,10 +45,9 @@ def wrap_lines(text: str, columns: int) -> tuple[str, ...]:
 
 
 def vertical_cells(text: str, width_dots: int) -> tuple[tuple[str, int], ...]:
-    ordinary = (width_dots // 2 + 16 + ROW_DOTS - 1) // ROW_DOTS
+    ordinary = (width_dots // 4 + 16 + ROW_DOTS - 1) // ROW_DOTS
     return tuple(
-        (char, 1 if char == "." else 2 if char == "…" else ordinary)
-        for char in text.replace("\n", "")
+        (char, 1 if char in (".", "…") else ordinary) for char in text.replace("\n", "")
     )
 
 
@@ -59,7 +60,7 @@ def vertical_events(
     def decoration(name: Decoration, lines: int, kind: PrintKind) -> PrintEvent:
         return DecorationEvent("frame:" + name, kind, name, lines)
 
-    output: list[Event] = [decoration("header", 3, "opening")]
+    output: list[Event] = [decoration("header", VERTICAL_HEADER_LINES, "opening")]
     for event in events:
         if isinstance(event, WaitEvent):
             output.append(event)
@@ -69,7 +70,7 @@ def vertical_events(
             output.append(GlyphEvent(event.node, event.kind, char, lines))
             if index < len(cells) - 1 and character_ms:
                 output.append(WaitEvent(event.node, character_ms, checkpoint=False))
-    output.append(decoration("footer", 2, "result"))
+    output.append(decoration("footer", VERTICAL_FOOTER_LINES, "result"))
     if tail_lines:
         output.append(decoration("feed", tail_lines, "result"))
     return tuple(output)

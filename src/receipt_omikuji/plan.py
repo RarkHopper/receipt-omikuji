@@ -89,9 +89,9 @@ def make_setting(**option: Unpack[SettingOption]) -> Setting:
     )
     return Setting(
         seed=option.get("seed", "42"),
-        rounds=option.get("rounds", 4),
+        rounds=option.get("rounds", 2 if vertical else 4),
         max_wait_ms=option.get("max_wait_ms", 20000),
-        max_lines=option.get("max_lines", 2400 if vertical else 80),
+        max_lines=option.get("max_lines", 240 if vertical else 80),
         columns=option.get("columns", 32),
         expose_lines=option.get("expose_lines", 0),
         result=selection,

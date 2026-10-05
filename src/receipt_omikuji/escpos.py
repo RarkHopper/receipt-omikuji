@@ -3,9 +3,10 @@ import math
 import struct
 from abc import ABC, abstractmethod
 from collections.abc import Callable
+from importlib.resources import files
 from pathlib import Path
 
-from PIL import Image, ImageDraw, ImageFont, ImageOps
+from PIL import Image, ImageChops, ImageDraw, ImageFont, ImageOps
 
 from receipt_omikuji.paper import character_width
 from receipt_omikuji.plan import ROW_DOTS, DecorationEvent, Plan, PrintEvent
@@ -140,6 +141,21 @@ class VerticalEncoder(ImageEncoder):
         self.heading_font = _font(font, 27)
         self.frame_left = width_dots // 4 + 5
         self.frame_right = width_dots - self.frame_left - 1
+        with (
+            files("receipt_omikuji").joinpath("data/club-coc.png").open("rb") as source
+        ):
+            with Image.open(source) as logo:
+                red, green, blue = logo.convert("RGB").split()
+                # 輝度で白黒にすると緑と水色の回路が潰れるため、最も明るいチャンネルで判定する
+                brightness = ImageChops.lighter(ImageChops.lighter(red, green), blue)
+        box = ImageOps.invert(brightness).getbbox()
+        if box is None:
+            raise ValueError("ロゴに印刷できる部分がありません")
+        self.logo = ImageOps.contain(
+            brightness.crop(box),
+            (self.frame_right - self.frame_left - 24, 64),
+            Image.Resampling.LANCZOS,
+        ).point(lambda value: 0 if value < 128 else 255)
 
     def image(self, event: PrintEvent) -> Image.Image:
         height = event.lines * ROW_DOTS
@@ -172,7 +188,11 @@ class VerticalEncoder(ImageEncoder):
             inner = edge + 4 if event.decoration == "header" else edge - 4
             draw.line((self.frame_left, edge, self.frame_right, edge), fill=0)
             draw.line((self.frame_left + 4, inner, self.frame_right - 4, inner), fill=0)
-            flower_y = 28 if event.decoration == "header" else 11
+            if event.decoration == "header":
+                image.paste(self.logo, (center - self.logo.width // 2, 20))
+                _center(image, _glyph("御神籤", self.heading_font), center, height - 24)
+                return image
+            flower_y = 11
             for dx, dy in ((0, -4), (4, 0), (0, 4), (-4, 0)):
                 draw.ellipse(
                     (
@@ -184,8 +204,6 @@ class VerticalEncoder(ImageEncoder):
                     outline=0,
                 )
             draw.ellipse((center - 1, flower_y - 1, center + 1, flower_y + 1), fill=0)
-            if event.decoration == "header":
-                _center(image, _glyph("御神籤", self.heading_font), center, height - 24)
             return image
         if len(event.text) != 1:
             raise ValueError("縦書きの画像には一文字を指定してください")

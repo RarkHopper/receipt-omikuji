@@ -579,7 +579,7 @@ def sample_export() -> None:
         assert outcome.returncode == 0, outcome.stderr
         frame = decode_raster(target.read_bytes())
         assert frame.width_bytes == 48
-        assert frame.height == 896
+        assert frame.height == 928
         image = Image.frombytes("1", (384, frame.height), frame.payload)
         assert image.getbbox() is not None
         assert image.crop((0, frame.height - 128, 384, frame.height)).getbbox() is None
@@ -679,6 +679,9 @@ def vertical_paper_budget() -> None:
             glyph = ink.crop((112, 0, 272, frame.height)).getbbox()
             if glyph is not None:
                 assert glyph[2] - glyph[0] <= 96 and glyph[3] - glyph[1] <= 96
+    header = encoder.image(events[0])
+    logo = decode_raster(bitmap(header.crop((112, 20, 272, 84))))
+    assert any(logo.payload)
     minimum = generate(GRAPH, make_setting(layout="vertical", seed="紙量", rounds=0))
     limited = generate(
         GRAPH,

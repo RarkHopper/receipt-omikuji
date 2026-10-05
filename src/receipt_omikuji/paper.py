@@ -12,7 +12,7 @@ from receipt_omikuji.plan import (
 LINE_START_PROHIBITED = (
     "、。！？：；）」』】〕〉》ぁぃぅぇぉっゃゅょゎァィゥェォッャュョヮー"
 )
-VERTICAL_HEADER_LINES = 3
+VERTICAL_HEADER_LINES = 4
 VERTICAL_FOOTER_LINES = 1
 
 

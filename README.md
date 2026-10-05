@@ -61,7 +61,7 @@ make start PRINTER_ARGS="--vid 0x1234 --pid 0x5678 --interface 0 --endpoint 0x01
 make dry-run ARGS="--seed 朝 --rounds 6 --max-wait-ms 25000"
 ```
 
-語彙を追加する場合は、`src/receipt_omikuji/data/語彙.json`の`dodge`に固有の`id`、`prefix`、`continuation`、`join`を登録します。たとえば「大」と「丈夫！」を「大丈夫」としてつなぎます。新しい接頭辞には`group`の導入文も必要です。直近三回の肩透かしと、直前と同じ接頭辞は避けます。
+語彙を追加する場合は、`src/receipt_omikuji/data/語彙.json`の`dodge`に固有の`id`、導入の`lead`、`prefix`、`continuation`、`join`、再予告の`reannounce`を登録します。たとえば「大」と「丈夫！」を「大丈夫」としてつなぎます。導入と再予告をその肩透かしと組にし、選ばれた組を順に印字します。予告や導入、再予告は、単独で読める文にしてください。追加した組を通して読み、`make check`でグラフの接続を確認できます。直近三回の肩透かしと、直前と同じ接頭辞は避けます。
 
 ## ファイルへ出力する
 

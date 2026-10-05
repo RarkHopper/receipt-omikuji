@@ -171,11 +171,50 @@ def speech_graph() -> None:
             if node.startswith("prefix:"):
                 assert plan.path[pos - 1].startswith("lead:")
                 assert plan.path[pos + 1].startswith("dodge:")
-                assert plan.path[pos + 2] == "reannounce"
+                assert plan.path[pos + 2].startswith("reannounce:")
+
+
+@step("導入、接頭辞、肩透かし、再予告は組ごとに接続し、全候補をグラフから辿れる")
+def registered_pairs() -> None:
+    reached = set()
+    pending = ["start"]
+    while pending:
+        node = pending.pop()
+        if node not in reached:
+            reached.add(node)
+            pending.extend(GRAPH.edges[node])
+    assert reached == set(GRAPH.edges)
+    assert {GRAPH.texts[node] for node in GRAPH.edges["start"]} == set(
+        GRAPH.lexicon.opening
+    )
+    for entry in GRAPH.lexicon.dodge:
+        lead, prefix, dodge, again = (
+            kind + ":" + entry.id for kind in ("lead", "prefix", "dodge", "reannounce")
+        )
+        assert lead in GRAPH.edges["gate"]
+        assert GRAPH.edges[lead] == (prefix,)
+        assert GRAPH.edges[prefix] == (dodge,)
+        assert GRAPH.edges[dodge] == (again,)
+        assert GRAPH.edges[again] == ("gate",)
+        assert (
+            GRAPH.texts[lead],
+            GRAPH.texts[prefix] + GRAPH.texts[dodge],
+            GRAPH.texts[again],
+        ) == (entry.lead, entry.prefix + entry.continuation, entry.reannounce)
+    for seed in range(24):
+        plan = generate(GRAPH, make_setting(seed=str(seed)))
+        for event in prints(plan):
+            text = event.text.replace("\n", "")
+            registered = GRAPH.texts[event.node].replace("\n", "")
+            if event.kind in ("prefix", "final_prefix"):
+                assert text.startswith(registered)
+                assert text[len(registered) :] in GRAPH.lexicon.dots
+            else:
+                assert text == registered
 
 
 @step(
-    "「大」と「丈夫！」や「運」と「動も忘れずに。」は、印字した語の続きとしてつながる"
+    "「大」と「丈夫！」や「運」と「動。まず背伸びをしよう。」は、印字した語の続きとしてつながる"
 )
 def shared_prefix() -> None:
     entries = {"dodge:" + entry.id: entry for entry in GRAPH.lexicon.dodge}
@@ -190,7 +229,7 @@ def shared_prefix() -> None:
     for entry in entries.values():
         assert (entry.prefix + entry.continuation).startswith(entry.join)
         assert entry.join.startswith(entry.prefix) and entry.join != entry.prefix
-        assert "dodge:" + entry.id in GRAPH.edges["prefix:" + entry.prefix]
+        assert "dodge:" + entry.id in GRAPH.edges["prefix:" + entry.id]
     observed = set()
     for seed in range(20):
         plan = generate(
@@ -206,12 +245,9 @@ def shared_prefix() -> None:
                 assert event.text.replace("\n", "") == entry.continuation
                 observed.add(entry.id)
     assert len(observed) >= 24
-    assert {
-        "atari_question",
-        "ataranai_tease",
-        "daikichi_range",
-        "daikichi_question",
-    } <= observed
+    assert {entries["dodge:" + key].prefix for key in observed} == {
+        entry.prefix for entry in GRAPH.lexicon.dodge
+    }
 
 
 @step("直近三回の肩透かしを避け、同じ接頭辞を続けて選ばない")

@@ -71,23 +71,28 @@ def generate(graph: SpeechGraph, setting: Setting) -> Plan:
         lines = wrap_lines(text, setting.columns)
         return TextEvent(node, kind, "\n".join(lines), len(lines) + gap, gap)
 
+    final_id = random.choose(
+        tuple(
+            node for node in graph.edges["gate"] if node.startswith("final_announce:")
+        )
+    )
+    final_prefix_id, result_id = "final_prefix:" + result, "confirmed:" + result
     final: list[Event] = [
-        make("final_announce", "final_announce", random.choose(lexicon.final_announce)),
-        make("final_prefix", "final_prefix", result[0] + random.choose(lexicon.dots)),
-        WaitEvent(
+        make(final_id, "final_announce", graph.texts[final_id]),
+        make(
+            final_prefix_id,
             "final_prefix",
+            graph.texts[final_prefix_id] + random.choose(lexicon.dots),
+        ),
+        WaitEvent(
+            final_prefix_id,
             min(setting.max_wait_ms, random.choose((1600, 2000, 2400))),
             True,
         ),
-        make(
-            "result",
-            "result",
-            (result[1:] + "！\n" if len(result) > 1 else "")
-            + "【確定】今日の運勢："
-            + result,
-        ),
+        make(result_id, "result", graph.texts[result_id]),
     ]
-    events: list[Event] = [make("start", "opening", random.choose(lexicon.opening))]
+    opening_id = random.choose(graph.edges["start"])
+    events: list[Event] = [make(opening_id, "opening", graph.texts[opening_id])]
     character_ms = 0 if setting.max_wait_ms == 0 else setting.character_ms
 
     def count_lines(items: Sequence[Event]) -> int:
@@ -126,7 +131,7 @@ def generate(graph: SpeechGraph, setting: Setting) -> Plan:
     dodge_by_id = {d.id: d for d in lexicon.dodge}
     recent_speech: list[str] = []
     chosen: list[str] = []
-    path = ["start", "gate"]
+    path = ["start", opening_id, "gate"]
     for _ in range(setting.rounds):
         eligible = [
             d
@@ -138,40 +143,35 @@ def generate(graph: SpeechGraph, setting: Setting) -> Plan:
             dodge = random.choose(eligible)
             eligible.remove(dodge)
 
-            leads = [
-                text
-                for text in lexicon.group[dodge.prefix]
-                if text not in recent_speech
-            ]
-            announcements = [
-                text for text in lexicon.reannounce if text not in recent_speech
-            ]
-            if not leads or not announcements:
+            if dodge.lead in recent_speech or dodge.reannounce in recent_speech:
                 continue
-            lead = random.choose(leads)
-            again = random.choose(announcements)
-            lead_id, prefix_id, dodge_id = (
-                "lead:" + dodge.prefix,
-                "prefix:" + dodge.prefix,
-                "dodge:" + dodge.id,
+            lead_id, prefix_id, dodge_id, again_id = (
+                kind + ":" + dodge.id
+                for kind in ("lead", "prefix", "dodge", "reannounce")
             )
             no_wait = setting.max_wait_ms == 0
             cycle: list[Event] = [
-                make(lead_id, "lead", lead),
+                make(lead_id, "lead", graph.texts[lead_id]),
                 WaitEvent(
                     lead_id, 0 if no_wait else random.choose((250, 400, 600)), True
                 ),
-                make(prefix_id, "prefix", dodge.prefix + random.choose(lexicon.dots)),
+                make(
+                    prefix_id,
+                    "prefix",
+                    graph.texts[prefix_id] + random.choose(lexicon.dots),
+                ),
                 WaitEvent(
                     prefix_id,
                     0 if no_wait else random.choose((1200, 1800, 2200, 2800)),
                     True,
                 ),
-                make(dodge_id, "dodge", dodge.continuation, random.choose((0, 0, 1))),
+                make(
+                    dodge_id, "dodge", graph.texts[dodge_id], random.choose((0, 0, 1))
+                ),
                 WaitEvent(
                     dodge_id, 0 if no_wait else random.choose((350, 600, 900)), True
                 ),
-                make("reannounce", "reannounce", again),
+                make(again_id, "reannounce", graph.texts[again_id]),
             ]
             if (
                 count_lines(events + cycle) + reserved_lines <= setting.max_lines
@@ -181,20 +181,12 @@ def generate(graph: SpeechGraph, setting: Setting) -> Plan:
         else:
             break
         events.extend(cycle)
-        path.extend(
-            (
-                "lead:" + dodge.prefix,
-                "prefix:" + dodge.prefix,
-                "dodge:" + dodge.id,
-                "reannounce",
-                "gate",
-            )
-        )
+        path.extend((lead_id, prefix_id, dodge_id, again_id, "gate"))
         chosen.append(dodge.id)
         recent = (recent + [dodge.id])[-3:]
-        recent_speech = (recent_speech + [lead, again])[-6:]
+        recent_speech = (recent_speech + [dodge.lead, dodge.reannounce])[-6:]
     events.extend(final)
-    path.extend(("final_announce", "final_prefix", "result"))
+    path.extend((final_id, final_prefix_id, result_id, "result"))
     if any(target not in graph.edges[source] for source, target in zip(path, path[1:])):
         raise RuntimeError("発話グラフにない接続です")
     output = (

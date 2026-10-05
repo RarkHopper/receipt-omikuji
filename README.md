@@ -95,15 +95,16 @@ php -d ffi.enable=1 bin/omikuji.php print --sample --allow-print \
 
 取消後は新しいデータを送りません。待ちは25ms以内の区切りで確認し、USB転送にも一秒のtimeoutを設けています。送信済みのデータや実行中の転送はプリンター側に残り得るため、物理的な排出の即時停止は保証できません。
 
-## Gauge試験
+## 検査
 
-Gauge本体とPython plugin 0.5.1を用意してください。Pythonのstep実装からPHP本体とCLIを呼びます。
-`make setup` は、このディレクトリの `.venv/` にPython環境を作り、Gauge用の `getgauge==0.5.1` とその依存を導入します。文面生成や印刷にはPythonを使いません。`make test` もこの環境を指定し、グローバルのPythonパッケージを変更しません。
+Gauge本体とPython plugin 0.5.1を用意し、`make setup`でこのディレクトリの`.venv/`にGauge用のPythonパッケージとRuffを導入してください。
 
 ```sh
 make setup
-make test
+make check
 ```
+
+`make check`はPHPの構文検査、Pythonの未使用import・未定義名・import順序などの検査、PythonからPHP本体とCLIを呼ぶGauge試験を実行します。lintだけなら`make lint`、Gauge試験だけなら`make test`を使ってください。
 
 受け入れ試験は、グラフの接続、接頭辞の継続、直近のネタの抑制、seed再現、回数・時間・紙量の予算、結果の一意性、取消境界、行バッファ、ラスタフレーム、プリンター未接続のCLIを確認します。日本語ラスタの試験でもGDとフォントを使います。結果とログは `build/` に出ます。
 

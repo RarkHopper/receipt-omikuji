@@ -2,6 +2,7 @@ import json
 import os
 import pathlib
 import subprocess
+
 from getgauge.python import step
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]

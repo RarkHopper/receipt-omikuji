@@ -1,8 +1,14 @@
-.PHONY: setup test demo preview example
+.PHONY: setup lint check test demo preview example
 
 setup:
 	python3 -m venv .venv
 	PIP_CACHE_DIR=$(CURDIR)/build/pip-cache .venv/bin/python -m pip install -r requirements.txt
+
+lint:
+	@set -e; for file in bin/*.php src/*.php test/*.php; do php -l "$$file"; done
+	.venv/bin/ruff check step_impl
+
+check: lint test
 
 test:
 	GAUGE_PYTHON_COMMAND=$(CURDIR)/.venv/bin/python gauge validate spec

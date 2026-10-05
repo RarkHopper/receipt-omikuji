@@ -100,12 +100,17 @@ class Lexicon:
         )
         speeches = list(lexicon.opening + lexicon.reannounce + lexicon.final_announce)
         speeches.extend(text for values in group.values() for text in values)
-        speeches.extend(dodge.continuation for dodge in dodges)
+        speeches.extend(dodge.prefix + dodge.continuation for dodge in dodges)
         for prefix in group:
             _text(prefix)
         for speech in speeches:
-            if any(result in speech for result in lexicon.result):
-                raise ValueError("確定前の文に運勢を含められません")
+            # 「大吉から大凶まで」は範囲の予告。
+            # 運勢名の有無ではなく、冒頭で結果を言い切る文を拒否する。
+            if any(
+                re.match(re.escape(result) + r"(?:[！!。]|です|$)", speech)
+                for result in lexicon.result
+            ):
+                raise ValueError("確定前の文で運勢を言い切っています")
         if any(set(dots) - {".", "…"} for dots in lexicon.dots):
             raise ValueError("待ちの点には.か…を使ってください")
         return lexicon

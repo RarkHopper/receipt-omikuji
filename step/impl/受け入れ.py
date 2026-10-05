@@ -182,6 +182,8 @@ def shared_prefix() -> None:
         "大切",
         "運動",
         "あたる",
+        "あたり",
+        "大吉から大凶まで",
     }
     for entry in entries.values():
         assert (entry.prefix + entry.continuation).startswith(entry.join)
@@ -202,6 +204,12 @@ def shared_prefix() -> None:
                 assert event.text.replace("\n", "") == entry.continuation
                 observed.add(entry.id)
     assert len(observed) >= 24
+    assert {
+        "atari_question",
+        "ataranai_tease",
+        "daikichi_range",
+        "daikichi_question",
+    } <= observed
 
 
 @step("直近三回の肩透かしを避け、同じ接頭辞を続けて選ばない")
@@ -327,12 +335,11 @@ def unique_result() -> None:
             assert events[-1].text.startswith(name[1:])
 
 
-@step("肩透かしには運勢の確定欄も完成した運勢名も含まれない")
+@step("肩透かしは運勢名を含んでも、結果を言い切る書き出しや確定欄を含まない")
 def dodge_semantics() -> None:
     for entry in GRAPH.lexicon.dodge:
         speech = entry.prefix + entry.continuation
-        assert "【確定】" not in speech
-        assert not any(name in entry.continuation for name in GRAPH.lexicon.result)
+        assert "【確定】" not in speech and speech not in GRAPH.lexicon.result
         assert not any(
             speech.startswith(name + punctuation)
             for name in GRAPH.lexicon.result

@@ -306,7 +306,7 @@ def offline_cli() -> None:
         assert (
             duplicate.returncode == 2
             and (targets / "plan.json").read_bytes() == preserved
-        )
+        ), (duplicate.returncode, duplicate.stderr)
         missing_font = cli(
             [
                 "generate",
@@ -521,11 +521,9 @@ def manual_progression() -> None:
 def manual_cancellation() -> None:
     plan = generate(GRAPH, make_setting(layout="vertical", rounds=1, max_wait_ms=60000))
     sink, cancel = TraceSink(), Cancellation()
-    checkpoints = []
 
     def advance(event, token, check):
-        checkpoints.append(event)
-        return len(checkpoints) < 2
+        return not event.node.startswith("prefix:")
 
     run = play(plan, sink, cancel, advance=ManualAdvance(advance))
     assert (

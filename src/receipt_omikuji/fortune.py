@@ -51,17 +51,11 @@ def generate(graph: SpeechGraph, setting: Setting) -> Plan:
 
     def make(node: str, kind: PrintKind, text: str, gap: int = 0) -> PrintEvent:
         if vertical:
-            frame_lines = (VERTICAL_HEADER_LINES if kind == "opening" else 0) + (
-                VERTICAL_FOOTER_LINES + setting.tail_feed_lines
-                if kind == "result"
-                else 0
-            )
             return TextEvent(
                 node,
                 kind,
                 text.replace("\n", ""),
-                sum(lines for _, lines in vertical_cells(text, setting.width_dots))
-                + frame_lines,
+                sum(lines for _, lines in vertical_cells(text, setting.width_dots)),
                 0,
             )
         if kind in ("prefix", "final_prefix", "result"):
@@ -71,14 +65,8 @@ def generate(graph: SpeechGraph, setting: Setting) -> Plan:
         lines = wrap_lines(text, setting.columns)
         return TextEvent(node, kind, "\n".join(lines), len(lines) + gap, gap)
 
-    final_id = random.choose(
-        tuple(
-            node for node in graph.edges["gate"] if node.startswith("final_announce:")
-        )
-    )
-    final_prefix_id, result_id = "final_prefix:" + result, "confirmed:" + result
+    final_prefix_id, result_id = "prefix:" + result[0], "confirmed:" + result
     final: list[Event] = [
-        make(final_id, "final_announce", graph.texts[final_id]),
         make(
             final_prefix_id,
             "final_prefix",
@@ -91,8 +79,8 @@ def generate(graph: SpeechGraph, setting: Setting) -> Plan:
         ),
         make(result_id, "result", graph.texts[result_id]),
     ]
-    opening_id = random.choose(graph.edges["start"])
-    events: list[Event] = [make(opening_id, "opening", graph.texts[opening_id])]
+    announce_id = random.choose(graph.edges["announce"])
+    events: list[Event] = [make(announce_id, "announce", graph.texts[announce_id])]
     character_ms = 0 if setting.max_wait_ms == 0 else setting.character_ms
 
     def count_lines(items: Sequence[Event]) -> int:
@@ -123,15 +111,20 @@ def generate(graph: SpeechGraph, setting: Setting) -> Plan:
             character_ms, remaining // max(1, count_gaps(events + final))
         )
         setting = replace(setting, character_ms=character_ms)
-    reserved_lines = count_lines(final)
+    frame_lines = (
+        VERTICAL_HEADER_LINES + VERTICAL_FOOTER_LINES + setting.tail_feed_lines
+        if vertical
+        else 0
+    )
+    reserved_lines = count_lines(final) + frame_lines
     reserved_wait = count_wait(final)
     if count_lines(events) + reserved_lines > setting.max_lines:
         raise ValueError("紙量予算に最終発表が収まりません")
     recent: list[str] = []
     dodge_by_id = {d.id: d for d in lexicon.dodge}
-    recent_speech: list[str] = []
+    recent_announcements = [announce_id]
     chosen: list[str] = []
-    path = ["start", opening_id, "gate"]
+    path = ["start", "announce", announce_id, "gate"]
     for _ in range(setting.rounds):
         eligible = [
             d
@@ -140,21 +133,20 @@ def generate(graph: SpeechGraph, setting: Setting) -> Plan:
             and (not chosen or d.prefix != dodge_by_id[chosen[-1]].prefix)
         ]
         while eligible:
-            dodge = random.choose(eligible)
+            prefix = random.choose(tuple(dict.fromkeys(d.prefix for d in eligible)))
+            dodge = random.choose(tuple(d for d in eligible if d.prefix == prefix))
             eligible.remove(dodge)
-
-            if dodge.lead in recent_speech or dodge.reannounce in recent_speech:
-                continue
-            lead_id, prefix_id, dodge_id, again_id = (
-                kind + ":" + dodge.id
-                for kind in ("lead", "prefix", "dodge", "reannounce")
+            next_announce = random.choose(
+                tuple(
+                    node
+                    for node in graph.edges["announce"]
+                    if node not in recent_announcements
+                )
+                or graph.edges["announce"]
             )
+            prefix_id, dodge_id = "prefix:" + dodge.prefix, "dodge:" + dodge.id
             no_wait = setting.max_wait_ms == 0
             cycle: list[Event] = [
-                make(lead_id, "lead", graph.texts[lead_id]),
-                WaitEvent(
-                    lead_id, 0 if no_wait else random.choose((250, 400, 600)), True
-                ),
                 make(
                     prefix_id,
                     "prefix",
@@ -171,7 +163,7 @@ def generate(graph: SpeechGraph, setting: Setting) -> Plan:
                 WaitEvent(
                     dodge_id, 0 if no_wait else random.choose((350, 600, 900)), True
                 ),
-                make(again_id, "reannounce", graph.texts[again_id]),
+                make(next_announce, "announce", graph.texts[next_announce]),
             ]
             if (
                 count_lines(events + cycle) + reserved_lines <= setting.max_lines
@@ -181,12 +173,12 @@ def generate(graph: SpeechGraph, setting: Setting) -> Plan:
         else:
             break
         events.extend(cycle)
-        path.extend((lead_id, prefix_id, dodge_id, again_id, "gate"))
+        path.extend((prefix_id, dodge_id, "announce", next_announce, "gate"))
         chosen.append(dodge.id)
         recent = (recent + [dodge.id])[-3:]
-        recent_speech = (recent_speech + [dodge.lead, dodge.reannounce])[-6:]
+        recent_announcements = (recent_announcements + [next_announce])[-3:]
     events.extend(final)
-    path.extend((final_id, final_prefix_id, result_id, "result"))
+    path.extend((final_prefix_id, result_id, "result"))
     if any(target not in graph.edges[source] for source, target in zip(path, path[1:])):
         raise RuntimeError("発話グラフにない接続です")
     output = (

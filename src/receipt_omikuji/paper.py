@@ -60,7 +60,7 @@ def vertical_events(
     def decoration(name: Decoration, lines: int, kind: PrintKind) -> PrintEvent:
         return DecorationEvent("frame:" + name, kind, name, lines)
 
-    output: list[Event] = [decoration("header", VERTICAL_HEADER_LINES, "opening")]
+    output: list[Event] = [decoration("header", VERTICAL_HEADER_LINES, "announce")]
     for event in events:
         if isinstance(event, WaitEvent):
             output.append(event)

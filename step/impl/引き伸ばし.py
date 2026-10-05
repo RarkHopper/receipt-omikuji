@@ -33,7 +33,7 @@ def cli(
     )
 
 
-@step("予告から接頭辞と肩透かしを経て再予告に戻り、最後は結果に到達する")
+@step("予告から接頭辞と肩透かしを経て同じ予告の候補に戻り、最後は結果に到達する")
 def speech_graph() -> None:
     for seed in range(12):
         plan = generate(GRAPH, make_setting(seed=str(seed)))
@@ -43,13 +43,15 @@ def speech_graph() -> None:
             assert target in GRAPH.edges[source], (source, target)
         for pos, node in enumerate(plan.path):
             if node.startswith("prefix:"):
-                assert plan.path[pos - 1].startswith("lead:")
-                assert plan.path[pos + 1].startswith("dodge:")
-                assert plan.path[pos + 2].startswith("reannounce:")
+                assert plan.path[pos - 1] == "gate"
+                if plan.path[pos + 1].startswith("dodge:"):
+                    assert plan.path[pos + 2] == "announce"
+                else:
+                    assert plan.path[pos + 1] == "confirmed:" + plan.result
 
 
-@step("導入、接頭辞、肩透かし、再予告は組ごとに接続し、全候補をグラフから辿れる")
-def registered_pairs() -> None:
+@step("同じ接頭辞から登録した続きだけへ分岐し、全候補をグラフから辿れる")
+def registered_continuations() -> None:
     reached = set()
     pending = ["start"]
     while pending:
@@ -58,23 +60,33 @@ def registered_pairs() -> None:
             reached.add(node)
             pending.extend(GRAPH.edges[node])
     assert reached == set(GRAPH.edges)
-    assert {GRAPH.texts[node] for node in GRAPH.edges["start"]} == set(
-        GRAPH.lexicon.opening
+    assert GRAPH.edges["start"] == ("announce",)
+    assert {GRAPH.texts[node] for node in GRAPH.edges["announce"]} == set(
+        GRAPH.lexicon.announce
     )
+    assert all(GRAPH.edges[node] == ("gate",) for node in GRAPH.edges["announce"])
+    prefixes = {entry.prefix for entry in GRAPH.lexicon.dodge} | {
+        result[0] for result in GRAPH.lexicon.result
+    }
+    assert set(GRAPH.edges["gate"]) == {"prefix:" + prefix for prefix in prefixes}
+    for prefix in prefixes:
+        assert set(GRAPH.edges["prefix:" + prefix]) == {
+            "dodge:" + entry.id
+            for entry in GRAPH.lexicon.dodge
+            if entry.prefix == prefix
+        } | {
+            "confirmed:" + result
+            for result in GRAPH.lexicon.result
+            if result[0] == prefix
+        }
     for entry in GRAPH.lexicon.dodge:
-        lead, prefix, dodge, again = (
-            kind + ":" + entry.id for kind in ("lead", "prefix", "dodge", "reannounce")
+        prefix, dodge = "prefix:" + entry.prefix, "dodge:" + entry.id
+        assert GRAPH.edges[dodge] == ("announce",)
+        assert GRAPH.texts[prefix] + GRAPH.texts[dodge] == (
+            entry.prefix + entry.continuation
         )
-        assert lead in GRAPH.edges["gate"]
-        assert GRAPH.edges[lead] == (prefix,)
-        assert GRAPH.edges[prefix] == (dodge,)
-        assert GRAPH.edges[dodge] == (again,)
-        assert GRAPH.edges[again] == ("gate",)
-        assert (
-            GRAPH.texts[lead],
-            GRAPH.texts[prefix] + GRAPH.texts[dodge],
-            GRAPH.texts[again],
-        ) == (entry.lead, entry.prefix + entry.continuation, entry.reannounce)
+    for result in GRAPH.lexicon.result:
+        assert GRAPH.edges["confirmed:" + result] == ("result",)
     for seed in range(24):
         plan = generate(GRAPH, make_setting(seed=str(seed)))
         for event in prints(plan):
@@ -88,7 +100,7 @@ def registered_pairs() -> None:
 
 
 @step(
-    "「大」と「丈夫！」や「運」と「動。まず背伸びをしよう。」は、印字した語の続きとしてつながる"
+    "「大」と「吉から大凶までの間で出ます。」、「小」と「腹が空いてきましたね。」、「末」と「永くお幸せに。」が語の続きとしてつながる"
 )
 def shared_prefix() -> None:
     entries = {"dodge:" + entry.id: entry for entry in GRAPH.lexicon.dodge}
@@ -99,11 +111,22 @@ def shared_prefix() -> None:
         "あたる",
         "あたり",
         "大吉から大凶まで",
+        "小腹",
+        "末永く",
     }
     for entry in entries.values():
         assert (entry.prefix + entry.continuation).startswith(entry.join)
         assert entry.join.startswith(entry.prefix) and entry.join != entry.prefix
-        assert "dodge:" + entry.id in GRAPH.edges["prefix:" + entry.id]
+        assert "dodge:" + entry.id in GRAPH.edges["prefix:" + entry.prefix]
+    for prefix, continuation in (
+        ("大", "吉から大凶までの間で出ます。"),
+        ("小", "腹が空いてきましたね。"),
+        ("末", "永くお幸せに。"),
+    ):
+        assert any(
+            entry.prefix == prefix and entry.continuation == continuation
+            for entry in entries.values()
+        )
     observed = set()
     for seed in range(20):
         plan = generate(
@@ -138,9 +161,9 @@ def recent_speech() -> None:
         assert all(first != second for first, second in zip(prefixes, prefixes[1:]))
 
 
-@step("複数のseedで、接頭辞、肩透かし、再予告、点と空行に異なる表現が現れる")
+@step("複数のseedで、接頭辞、肩透かし、予告、点と空行に異なる表現が現れる")
 def variation() -> None:
-    kinds = {kind: set() for kind in ("prefix", "dodge", "reannounce")}
+    kinds = {kind: set() for kind in ("prefix", "dodge", "announce")}
     blanks = set()
     for seed in range(20):
         for event in prints(generate(GRAPH, make_setting(seed=str(seed)))):
@@ -261,7 +284,7 @@ def dodge_semantics() -> None:
         files("receipt_omikuji").joinpath("asset/語彙.json").read_text(encoding="utf-8")
     )
     for premature in ("吉です。", "吉！", "吉", "【確定】吉"):
-        invalid = dict(source, opening=[premature])
+        invalid = dict(source, announce=[premature])
         try:
             Lexicon.from_dict(invalid)
         except ValueError:

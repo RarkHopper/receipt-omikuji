@@ -1,2959 +1,2179 @@
 {
-  "version": 4,
-  "opening": [
-    "今日を占います。",
-    "おみくじです。",
-    "運勢を調べます。",
-    "紙が動きます。",
-    "運試しをしよう。",
-    "一枚、引きます。",
-    "占ってみよう。",
-    "始めます。",
-    "結果を伝えるよ。",
-    "紙を見てね。",
-    "あなたの番です。",
-    "少し待ってね。",
-    "今日はどうかな？",
-    "そっと見守ってね。",
-    "願ってみよう。",
-    "深呼吸しよう。",
-    "運勢を読みます。",
-    "一緒に占おう。",
-    "今日の一枚です。",
-    "お手元を見てね。",
-    "何が出るかな？",
-    "心を落ち着けよう。",
-    "占いを始めます。",
-    "続きを見てね。",
-    "ゆっくり読もう。",
-    "おみくじを引こう。",
-    "目をこらしてね。",
-    "気楽にどうぞ。",
-    "楽しんでいこう。",
-    "期待して待とう。",
-    "運勢を見てみよう。",
-    "紙に聞いてみよう。",
-    "お待たせしました。",
-    "いい日になるかな？",
-    "願いを込めよう。",
-    "今日は何が出る？",
-    "運を試してみよう。",
-    "結果を待とう。",
-    "印刷を始めます。",
-    "そろそろ始めよう。"
-  ],
-  "final_announce": [
-    "結果を出します。",
-    "これで確定です。",
-    "最後の発表です。",
-    "答えを見せます。",
-    "結果を見てね。",
-    "運勢を伝えます。",
-    "ここで発表します。",
-    "答えが出ました。",
-    "お待たせしました。",
-    "運勢を言います。",
-    "結果をご覧ください。",
-    "今度こそ確定です。",
-    "今日の運勢です。",
-    "結論が出ました。",
-    "答えを出すよ。",
-    "結果を伝えるね。",
-    "発表するよ。",
-    "本日の答えです。",
-    "確定した結果です。",
-    "おみくじの結果です。",
-    "これが結論です。",
-    "運勢が決まりました。",
-    "最後まで見てね。",
-    "これが答えです。",
-    "紙のお告げです。",
-    "発表します。",
-    "答えを読むよ。",
-    "結果はこれです。",
-    "では、確定です。",
-    "答え合わせです。"
+  "version": 5,
+  "announce": [
+    "あなたの運勢を占います。",
+    "お告げが届きました。",
+    "今日の運勢をお伝えします。",
+    "神様からのお言葉です。",
+    "運命のお告げです。",
+    "おみくじの時間です。",
+    "今日の運勢を見てみましょう。",
+    "神様にお尋ねします。",
+    "運勢を占ってみましょう。",
+    "あなたにお告げがあります。",
+    "本日のお告げです。",
+    "今日のおみくじをどうぞ。"
   ],
   "dodge": [
     {
       "id": "daijoubu",
       "prefix": "大",
       "continuation": "丈夫！",
-      "join": "大丈夫",
-      "lead": "見てね。",
-      "reannounce": "続きます。"
+      "join": "大丈夫"
     },
     {
       "id": "taisetsu",
       "prefix": "大",
-      "continuation": "切なのは、この先。",
-      "join": "大切",
-      "lead": "あの字が出ます。",
-      "reannounce": "続きを見ましょう。"
+      "continuation": "切なことは、だいたい寝ると思い出します。",
+      "join": "大切"
     },
     {
       "id": "daikon",
       "prefix": "大",
-      "continuation": "根。おでんの話です。",
-      "join": "大根",
-      "lead": "先頭の字です。",
-      "reannounce": "次に進みます。"
+      "continuation": "根はおでんに限ります。",
+      "join": "大根"
     },
     {
       "id": "ooame",
       "prefix": "大",
-      "continuation": "雨なら傘をどうぞ。",
-      "join": "大雨",
-      "lead": "見えてきますよ。",
-      "reannounce": "仕切り直します。"
+      "continuation": "雨の日ほど傘を忘れますね。",
+      "join": "大雨"
     },
     {
       "id": "daisouji",
       "prefix": "大",
-      "continuation": "掃除。机からどうぞ。",
-      "join": "大掃除",
-      "lead": "ご注目ください。",
-      "reannounce": "もう一度どうぞ。"
+      "continuation": "盛りにするか、まだ迷っています。",
+      "join": "大盛り"
     },
     {
       "id": "daiichi",
       "prefix": "大",
-      "continuation": "事な結果は、この先です。",
-      "join": "大事",
-      "lead": "期待して見よう。",
-      "reannounce": "お話を戻します。"
+      "continuation": "人になっても駄菓子は好きです。",
+      "join": "大人"
     },
     {
       "id": "daikokai",
       "prefix": "大",
-      "continuation": "航海。紙の海を進もう。",
-      "join": "大航海",
-      "lead": "大きく期待しよう。",
-      "reannounce": "占いに戻ります。"
+      "continuation": "掃除は引き出し一つで力尽きます。",
+      "join": "大掃除"
     },
     {
       "id": "daimanten",
       "prefix": "大",
-      "continuation": "満足にはまだ早い。",
-      "join": "大満足",
-      "lead": "次の字を出すよ。",
-      "reannounce": "この先も読んでね。"
+      "continuation": "仏も肩が凝るのでしょうか。",
+      "join": "大仏"
     },
     {
       "id": "ooatari",
       "prefix": "大",
-      "continuation": "当たりの予感だけです。",
-      "join": "大当たり",
-      "lead": "いよいよ出ます。",
-      "reannounce": "まだ続きます。"
+      "continuation": "福を一つ、余分に買いました。",
+      "join": "大福"
     },
     {
       "id": "dai_010",
       "prefix": "大",
-      "continuation": "盛り。ご飯の話です。",
-      "join": "大盛り",
-      "lead": "見逃さないでね。",
-      "reannounce": "次も見てね。"
+      "continuation": "好物は別腹です。",
+      "join": "大好物"
     },
     {
       "id": "dai_011",
       "prefix": "大",
-      "continuation": "福。あんこをどうぞ。",
-      "join": "大福",
-      "lead": "一字目を見よう。",
-      "reannounce": "話を続けます。"
+      "continuation": "の字で寝たい日もあります。",
+      "join": "大の字"
     },
     {
       "id": "dai_012",
       "prefix": "大",
-      "continuation": "豆。豆まきの準備をしよう。",
-      "join": "大豆",
-      "lead": "見えそうですか？",
-      "reannounce": "気を取り直そう。"
+      "continuation": "声で笑うとお腹が空きます。",
+      "join": "大声"
     },
     {
       "id": "dai_013",
       "prefix": "大",
-      "continuation": "葉。薬味として使います。",
-      "join": "大葉",
-      "lead": "先頭をご覧ください。",
-      "reannounce": "ここから続けます。"
+      "continuation": "自然の中でも電波を探しています。",
+      "join": "大自然"
     },
     {
       "id": "dai_014",
       "prefix": "大",
-      "continuation": "根おろしを焼き魚に添えよう。",
-      "join": "大根おろし",
-      "lead": "何の字でしょう？",
-      "reannounce": "先に進みましょう。"
+      "continuation": "目に見てください、おかわりしただけです。",
+      "join": "大目"
     },
     {
       "id": "dai_015",
       "prefix": "大",
-      "continuation": "さじ一杯の期待をどうぞ。",
-      "join": "大さじ",
-      "lead": "続きも気になるね。",
-      "reannounce": "発表を再開します。"
+      "continuation": "豆は枝豆の未来です。",
+      "join": "大豆"
     },
     {
       "id": "dai_016",
       "prefix": "大",
-      "continuation": "皿。結果は別盛りにします。",
-      "join": "大皿",
-      "lead": "何だと思いますか？",
-      "reannounce": "もう少し待ってね。"
+      "continuation": "事な用事ほど靴下が片方ありません。",
+      "join": "大事"
     },
     {
       "id": "dai_017",
       "prefix": "大",
-      "continuation": "鍋。おでんを煮込みます。",
-      "join": "大鍋",
-      "lead": "予想して待とう。",
-      "reannounce": "続きをお見せします。"
+      "continuation": "急ぎの日に限って信号が赤です。",
+      "join": "大急ぎ"
     },
     {
       "id": "dai_018",
       "prefix": "大",
-      "continuation": "食い。紙は食べないで。",
-      "join": "大食い",
-      "lead": "この字を読もう。",
-      "reannounce": "おみくじに戻ろう。"
+      "continuation": "冒険の第一歩は玄関です。",
+      "join": "大冒険"
     },
     {
       "id": "dai_019",
       "prefix": "大",
-      "continuation": "好物は何ですか。",
-      "join": "大好物",
-      "lead": "先に一字出します。",
-      "reannounce": "次をご覧ください。"
+      "continuation": "判焼きは何と呼びますか？",
+      "join": "大判焼き"
     },
     {
       "id": "dai_020",
       "prefix": "大",
-      "continuation": "宴会。まずお茶で乾杯。",
-      "join": "大宴会",
-      "lead": "そっと見ていてね。",
-      "reannounce": "また予告します。"
+      "continuation": "団円の前にトイレへどうぞ。",
+      "join": "大団円"
     },
     {
       "id": "dai_021",
       "prefix": "大",
-      "continuation": "笑いするのは結果の後です。",
-      "join": "大笑い",
-      "lead": "どう読めるかな？",
-      "reannounce": "改めて見てみよう。"
+      "continuation": "回りしてパン屋に寄りました。",
+      "join": "大回り"
     },
     {
       "id": "dai_022",
       "prefix": "大",
-      "continuation": "声は心の中にとどめよう。",
-      "join": "大声",
-      "lead": "先頭から読みます。",
-      "reannounce": "答えを探しましょう。"
+      "continuation": "忙しでもおやつの時間は守ります。",
+      "join": "大忙し"
     },
     {
       "id": "dai_023",
       "prefix": "大",
-      "continuation": "騒ぎするにはまだ早い。",
-      "join": "大騒ぎ",
-      "lead": "胸が高鳴りますね。",
-      "reannounce": "続きも見守ってね。"
+      "continuation": "笑いした理由はもう忘れました。",
+      "join": "大笑い"
     },
     {
       "id": "dai_024",
       "prefix": "大",
-      "continuation": "喜びは結果を見てからにしよう。",
-      "join": "大喜び",
-      "lead": "この字が出ます。",
-      "reannounce": "次は何でしょう？"
+      "continuation": "晦日の予定は今年もこたつです。",
+      "join": "大晦日"
     },
     {
       "id": "dai_025",
       "prefix": "大",
-      "continuation": "爆笑。紙も揺れます。",
-      "join": "大爆笑",
-      "lead": "読めそうですか？",
-      "reannounce": "ゆっくり進めます。"
+      "continuation": "皿の唐揚げを一人で守っています。",
+      "join": "大皿"
     },
     {
       "id": "dai_026",
       "prefix": "大",
-      "continuation": "あくび。眠くなった？",
-      "join": "大あくび",
-      "lead": "最初に出る字です。",
-      "reannounce": "お次もどうぞ。"
+      "continuation": "行列の先が気になって並びました。",
+      "join": "大行列"
     },
     {
       "id": "dai_027",
       "prefix": "大",
-      "continuation": "泣きする前に深呼吸しよう。",
-      "join": "大泣き",
-      "lead": "次を予想してね。",
-      "reannounce": "先を読んでみよう。"
+      "continuation": "雑把に切ったケーキが一番大きいです。",
+      "join": "大雑把"
     },
     {
       "id": "dai_028",
       "prefix": "大",
-      "continuation": "慌て。まず落ち着いて。",
-      "join": "大慌て",
-      "lead": "ちょっと見てください。",
-      "reannounce": "期待して見ていてね。"
+      "continuation": "昔の話でも昨日のように話します。",
+      "join": "大昔"
     },
     {
       "id": "dai_029",
       "prefix": "大",
-      "continuation": "忙しでも紙はゆっくり進みます。",
-      "join": "大忙し",
-      "lead": "紙の字を見てね。",
-      "reannounce": "まだ終わりません。"
+      "continuation": "風呂敷を広げたら畳めなくなりました。",
+      "join": "大風呂敷"
     },
     {
       "id": "dai_030",
       "prefix": "大",
-      "continuation": "急ぎでも結果は待とう。",
-      "join": "大急ぎ",
-      "lead": "どんな字が来るかな？",
-      "reannounce": "本題に戻ろう。"
+      "continuation": "辞典より冷蔵庫をよく開きます。",
+      "join": "大辞典"
     },
     {
       "id": "dai_031",
       "prefix": "大",
-      "continuation": "空。見上げるのは後にしよう。",
-      "join": "大空",
-      "lead": "楽しみに待ってね。",
-      "reannounce": "続きをお届けします。"
+      "continuation": "穴を狙う前に靴下の穴を塞ぎます。",
+      "join": "大穴"
     },
     {
       "id": "dai_032",
       "prefix": "大",
-      "continuation": "地。足元も見てね。",
-      "join": "大地",
-      "lead": "先頭にご注目ください。",
-      "reannounce": "紙の先を見てね。"
+      "continuation": "舞台でもお腹は鳴ります。",
+      "join": "大舞台"
     },
     {
       "id": "dai_033",
       "prefix": "大",
-      "continuation": "海原。紙は一列です。",
-      "join": "大海原",
-      "lead": "大きく期待してね。",
-      "reannounce": "もう少し付き合ってね。"
+      "continuation": "人数になるとピザが足りません。",
+      "join": "大人数"
     },
     {
       "id": "dai_034",
       "prefix": "大",
-      "continuation": "河。流れていくのは紙です。",
-      "join": "大河",
-      "lead": "ここで一字見せます。",
-      "reannounce": "発表は続きます。"
+      "continuation": "荷物の半分は念のためです。",
+      "join": "大荷物"
     },
     {
       "id": "dai_035",
       "prefix": "大",
-      "continuation": "波。紙は穏やかです。",
-      "join": "大波",
-      "lead": "この字をご覧ください。",
-      "reannounce": "落ち着いて見よう。"
+      "continuation": "作を書く前に机を片付け始めました。",
+      "join": "大作"
     },
     {
       "id": "dai_036",
       "prefix": "大",
-      "continuation": "雪。白い紙の話です。",
-      "join": "大雪",
-      "lead": "思わず期待しますね。",
-      "reannounce": "次はどうなるかな？"
+      "continuation": "空を見上げたらくしゃみが出ました。",
+      "join": "大空"
     },
     {
       "id": "dai_037",
       "prefix": "大",
-      "continuation": "風。紙を押さえて。",
-      "join": "大風",
-      "lead": "字が見えてきました。",
-      "reannounce": "改めてご注目ください。"
+      "continuation": "将、いつものをお願いします。",
+      "join": "大将"
     },
     {
       "id": "dai_038",
       "prefix": "大",
-      "continuation": "木。木陰でひと休みしよう。",
-      "join": "大木",
-      "lead": "どんな言葉になるかな？",
-      "reannounce": "続きを読んでください。"
+      "continuation": "移動の途中でお土産が増えました。",
+      "join": "大移動"
     },
     {
       "id": "dai_039",
       "prefix": "大",
-      "continuation": "草原。紙には草がありません。",
-      "join": "大草原",
-      "lead": "先頭をお見せします。",
-      "reannounce": "運勢を見ていこう。"
+      "continuation": "通りを渡ったら目的の店を通り過ぎました。",
+      "join": "大通り"
     },
     {
       "id": "dai_040",
       "prefix": "大",
-      "continuation": "都会。紙の中は静かです。",
-      "join": "大都会",
-      "lead": "期待が高まりますね。",
-      "reannounce": "先を見届けましょう。"
+      "continuation": "雪の日の足跡は寄り道を隠せません。",
+      "join": "大雪"
     },
     {
       "id": "dai_041",
       "prefix": "大",
-      "continuation": "通り。寄り道しよう。",
-      "join": "大通り",
-      "lead": "見てね。",
-      "reannounce": "もう一度見てね。"
+      "continuation": "好きな曲ほど歌詞がうろ覚えです。",
+      "join": "大好き"
     },
     {
       "id": "dai_042",
       "prefix": "大",
-      "continuation": "広間。紙幅は変わりません。",
-      "join": "大広間",
-      "lead": "あの字が出ます。",
-      "reannounce": "今のは前置きでした。"
+      "continuation": "成功のご褒美は昼寝にしましょう。",
+      "join": "大成功"
     },
     {
       "id": "dai_043",
       "prefix": "大",
-      "continuation": "門。心の中でくぐろう。",
-      "join": "大門",
-      "lead": "先頭の字です。",
-      "reannounce": "寄り道をしました。"
+      "continuation": "騒ぎの原因は小さな虫でした。",
+      "join": "大騒ぎ"
     },
     {
       "id": "dai_044",
       "prefix": "大",
-      "continuation": "橋。結果へ橋を架けよう。",
-      "join": "大橋",
-      "lead": "見えてきますよ。",
-      "reannounce": "次の字を見ましょう。"
+      "continuation": "輪の花より団子に目が行きます。",
+      "join": "大輪"
     },
     {
       "id": "dai_045",
       "prefix": "大",
-      "continuation": "階段。一段ずつどうぞ。",
-      "join": "大階段",
-      "lead": "ご注目ください。",
-      "reannounce": "続きも読んでね。"
+      "continuation": "船に乗ったつもりが酔いました。",
+      "join": "大船"
     },
     {
       "id": "dai_046",
       "prefix": "大",
-      "continuation": "仏のように、静かに見守ろう。",
-      "join": "大仏",
-      "lead": "期待して見よう。",
-      "reannounce": "お話はまだ続きます。"
+      "continuation": "半の心配は、お茶の後にしましょう。",
+      "join": "大半"
     },
     {
       "id": "dai_047",
       "prefix": "大",
-      "continuation": "浴場。紙は濡らさないでね。",
-      "join": "大浴場",
-      "lead": "大きく期待しよう。",
-      "reannounce": "改めて占います。"
+      "continuation": "泣きした後は水を飲みましょう。",
+      "join": "大泣き"
     },
     {
       "id": "dai_048",
       "prefix": "大",
-      "continuation": "劇場。今は前座です。",
-      "join": "大劇場",
-      "lead": "次の字を出すよ。",
-      "reannounce": "本題を続けます。"
+      "continuation": "食いの動画を見てお腹が空きました。",
+      "join": "大食い"
     },
     {
       "id": "dai_049",
       "prefix": "大",
-      "continuation": "観覧車。紙はまっすぐ進みます。",
-      "join": "大観覧車",
-      "lead": "いよいよ出ます。",
-      "reannounce": "もう少し進みます。"
+      "continuation": "発見です、ポケットに飴がありました。",
+      "join": "大発見"
     },
     {
       "id": "dai_050",
       "prefix": "大",
-      "continuation": "行列。文字が並びます。",
-      "join": "大行列",
-      "lead": "見逃さないでね。",
-      "reannounce": "このまま見守ってね。"
+      "continuation": "都会でも迷子になるのは得意です。",
+      "join": "大都会"
     },
     {
       "id": "dai_051",
       "prefix": "大",
-      "continuation": "冒険。紙の先へ進もう。",
-      "join": "大冒険",
-      "lead": "一字目を見よう。",
-      "reannounce": "一息ついて続けよう。"
+      "continuation": "満足のはずがデザートを頼みました。",
+      "join": "大満足"
     },
     {
       "id": "dai_052",
       "prefix": "大",
-      "continuation": "発見。次の文字を見つけました。",
-      "join": "大発見",
-      "lead": "見えそうですか？",
-      "reannounce": "また見てみましょう。"
+      "continuation": "歓迎します、お菓子もあります。",
+      "join": "大歓迎"
     },
     {
       "id": "dai_053",
       "prefix": "大",
-      "continuation": "逆転。紙は戻りません。",
-      "join": "大逆転",
-      "lead": "先頭をご覧ください。",
-      "reannounce": "さて、続きをどうぞ。"
+      "continuation": "浴場ではつい声が響きます。",
+      "join": "大浴場"
     },
     {
       "id": "dai_054",
       "prefix": "大",
-      "continuation": "成功かどうかは最後に分かります。",
-      "join": "大成功",
-      "lead": "何の字でしょう？",
-      "reannounce": "次の文字が出ます。"
+      "continuation": "前提として、まずご飯を食べましょう。",
+      "join": "大前提"
     },
     {
       "id": "dai_055",
       "prefix": "大",
-      "continuation": "失敗。早とちりしただけです。",
-      "join": "大失敗",
-      "lead": "続きも気になるね。",
-      "reannounce": "まだ先があります。"
+      "continuation": "差で勝っても洗い物は残ります。",
+      "join": "大差"
     },
     {
       "id": "dai_056",
       "prefix": "大",
-      "continuation": "活躍。主役の出番はまだ先です。",
-      "join": "大活躍",
-      "lead": "何だと思いますか？",
-      "reannounce": "答えに近づきましょう。"
+      "continuation": "逆転より先に充電が切れました。",
+      "join": "大逆転"
     },
     {
       "id": "dai_057",
       "prefix": "大",
-      "continuation": "挑戦。続きを読もう。",
-      "join": "大挑戦",
-      "lead": "予想して待とう。",
-      "reannounce": "次も楽しんでね。"
+      "continuation": "観覧車の頂上でくしゃみを我慢しました。",
+      "join": "大観覧車"
     },
     {
       "id": "dai_058",
       "prefix": "大",
-      "continuation": "健闘。待つのも大変ですね。",
-      "join": "大健闘",
-      "lead": "この字を読もう。",
-      "reannounce": "ゆっくり見ていてね。"
+      "continuation": "きな夢と小さな財布があります。",
+      "join": "大きな"
     },
     {
       "id": "dai_059",
       "prefix": "大",
-      "continuation": "記録。紙の長さかな。",
-      "join": "大記録",
-      "lead": "先に一字出します。",
-      "reannounce": "お話に戻りましょう。"
+      "continuation": "きく伸びをしてから考えましょう。",
+      "join": "大きく"
     },
     {
       "id": "dai_060",
       "prefix": "大",
-      "continuation": "団円の前に寄り道しよう。",
-      "join": "大団円",
-      "lead": "そっと見ていてね。",
-      "reannounce": "続きを待ちましょう。"
+      "continuation": "きめの服は食後に頼もしいです。",
+      "join": "大きめ"
     },
     {
       "id": "dai_061",
       "prefix": "大",
-      "continuation": "名。行列に並ぶのは文字です。",
-      "join": "大名",
-      "lead": "どう読めるかな？",
-      "reannounce": "紙はまだ出ます。"
+      "continuation": "きさよりも、おかわりできるかが大事です。",
+      "join": "大きさ"
     },
     {
       "id": "dai_062",
       "prefix": "大",
-      "continuation": "将。ご注文は運勢？",
-      "join": "大将",
-      "lead": "先頭から読みます。",
-      "reannounce": "この先をご覧ください。"
+      "continuation": "広間の隅が一番落ち着きます。",
+      "join": "大広間"
     },
     {
       "id": "dai_063",
       "prefix": "大",
-      "continuation": "臣。紙担当です。",
-      "join": "大臣",
-      "lead": "胸が高鳴りますね。",
-      "reannounce": "発表に戻ります。"
+      "continuation": "役を任されると急に喉が渇きます。",
+      "join": "大役"
     },
     {
       "id": "dai_064",
       "prefix": "大",
-      "continuation": "統領。紙の国のお話です。",
-      "join": "大統領",
-      "lead": "この字が出ます。",
-      "reannounce": "もう少し読んでみよう。"
+      "continuation": "根おろしを作ると腕も鍛えられます。",
+      "join": "大根おろし"
     },
     {
       "id": "dai_065",
       "prefix": "大",
-      "continuation": "魔王。倒す相手は眠気です。",
-      "join": "大魔王",
-      "lead": "読めそうですか？",
-      "reannounce": "次の展開を見ましょう。"
+      "continuation": "器晩成なので、今日は寝ます。",
+      "join": "大器晩成"
     },
     {
       "id": "dai_066",
       "prefix": "大",
-      "continuation": "工。紙の家を建てよう。",
-      "join": "大工",
-      "lead": "最初に出る字です。",
-      "reannounce": "もう一息です。"
+      "continuation": "物を狙って釣れたのは長靴でした。",
+      "join": "大物"
     },
     {
       "id": "dai_067",
       "prefix": "大",
-      "continuation": "スター。紙の舞台に登場します。",
-      "join": "大スター",
-      "lead": "次を予想してね。",
-      "reannounce": "続きを楽しんでね。"
+      "continuation": "風に洗濯物の行き先を任せました。",
+      "join": "大風"
     },
     {
       "id": "dai_068",
       "prefix": "大",
-      "continuation": "先輩。結果を待つ達人です。",
-      "join": "大先輩",
-      "lead": "ちょっと見てください。",
-      "reannounce": "ここからまた進もう。"
+      "continuation": "海原より家のお風呂が落ち着きます。",
+      "join": "大海原"
     },
     {
       "id": "dai_069",
       "prefix": "大",
-      "continuation": "親友。紙にも紹介して。",
-      "join": "大親友",
-      "lead": "紙の字を見てね。",
-      "reannounce": "次へ参りましょう。"
+      "continuation": "赤字の原因は限定のお菓子でした。",
+      "join": "大赤字"
     },
     {
       "id": "dai_070",
       "prefix": "大",
-      "continuation": "黒柱。家の話でした。",
-      "join": "大黒柱",
-      "lead": "どんな字が来るかな？",
-      "reannounce": "文字を追ってみよう。"
+      "continuation": "盤振る舞いした翌日はおにぎりです。",
+      "join": "大盤振る舞い"
     },
     {
       "id": "dai_071",
       "prefix": "大",
-      "continuation": "きな夢。紙に収まる？",
-      "join": "大きな夢",
-      "lead": "楽しみに待ってね。",
-      "reannounce": "引き続きご覧ください。"
+      "continuation": "衆食堂の定食が恋しくなりました。",
+      "join": "大衆食堂"
     },
     {
       "id": "dai_072",
       "prefix": "大",
-      "continuation": "きな声で呼ぶにはまだ早い。",
-      "join": "大きな声",
-      "lead": "先頭にご注目ください。",
-      "reannounce": "続きを出します。"
+      "continuation": "先輩もコピー機の前で迷っています。",
+      "join": "大先輩"
     },
     {
       "id": "dai_073",
       "prefix": "大",
-      "continuation": "きな一歩。紙も前へ進みます。",
-      "join": "大きな一歩",
-      "lead": "大きく期待してね。",
-      "reannounce": "さて、進めましょう。"
+      "continuation": "抵のことは明日の自分に期待します。",
+      "join": "大抵"
     },
     {
       "id": "dai_074",
       "prefix": "大",
-      "continuation": "きな箱。期待が詰まっています。",
-      "join": "大きな箱",
-      "lead": "ここで一字見せます。",
-      "reannounce": "次は何が出るかな？"
+      "continuation": "手柄です、なくした鍵が見つかりました。",
+      "join": "大手柄"
     },
     {
       "id": "dai_075",
       "prefix": "大",
-      "continuation": "きな傘。紙も雨宿りできます。",
-      "join": "大きな傘",
-      "lead": "この字をご覧ください。",
-      "reannounce": "まだ結論の前です。"
+      "continuation": "人気の店より空いている店に惹かれます。",
+      "join": "大人気"
     },
     {
       "id": "dai_076",
       "prefix": "大",
-      "continuation": "きな魚。釣果の話です。",
-      "join": "大きな魚",
-      "lead": "思わず期待しますね。",
-      "reannounce": "紙に聞いてみます。"
+      "continuation": "げさに喜ぶとケーキがもう一切れ出ます。",
+      "join": "大げさ"
     },
     {
       "id": "dai_077",
       "prefix": "大",
-      "continuation": "きな栗。木の下で見つけました。",
-      "join": "大きな栗",
-      "lead": "字が見えてきました。",
-      "reannounce": "答えを待ちましょう。"
+      "continuation": "工さんの鉛筆は耳にも収まります。",
+      "join": "大工"
     },
     {
       "id": "dai_078",
       "prefix": "大",
-      "continuation": "きなお世話でしたか？",
-      "join": "大きなお世話",
-      "lead": "どんな言葉になるかな？",
-      "reannounce": "次も予想してみよう。"
+      "continuation": "口を開けてもハンバーガーが入りません。",
+      "join": "大口"
     },
     {
       "id": "dai_079",
       "prefix": "大",
-      "continuation": "きな勘違いかどうかはこの先で分かります。",
-      "join": "大きな勘違い",
-      "lead": "先頭をお見せします。",
-      "reannounce": "話を進めます。"
+      "continuation": "間違いでした、今日は火曜日です。",
+      "join": "大間違い"
     },
     {
       "id": "dai_080",
       "prefix": "大",
-      "continuation": "きな拍手は結果が出てからにしよう。",
-      "join": "大きな拍手",
-      "lead": "期待が高まりますね。",
-      "reannounce": "ここで占いに戻ろう。"
+      "continuation": "売り出しの日に財布を忘れました。",
+      "join": "大売り出し"
     },
     {
       "id": "dai_081",
       "prefix": "大",
-      "continuation": "丈夫。紙は続きます。",
-      "join": "大丈夫",
-      "lead": "見てね。",
-      "reannounce": "もう一度予告します。"
+      "continuation": "相撲を見ながらつい踏ん張ってしまいます。",
+      "join": "大相撲"
     },
     {
       "id": "dai_082",
       "prefix": "大",
-      "continuation": "切な話は最後にします。",
-      "join": "大切",
-      "lead": "あの字が出ます。",
-      "reannounce": "先まで見てみよう。"
+      "continuation": "根役者でもおでん屋なら活躍できますか？",
+      "join": "大根役者"
     },
     {
       "id": "dai_083",
       "prefix": "大",
-      "continuation": "根役者。紙の演技です。",
-      "join": "大根",
-      "lead": "先頭の字です。",
-      "reannounce": "続きを追いましょう。"
+      "continuation": "陸を渡る前に横断歩道を渡りましょう。",
+      "join": "大陸"
     },
     {
       "id": "dai_084",
       "prefix": "大",
-      "continuation": "掃除。運勢も捜索中です。",
-      "join": "大掃除",
-      "lead": "見えてきますよ。",
-      "reannounce": "まだ答えは出しません。"
+      "continuation": "興奮した猫がカーテンを登っています。",
+      "join": "大興奮"
     },
     {
       "id": "dai_085",
       "prefix": "大",
-      "continuation": "航海。答えの港へ向かおう。",
-      "join": "大航海",
-      "lead": "ご注目ください。",
-      "reannounce": "この先に進もう。"
+      "continuation": "容量のお菓子ほどすぐなくなります。",
+      "join": "大容量"
     },
     {
       "id": "dai_086",
       "prefix": "大",
-      "continuation": "満足の昼寝がしたい。",
-      "join": "大満足",
-      "lead": "期待して見よう。",
-      "reannounce": "またお待ちください。"
+      "continuation": "富豪になってもポイントを貯めたいです。",
+      "join": "大富豪"
     },
     {
       "id": "dai_087",
       "prefix": "大",
-      "continuation": "当たりかどうかはまだ言いません。",
-      "join": "大当たり",
-      "lead": "大きく期待しよう。",
-      "reannounce": "順にお見せします。"
+      "continuation": "往生するまで好きなものを食べたいですね。",
+      "join": "大往生"
     },
     {
       "id": "dai_088",
       "prefix": "大",
-      "continuation": "盛りの期待をどうぞ。",
-      "join": "大盛り",
-      "lead": "次の字を出すよ。",
-      "reannounce": "次の発表に進みます。"
+      "continuation": "晦日の掃除は来年への持ち越しです。",
+      "join": "大晦日の"
     },
     {
       "id": "dai_089",
       "prefix": "大",
-      "continuation": "福。食後にひとついかが？",
-      "join": "大福",
-      "lead": "いよいよ出ます。",
-      "reannounce": "紙の続きを読もう。"
+      "continuation": "当たりのアイス棒を捨てそうになりました。",
+      "join": "大当たり"
     },
     {
       "id": "dai_090",
       "prefix": "大",
-      "continuation": "団円はもう少し先です。",
-      "join": "大団円",
-      "lead": "見逃さないでね。",
-      "reannounce": "引き続き見守ってね。"
+      "continuation": "騒動の末、リモコンはソファの下でした。",
+      "join": "大騒動"
     },
     {
       "id": "daikichi_range",
-      "prefix": "大吉",
-      "continuation": "から大凶までの範囲です。",
-      "join": "大吉から大凶まで",
-      "lead": "二文字を見せます。",
-      "reannounce": "また文字が出ます。"
+      "prefix": "大",
+      "continuation": "吉から大凶までの間で出ます。",
+      "join": "大吉から大凶まで"
     },
     {
       "id": "daikichi_question",
-      "prefix": "大吉",
-      "continuation": "かどうかは、まだ秘密です。",
-      "join": "大吉かどうか",
-      "lead": "よさそうに見えますね。",
-      "reannounce": "今度の文字を見よう。"
+      "prefix": "大",
+      "continuation": "吉を引いた日の夕飯は何にしますか？",
+      "join": "大吉"
     },
     {
       "id": "daikichi_003",
-      "prefix": "大吉",
-      "continuation": "の文字だけ先に出ています。",
-      "join": "大吉の文字",
-      "lead": "二字、続けて出ます。",
-      "reannounce": "少しずつ進めます。"
+      "prefix": "大",
+      "continuation": "吉でも早起きには目覚ましが要ります。",
+      "join": "大吉"
     },
     {
       "id": "daikichi_004",
-      "prefix": "大吉",
-      "continuation": "の予感がするだけです。",
-      "join": "大吉の予感",
-      "lead": "この二字をご覧ください。",
-      "reannounce": "次の予告をどうぞ。"
+      "prefix": "大",
+      "continuation": "吉を引く練習なら何度でもできます。",
+      "join": "大吉"
     },
     {
       "id": "daikichi_005",
-      "prefix": "大吉",
-      "continuation": "の夢を見た？",
-      "join": "大吉の夢",
-      "lead": "見覚えがありますか？",
-      "reannounce": "ここで仕切り直そう。"
+      "prefix": "大",
+      "continuation": "吉を引いても洗濯物は溜まります。",
+      "join": "大吉"
     },
     {
       "id": "daikichi_006",
-      "prefix": "大吉",
-      "continuation": "を願う気持ちは分かります。",
-      "join": "大吉を願う",
-      "lead": "嬉しくなりそうですね。",
-      "reannounce": "紙を追ってみましょう。"
+      "prefix": "大",
+      "continuation": "吉を待つ間にお茶が冷めました。",
+      "join": "大吉"
     },
     {
       "id": "daikichi_007",
-      "prefix": "大吉",
-      "continuation": "を探す旅はまだ続きます。",
-      "join": "大吉を探す",
-      "lead": "この続きも読んでね。",
-      "reannounce": "もう少し続けよう。"
+      "prefix": "大",
+      "continuation": "吉を引いたら猫にも自慢したくなります。",
+      "join": "大吉"
     },
     {
       "id": "daikichi_008",
-      "prefix": "大吉",
-      "continuation": "を待つ気分ですね。",
-      "join": "大吉を待つ",
-      "lead": "早合点はしないでね。",
-      "reannounce": "運勢の話に戻ります。"
+      "prefix": "大",
+      "continuation": "吉を引いても宿題は消えません。",
+      "join": "大吉"
     },
     {
       "id": "daikichi_009",
-      "prefix": "大吉",
-      "continuation": "が出るかはこの先で分かります。",
-      "join": "大吉が出る",
-      "lead": "二文字、読めるかな？",
-      "reannounce": "次を見てみよう。"
+      "prefix": "大",
+      "continuation": "吉の翌日もご飯はおいしいです。",
+      "join": "大吉"
     },
     {
       "id": "daikichi_010",
-      "prefix": "大吉",
-      "continuation": "だったら嬉しいね。",
-      "join": "大吉だったら",
-      "lead": "期待が膨らみますね。",
-      "reannounce": "今のは小話でした。"
+      "prefix": "大",
+      "continuation": "吉を目指す前に深呼吸しましょう。",
+      "join": "大吉"
     },
     {
       "id": "daikichi_011",
-      "prefix": "大吉",
-      "continuation": "なら何をしよう。",
-      "join": "大吉なら",
-      "lead": "この二字を見てね。",
-      "reannounce": "続きを発表します。"
+      "prefix": "大",
+      "continuation": "吉を引いたら誰に見せますか？",
+      "join": "大吉"
     },
     {
       "id": "daikichi_012",
-      "prefix": "大吉",
-      "continuation": "とは限らないと先に伝えます。",
-      "join": "大吉とは",
-      "lead": "あの二文字が出ます。",
-      "reannounce": "お次をご覧ください。"
+      "prefix": "大",
+      "continuation": "吉を引いても電車は待ってくれません。",
+      "join": "大吉"
     },
     {
       "id": "daikichi_013",
-      "prefix": "大吉",
-      "continuation": "より先に深呼吸しよう。",
-      "join": "大吉より",
-      "lead": "よい響きがしますね。",
-      "reannounce": "もう少し見ていてね。"
+      "prefix": "大",
+      "continuation": "吉の夢を見たので二度寝しました。",
+      "join": "大吉"
     },
     {
       "id": "daikichi_014",
-      "prefix": "大吉",
-      "continuation": "まであと何文字？",
-      "join": "大吉まで",
-      "lead": "二字目までご覧ください。",
-      "reannounce": "焦らずに待ってね。"
+      "prefix": "大",
+      "continuation": "吉を探すより眼鏡を探すのが先でした。",
+      "join": "大吉"
     },
     {
       "id": "daikichi_015",
-      "prefix": "大吉",
-      "continuation": "への期待が先走っています。",
-      "join": "大吉への",
-      "lead": "つい笑顔になりますね。",
-      "reannounce": "次も気楽にどうぞ。"
+      "prefix": "大",
+      "continuation": "吉の隣で猫があくびをしています。",
+      "join": "大吉"
     },
     {
       "id": "daikichi_016",
-      "prefix": "大吉",
-      "continuation": "という響き、いいね。",
-      "join": "大吉という",
-      "lead": "ここではまだ明かしません。",
-      "reannounce": "では、続きを読もう。"
+      "prefix": "大",
+      "continuation": "吉でも雨の日には傘が要ります。",
+      "join": "大吉"
     },
     {
       "id": "daikichi_017",
-      "prefix": "大吉",
-      "continuation": "の候補はまだ残っています。",
-      "join": "大吉の候補",
-      "lead": "二文字をお見せします。",
-      "reannounce": "改めて紙を見てね。"
+      "prefix": "大",
+      "continuation": "吉なら唐揚げを一つ増やしましょうか？",
+      "join": "大吉"
     },
     {
       "id": "daikichi_018",
-      "prefix": "大吉",
-      "continuation": "の続きも読んでね。",
-      "join": "大吉の続き",
-      "lead": "思わず喜びそうですね。",
-      "reannounce": "また予想してみてね。"
+      "prefix": "大",
+      "continuation": "吉を願う声よりお腹の音が響きました。",
+      "join": "大吉"
     },
     {
       "id": "daikichi_019",
-      "prefix": "大吉",
-      "continuation": "を想像してみよう。",
-      "join": "大吉を想像",
-      "lead": "続きも確かめましょう。",
-      "reannounce": "答えを探していこう。"
+      "prefix": "大",
+      "continuation": "吉の予感がしますが、鼻もむずむずします。",
+      "join": "大吉"
     },
     {
       "id": "daikichi_020",
-      "prefix": "大吉",
-      "continuation": "も候補のひとつです。",
-      "join": "大吉も",
-      "lead": "もう分かったと思った？",
-      "reannounce": "続きが出てきます。"
+      "prefix": "大",
+      "continuation": "吉を引く手にもハンドクリームをどうぞ。",
+      "join": "大吉"
     },
     {
       "id": "chuuto",
       "prefix": "中",
-      "continuation": "途半端な予告でした。",
-      "join": "中途半端",
-      "lead": "次の字です。",
-      "reannounce": "一緒に見ていこう。"
+      "continuation": "途半端に残ったお菓子は誰が食べますか？",
+      "join": "中途半端"
     },
     {
       "id": "chuukei",
       "prefix": "中",
-      "continuation": "継中。現場からお届けします。",
-      "join": "中継",
-      "lead": "一字出します。",
-      "reannounce": "次の文字を待とう。"
+      "continuation": "継先からは猫の寝顔をお届けします。",
+      "join": "中継"
     },
     {
       "id": "chuukan",
       "prefix": "中",
-      "continuation": "間地点。まだ先があります。",
-      "join": "中間",
-      "lead": "一文字を見てね。",
-      "reannounce": "まだ発表の途中です。"
+      "continuation": "間地点でおやつ休憩にしましょう。",
+      "join": "中間"
     },
     {
       "id": "chuudoku",
       "prefix": "中",
-      "continuation": "毒になるほど気になる？",
-      "join": "中毒",
-      "lead": "穏やかに待ちましょう。",
-      "reannounce": "また先へ進みます。"
+      "continuation": "毒になるほど好きな曲をまた流します。",
+      "join": "中毒"
     },
     {
       "id": "chu_005",
       "prefix": "中",
-      "continuation": "華。今日は餃子かな。",
-      "join": "中華",
-      "lead": "落ち着いて見てね。",
-      "reannounce": "いったん落ち着こう。"
+      "continuation": "華にするか、カレーにするか迷っています。",
+      "join": "中華"
     },
     {
       "id": "chu_006",
       "prefix": "中",
-      "continuation": "華まん。熱いうちに召し上がれ。",
-      "join": "中華まん",
-      "lead": "次を読んでみよう。",
-      "reannounce": "おみくじを続けます。"
+      "continuation": "身は秘密ですが、たぶんお菓子です。",
+      "join": "中身"
     },
     {
       "id": "chu_007",
       "prefix": "中",
-      "continuation": "華そば。麺は別です。",
-      "join": "中華そば",
-      "lead": "一字、出てきますよ。",
-      "reannounce": "続きをどうぞ。"
+      "continuation": "庭の猫には予定がありません。",
+      "join": "中庭"
     },
     {
       "id": "chu_008",
       "prefix": "中",
-      "continuation": "火で期待をじっくり煮込もう。",
-      "join": "中火",
-      "lead": "さて、何でしょう？",
-      "reannounce": "では、次へ進もう。"
+      "continuation": "腰のまま探し物をすると腰に来ます。",
+      "join": "中腰"
     },
     {
       "id": "chu_009",
       "prefix": "中",
-      "continuation": "辛。運勢の味付け？",
-      "join": "中辛",
-      "lead": "そろそろ字が出ます。",
-      "reannounce": "もう少し見守ろう。"
+      "continuation": "火のつもりが強火でした。",
+      "join": "中火"
     },
     {
       "id": "chu_010",
       "prefix": "中",
-      "continuation": "トロ。お寿司の話です。",
-      "join": "中トロ",
-      "lead": "どう見えるでしょう？",
-      "reannounce": "発表を続けます。"
+      "continuation": "古の本から昔のレシートが出てきました。",
+      "join": "中古"
     },
     {
       "id": "chu_011",
       "prefix": "中",
-      "continuation": "身。まだ印刷中です。",
-      "join": "中身",
-      "lead": "字を確かめてね。",
-      "reannounce": "続きます。"
+      "continuation": "指だけ手袋の先が余ります。",
+      "join": "中指"
     },
     {
       "id": "chu_012",
       "prefix": "中",
-      "continuation": "央。文字の居場所です。",
-      "join": "中央",
-      "lead": "期待しすぎず待とう。",
-      "reannounce": "続きを見ましょう。"
+      "continuation": "休みにはお茶をどうぞ。",
+      "join": "中休み"
     },
     {
       "id": "chu_013",
       "prefix": "中",
-      "continuation": "庭。ひと休みしよう。",
-      "join": "中庭",
-      "lead": "控えめに期待しよう。",
-      "reannounce": "次に進みます。"
+      "continuation": "華まんを二つ買うか迷う季節です。",
+      "join": "中華まん"
     },
     {
       "id": "chu_014",
       "prefix": "中",
-      "continuation": "学校。給食が懐かしい。",
-      "join": "中学校",
-      "lead": "次の字を見てみよう。",
-      "reannounce": "仕切り直します。"
+      "continuation": "学生の頃の髪型は秘密です。",
+      "join": "中学生"
     },
     {
       "id": "chu_015",
       "prefix": "中",
-      "continuation": "学生。制服の話です。",
-      "join": "中学生",
-      "lead": "字を一つお届けします。",
-      "reannounce": "もう一度どうぞ。"
+      "continuation": "敷きを替えたら靴が少し好きになりました。",
+      "join": "中敷き"
     },
     {
       "id": "chu_016",
       "prefix": "中",
-      "continuation": "古。紙は新品です。",
-      "join": "中古",
-      "lead": "ちょっと見えてきたね。",
-      "reannounce": "お話を戻します。"
+      "continuation": "心から切ったはずのケーキが不揃いです。",
+      "join": "中心"
     },
     {
       "id": "chu_017",
       "prefix": "中",
-      "continuation": "型の箱。期待を詰めよう。",
-      "join": "中型",
-      "lead": "ここで一字出します。",
-      "reannounce": "占いに戻ります。"
+      "continuation": "辛でも水のおかわりが止まりません。",
+      "join": "中辛"
     },
     {
       "id": "chu_018",
       "prefix": "中",
-      "continuation": "敷き。靴の話でした。",
-      "join": "中敷き",
-      "lead": "どう読めますか？",
-      "reannounce": "この先も読んでね。"
+      "continuation": "立の立場から両方のケーキを食べます。",
+      "join": "中立"
     },
     {
       "id": "chu_019",
       "prefix": "中",
-      "continuation": "腰。楽な姿勢でどうぞ。",
-      "join": "中腰",
-      "lead": "この一字を見てね。",
-      "reannounce": "まだ続きます。"
+      "continuation": "止になった予定の代わりに昼寝をします。",
+      "join": "中止"
     },
     {
       "id": "chu_020",
       "prefix": "中",
-      "continuation": "指を占う話ではありません。",
-      "join": "中指",
-      "lead": "ほどほどに待ちましょう。",
-      "reannounce": "次も見てね。"
+      "continuation": "旬になると月末がもう気になります。",
+      "join": "中旬"
     },
     {
       "id": "chu_021",
       "prefix": "中",
-      "continuation": "旬。カレンダーの話です。",
-      "join": "中旬",
-      "lead": "次の文字をご覧ください。",
-      "reannounce": "話を続けます。"
+      "continuation": "華鍋を振ったら具が一つ逃げました。",
+      "join": "中華鍋"
     },
     {
       "id": "chu_022",
       "prefix": "中",
-      "continuation": "秋。月を眺めよう。",
-      "join": "中秋",
-      "lead": "落ち着いて読んでみてね。",
-      "reannounce": "気を取り直そう。"
+      "continuation": "耳炎になったら耳鼻科へ行きましょう。",
+      "join": "中耳炎"
     },
     {
       "id": "chu_023",
       "prefix": "中",
-      "continuation": "休み。紙にも休憩をあげよう。",
-      "join": "中休み",
-      "lead": "新しい字が出ます。",
-      "reannounce": "ここから続けます。"
+      "continuation": "盤で犯人が分かっても黙っていましょう。",
+      "join": "中盤"
     },
     {
       "id": "chu_024",
       "prefix": "中",
-      "continuation": "立。結果には口を出しません。",
-      "join": "中立",
-      "lead": "どんな続きになるかな？",
-      "reannounce": "先に進みましょう。"
+      "continuation": "秋の名月より団子が気になります。",
+      "join": "中秋"
     },
     {
       "id": "chu_025",
       "prefix": "中",
-      "continuation": "断せずに続きます。",
-      "join": "中断",
-      "lead": "気になる字が来ます。",
-      "reannounce": "発表を再開します。"
+      "continuation": "型のスーツケースにもお土産を詰めすぎます。",
+      "join": "中型"
     },
     {
       "id": "chu_026",
       "prefix": "中",
-      "continuation": "止ではなく予告です。",
-      "join": "中止",
-      "lead": "手がかりをお見せします。",
-      "reannounce": "もう少し待ってね。"
+      "continuation": "継ぎ投手にもお茶休憩をあげたいです。",
+      "join": "中継ぎ"
     },
     {
       "id": "chu_027",
       "prefix": "中",
-      "continuation": "盤。決着はまだ先です。",
-      "join": "中盤",
-      "lead": "読める字から読もう。",
-      "reannounce": "続きをお見せします。"
+      "continuation": "程まで読んで、しおりをなくしました。",
+      "join": "中程"
     },
     {
       "id": "chu_028",
       "prefix": "中",
-      "continuation": "級。待ち方にも腕前が出ます。",
-      "join": "中級",
-      "lead": "次に出る字を見てね。",
-      "reannounce": "おみくじに戻ろう。"
+      "continuation": "の人もそろそろお腹が空いています。",
+      "join": "中の"
     },
     {
       "id": "chu_029",
       "prefix": "中",
-      "continuation": "段。続きはその下にあります。",
-      "join": "中段",
-      "lead": "一文字、印刷します。",
-      "reannounce": "次をご覧ください。"
+      "continuation": "でも一番好きなのは端のカリカリです。",
+      "join": "中でも"
     },
     {
       "id": "chu_030",
       "prefix": "中",
-      "continuation": "ほど。紙の途中です。",
-      "join": "中ほど",
-      "lead": "続きを予想しましょう。",
-      "reannounce": "また予告します。"
+      "continuation": "に入ると、出たくなくなるのがこたつです。",
+      "join": "中に"
     },
     {
       "id": "chu_031",
       "prefix": "中",
-      "continuation": "継ぎ。最後は抑えに任せよう。",
-      "join": "中継ぎ",
-      "lead": "今から一字見せます。",
-      "reannounce": "改めて見てみよう。"
+      "continuation": "へどうぞ、猫が席を取っています。",
+      "join": "中へ"
     },
     {
       "id": "chu_032",
       "prefix": "中",
-      "continuation": "華料理。今日は何を食べよう。",
-      "join": "中華料理",
-      "lead": "小さく息をつこう。",
-      "reannounce": "答えを探しましょう。"
+      "continuation": "から出てきたのは去年の手袋でした。",
+      "join": "中から"
     },
     {
       "id": "chu_033",
       "prefix": "中",
-      "continuation": "華鍋。炒める準備ができました。",
-      "join": "中華鍋",
-      "lead": "この字で何を思う？",
-      "reannounce": "続きも見守ってね。"
+      "continuation": "まで火が通るのを待ちましょう。",
+      "join": "中まで"
     },
     {
       "id": "chu_034",
       "prefix": "中",
-      "continuation": "の人。紙にはいません。",
-      "join": "中の人",
-      "lead": "もうじき見えますよ。",
-      "reannounce": "次は何でしょう？"
+      "continuation": "抜けしてプリンを買いに行ったら売り切れでした。",
+      "join": "中抜け"
     },
     {
       "id": "chu_035",
       "prefix": "中",
-      "continuation": "のほうまで読めましたね。",
-      "join": "中のほう",
-      "lead": "期待しすぎないでね。",
-      "reannounce": "ゆっくり進めます。"
+      "continuation": "道を行くつもりがパン屋に寄りました。",
+      "join": "中道"
     },
     {
       "id": "chu_036",
       "prefix": "中",
-      "continuation": "から出るのは文字です。",
-      "join": "中から",
-      "lead": "字を目で追ってね。",
-      "reannounce": "お次もどうぞ。"
+      "continuation": "枢を担う人にもおやつが要ります。",
+      "join": "中枢"
     },
     {
       "id": "chu_037",
       "prefix": "中",
-      "continuation": "まで温かい肉まんをどうぞ。",
-      "join": "中まで",
-      "lead": "次が気になりますね。",
-      "reannounce": "先を読んでみよう。"
+      "continuation": "点を打つ場所で少し迷っています。",
+      "join": "中点"
     },
     {
       "id": "chu_038",
       "prefix": "中",
-      "continuation": "に答えが隠れているかも。",
-      "join": "中に",
-      "lead": "少しだけお見せします。",
-      "reannounce": "期待して見ていてね。"
+      "continuation": "年になっても給食の話で盛り上がります。",
+      "join": "中年"
     },
     {
       "id": "chu_039",
       "prefix": "中",
-      "continuation": "でも紙がよく働きます。",
-      "join": "中でも",
-      "lead": "その字を読んでみてね。",
-      "reannounce": "まだ終わりません。"
+      "continuation": "華そばのスープをどこまで飲むか悩みます。",
+      "join": "中華そば"
     },
     {
       "id": "chu_040",
       "prefix": "中",
-      "continuation": "には意外な結果もあります。",
-      "join": "中には",
-      "lead": "一字、先に見せるね。",
-      "reannounce": "本題に戻ろう。"
+      "continuation": "二階の席は少し秘密基地に似ています。",
+      "join": "中二階"
     },
     {
       "id": "koyasumi",
       "prefix": "小",
-      "continuation": "休止。ひと息つきましょう。",
-      "join": "小休止",
-      "lead": "そっと見てね。",
-      "reannounce": "続きをお届けします。"
+      "continuation": "休止です、お茶にしましょう。",
+      "join": "小休止"
     },
     {
       "id": "kogoe",
       "prefix": "小",
-      "continuation": "声で伝えます。まだ秘密です。",
-      "join": "小声",
-      "lead": "少しずつ出します。",
-      "reannounce": "紙の先を見てね。"
+      "continuation": "声で話してもお腹の音は隠せません。",
+      "join": "小声"
     },
     {
       "id": "kobara",
       "prefix": "小",
-      "continuation": "腹が空きましたね。",
-      "join": "小腹",
-      "lead": "一字だけ見せます。",
-      "reannounce": "もう少し付き合ってね。"
+      "continuation": "腹が空いてきましたね。",
+      "join": "小腹"
     },
     {
       "id": "koneta",
       "prefix": "小",
-      "continuation": "ネタ。本題はこの先です。",
-      "join": "小ネタ",
-      "lead": "ささやかに期待しよう。",
-      "reannounce": "発表は続きます。"
+      "continuation": "ネタを思いつく頃には会話が終わっています。",
+      "join": "小ネタ"
     },
     {
       "id": "sho_005",
       "prefix": "小",
-      "continuation": "判。紙製ではありません。",
-      "join": "小判",
-      "lead": "控えめにお見せします。",
-      "reannounce": "落ち着いて見よう。"
+      "continuation": "鳥にも朝寝坊の日はありますか？",
+      "join": "小鳥"
     },
     {
       "id": "sho_006",
       "prefix": "小",
-      "continuation": "銭。財布の話でした。",
-      "join": "小銭",
-      "lead": "ちょっと字を出します。",
-      "reannounce": "次はどうなるかな？"
+      "continuation": "銭を探すとレシートばかり出てきます。",
+      "join": "小銭"
     },
     {
       "id": "sho_007",
       "prefix": "小",
-      "continuation": "皿。結果は別皿に盛ります。",
-      "join": "小皿",
-      "lead": "肩の力を抜いてね。",
-      "reannounce": "改めてご注目ください。"
+      "continuation": "雨なら大丈夫、と歩いたら本降りになりました。",
+      "join": "小雨"
     },
     {
       "id": "sho_008",
       "prefix": "小",
-      "continuation": "鉢。ひと口サイズの予告です。",
-      "join": "小鉢",
-      "lead": "そっと字が出ます。",
-      "reannounce": "続きを読んでください。"
+      "continuation": "豆は煮るまでが長いですね。",
+      "join": "小豆"
     },
     {
       "id": "sho_009",
       "prefix": "小",
-      "continuation": "鳥。さえずりを待とう。",
-      "join": "小鳥",
-      "lead": "ひっそりと見せます。",
-      "reannounce": "運勢を見ていこう。"
+      "continuation": "道を選んだら猫に会えました。",
+      "join": "小道"
     },
     {
       "id": "sho_010",
       "prefix": "小",
-      "continuation": "動物。そっと見守ろう。",
-      "join": "小動物",
-      "lead": "小さく期待しよう。",
-      "reannounce": "先を見届けましょう。"
+      "continuation": "麦粉を出すと台所が少し白くなります。",
+      "join": "小麦粉"
     },
     {
       "id": "sho_011",
       "prefix": "小",
-      "continuation": "さな猫が昼寝中です。",
-      "join": "小さな猫",
-      "lead": "一文字だけ出すね。",
-      "reannounce": "もう一度見てね。"
+      "continuation": "学生の頃の宝物は今どこでしょう？",
+      "join": "小学生"
     },
     {
       "id": "sho_012",
       "prefix": "小",
-      "continuation": "魚。釣りの話です。",
-      "join": "小魚",
-      "lead": "ちらっと見てね。",
-      "reannounce": "今のは前置きでした。"
+      "continuation": "説の続きが気になって夜更かししました。",
+      "join": "小説"
     },
     {
       "id": "sho_013",
       "prefix": "小",
-      "continuation": "鹿。そっと見守って。",
-      "join": "小鹿",
-      "lead": "気楽に読んでみよう。",
-      "reannounce": "寄り道をしました。"
+      "continuation": "皿に取ると何度もおかわりしてしまいます。",
+      "join": "小皿"
     },
     {
       "id": "sho_014",
       "prefix": "小",
-      "continuation": "石。足元にもご注意。",
-      "join": "小石",
-      "lead": "ちょっと注目してね。",
-      "reannounce": "次の字を見ましょう。"
+      "continuation": "包の中身より箱が猫に人気です。",
+      "join": "小包"
     },
     {
       "id": "sho_015",
       "prefix": "小",
-      "continuation": "枝。木の話です。",
-      "join": "小枝",
-      "lead": "ささやかな予告です。",
-      "reannounce": "続きも読んでね。"
+      "continuation": "春日和には洗濯も昼寝も捗ります。",
+      "join": "小春日和"
     },
     {
       "id": "sho_016",
       "prefix": "小",
-      "continuation": "雨。紙も雨宿りしています。",
-      "join": "小雨",
-      "lead": "こっそり見せます。",
-      "reannounce": "お話はまだ続きます。"
+      "continuation": "石が靴に入ると世界がそこに集まります。",
+      "join": "小石"
     },
     {
       "id": "sho_017",
       "prefix": "小",
-      "continuation": "雪。白い雪が少し降っています。",
-      "join": "小雪",
-      "lead": "一字だけご覧ください。",
-      "reannounce": "改めて占います。"
+      "continuation": "魚のおやつも食べ始めると止まりません。",
+      "join": "小魚"
     },
     {
       "id": "sho_018",
       "prefix": "小",
-      "continuation": "春日和。散歩しよう。",
-      "join": "小春日和",
-      "lead": "少しだけ予告します。",
-      "reannounce": "本題を続けます。"
+      "continuation": "指をぶつけた痛みは声になります。",
+      "join": "小指"
     },
     {
       "id": "sho_019",
       "prefix": "小",
-      "continuation": "道。寄り道をしてみよう。",
-      "join": "小道",
-      "lead": "ゆっくり字を出します。",
-      "reannounce": "もう少し進みます。"
+      "continuation": "切手よりお菓子の引換券が欲しいです。",
+      "join": "小切手"
     },
     {
       "id": "sho_020",
       "prefix": "小",
-      "continuation": "川。紙は流さないでね。",
-      "join": "小川",
-      "lead": "つつましく期待しよう。",
-      "reannounce": "このまま見守ってね。"
+      "continuation": "心者なので最後の一個を遠慮します。",
+      "join": "小心者"
     },
     {
       "id": "sho_021",
       "prefix": "小",
-      "continuation": "島。答えはまだ沖にあります。",
-      "join": "小島",
-      "lead": "小さな手がかりです。",
-      "reannounce": "一息ついて続けよう。"
+      "continuation": "松菜を買いに行ってお菓子も買いました。",
+      "join": "小松菜"
     },
     {
       "id": "sho_022",
       "prefix": "小",
-      "continuation": "山。山頂はこの先です。",
-      "join": "小山",
-      "lead": "紙をそっと見てね。",
-      "reannounce": "また見てみましょう。"
+      "continuation": "鉢が増えると洗い物も増えます。",
+      "join": "小鉢"
     },
     {
       "id": "sho_023",
       "prefix": "小",
-      "continuation": "屋。紙の休憩所です。",
-      "join": "小屋",
-      "lead": "次の字をのぞいてね。",
-      "reannounce": "さて、続きをどうぞ。"
+      "continuation": "判がなくても猫は気にしません。",
+      "join": "小判"
     },
     {
       "id": "sho_024",
       "prefix": "小",
-      "continuation": "窓。先をのぞこう。",
-      "join": "小窓",
-      "lead": "一字をそっと出します。",
-      "reannounce": "次の文字が出ます。"
+      "continuation": "劇場の最前列ではくしゃみも緊張します。",
+      "join": "小劇場"
     },
     {
       "id": "sho_025",
       "prefix": "小",
-      "continuation": "箱に期待を少し詰めよう。",
-      "join": "小箱",
-      "lead": "小さな期待をどうぞ。",
-      "reannounce": "まだ先があります。"
+      "continuation": "旅行のつもりがお土産で大荷物です。",
+      "join": "小旅行"
     },
     {
       "id": "sho_026",
       "prefix": "小",
-      "continuation": "包。運勢をお届けします。",
-      "join": "小包",
-      "lead": "ほんの一字見せるね。",
-      "reannounce": "答えに近づきましょう。"
+      "continuation": "脇に抱えたパンからいい匂いがします。",
+      "join": "小脇"
     },
     {
       "id": "sho_027",
       "prefix": "小",
-      "continuation": "袋。お菓子の話です。",
-      "join": "小袋",
-      "lead": "控えめに読んでみてね。",
-      "reannounce": "次も楽しんでね。"
+      "continuation": "競り合いの原因は最後の唐揚げでした。",
+      "join": "小競り合い"
     },
     {
       "id": "sho_028",
       "prefix": "小",
-      "continuation": "筆。文字は印刷です。",
-      "join": "小筆",
-      "lead": "次をちょっと見よう。",
-      "reannounce": "ゆっくり見ていてね。"
+      "continuation": "刻みに眠る猫を見ていたら眠くなりました。",
+      "join": "小刻み"
     },
     {
       "id": "sho_029",
       "prefix": "小",
-      "continuation": "説。まだ序章です。",
-      "join": "小説",
-      "lead": "この一字をどうぞ。",
-      "reannounce": "お話に戻りましょう。"
+      "continuation": "まめに休むのも得意技です。",
+      "join": "小まめ"
     },
     {
       "id": "sho_030",
       "prefix": "小",
-      "continuation": "話。オチはこの先で明かします。",
-      "join": "小話",
-      "lead": "ひとまず一字出すね。",
-      "reannounce": "続きを待ちましょう。"
+      "continuation": "ぶりなケーキなら二つ食べられますね。",
+      "join": "小ぶり"
     },
     {
       "id": "sho_031",
       "prefix": "小",
-      "continuation": "節。音楽の区切りです。",
-      "join": "小節",
-      "lead": "少しだけ見ていてね。",
-      "reannounce": "紙はまだ出ます。"
+      "continuation": "さな幸せはポケットの飴でした。",
+      "join": "小さな"
     },
     {
       "id": "sho_032",
       "prefix": "小",
-      "continuation": "躍りするのは結果が出てからです。",
-      "join": "小躍り",
-      "lead": "ささやかですが見てね。",
-      "reannounce": "この先をご覧ください。"
+      "continuation": "さく切れば、たくさん食べた気がします。",
+      "join": "小さく"
     },
     {
       "id": "sho_033",
       "prefix": "小",
-      "continuation": "走り。まずはゆっくり読もう。",
-      "join": "小走り",
-      "lead": "小さく始めてみよう。",
-      "reannounce": "発表に戻ります。"
+      "continuation": "さめの傘では肩が濡れます。",
+      "join": "小さめ"
     },
     {
       "id": "sho_034",
       "prefix": "小",
-      "continuation": "柄。文字は大きめです。",
-      "join": "小柄",
-      "lead": "字を少しずつ見よう。",
-      "reannounce": "もう少し読んでみよう。"
+      "continuation": "さじ一杯のはずが山盛りでした。",
+      "join": "小さじ"
     },
     {
       "id": "sho_035",
       "prefix": "小",
-      "continuation": "粋な予告でした。",
-      "join": "小粋",
-      "lead": "軽い気持ちで見てね。",
-      "reannounce": "次の展開を見ましょう。"
+      "continuation": "遣い帳をつける前にお菓子を買いました。",
+      "join": "小遣い"
     },
     {
       "id": "sho_036",
       "prefix": "小",
-      "continuation": "細工。紙の仕掛けです。",
-      "join": "小細工",
-      "lead": "一字だけお見せします。",
-      "reannounce": "もう一息です。"
+      "continuation": "数点の位置で値段が大きく変わります。",
+      "join": "小数点"
     },
     {
       "id": "sho_037",
       "prefix": "小",
-      "continuation": "さな幸せ。お茶を飲みましょう。",
-      "join": "小さな幸せ",
-      "lead": "そっと紙をのぞこう。",
-      "reannounce": "続きを楽しんでね。"
+      "continuation": "型の扇風機を猫に取られました。",
+      "join": "小型"
     },
     {
       "id": "sho_038",
       "prefix": "小",
-      "continuation": "さな夢。まずはお昼寝をしよう。",
-      "join": "小さな夢",
-      "lead": "ひそひそと予告します。",
-      "reannounce": "ここからまた進もう。"
+      "continuation": "気味よい包丁の音にお腹が鳴ります。",
+      "join": "小気味よい"
     },
     {
       "id": "sho_039",
       "prefix": "小",
-      "continuation": "さな一歩。紙も前へ進みます。",
-      "join": "小さな一歩",
-      "lead": "こっそり読んでみてね。",
-      "reannounce": "次へ参りましょう。"
+      "continuation": "料理屋の暖簾が気になる夜です。",
+      "join": "小料理屋"
     },
     {
       "id": "sho_040",
       "prefix": "小",
-      "continuation": "さな拍手で結果を迎えよう。",
-      "join": "小さな拍手",
-      "lead": "次の字をちらりと見よう。",
-      "reannounce": "文字を追ってみよう。"
+      "continuation": "躍りしたいけれど隣の人が近いです。",
+      "join": "小躍り"
     },
     {
       "id": "suenagaku",
       "prefix": "末",
-      "continuation": "永くお付き合いください。",
-      "join": "末永く",
-      "lead": "先を見てね。",
-      "reannounce": "引き続きご覧ください。"
+      "continuation": "永くお幸せに。",
+      "join": "末永く"
     },
     {
       "id": "mattan",
       "prefix": "末",
-      "continuation": "端。いま紙の端です。",
-      "join": "末端",
-      "lead": "この先も読もう。",
-      "reannounce": "続きを出します。"
+      "continuation": "端の冷えには暖かい靴下をどうぞ。",
+      "join": "末端"
     },
     {
       "id": "suehiro",
       "prefix": "末",
-      "continuation": "広がり。紙幅は変わりません。",
-      "join": "末広がり",
-      "lead": "続きが出ます。",
-      "reannounce": "さて、進めましょう。"
+      "continuation": "広がりの扇子で涼みましょう。",
+      "join": "末広がり"
     },
     {
       "id": "sue_004",
       "prefix": "末",
-      "continuation": "っ子。兄弟の話でした。",
-      "join": "末っ子",
-      "lead": "先を見守ってね。",
-      "reannounce": "次は何が出るかな？"
+      "continuation": "っ子のつまみ食いが見つかりました。",
+      "join": "末っ子"
     },
     {
       "id": "sue_005",
       "prefix": "末",
-      "continuation": "尾。まだ到着前です。",
-      "join": "末尾",
-      "lead": "先の字を見ましょう。",
-      "reannounce": "まだ結論の前です。"
+      "continuation": "尾まで読んでからお返事しましょう。",
+      "join": "末尾"
     },
     {
       "id": "sue_006",
       "prefix": "末",
-      "continuation": "日。月の終わりです。",
-      "join": "末日",
-      "lead": "続きもご覧ください。",
-      "reannounce": "紙に聞いてみます。"
+      "continuation": "日の締め切りを来月と間違えました。",
+      "join": "末日"
     },
     {
       "id": "sue_007",
       "prefix": "末",
-      "continuation": "席へどうぞお座りください。",
-      "join": "末席",
-      "lead": "先まで読んでみよう。",
-      "reannounce": "答えを待ちましょう。"
+      "continuation": "席でもお菓子には手が届きます。",
+      "join": "末席"
     },
     {
       "id": "sue_008",
       "prefix": "末",
-      "continuation": "路ではなく、紙の行き先の話です。",
-      "join": "末路",
-      "lead": "行方が気になりますね。",
-      "reannounce": "次も予想してみよう。"
+      "continuation": "路が気になって最終回だけ見ました。",
+      "join": "末路"
     },
     {
       "id": "sue_009",
       "prefix": "末",
-      "continuation": "梢。指先を温めよう。",
-      "join": "末梢",
-      "lead": "続きが見えてきます。",
-      "reannounce": "話を進めます。"
+      "continuation": "梢まで温まるお風呂が恋しいです。",
+      "join": "末梢"
     },
     {
       "id": "sue_010",
       "prefix": "末",
-      "continuation": "尾の文字はまだ待機中です。",
-      "join": "末尾の文字",
-      "lead": "その先をご覧ください。",
-      "reannounce": "ここで占いに戻ろう。"
+      "continuation": "期の水より今のお茶を大事にしましょう。",
+      "join": "末期"
     },
     {
       "id": "sue_011",
       "prefix": "末",
-      "continuation": "尾の句点はまだ先にあります。",
-      "join": "末尾の句点",
-      "lead": "どこまで続くかな？",
-      "reannounce": "もう一度予告します。"
+      "continuation": "裔にも先祖のくしゃみは似るのでしょうか。",
+      "join": "末裔"
     },
     {
       "id": "sue_012",
       "prefix": "末",
-      "continuation": "尾の余白も出ます。",
-      "join": "末尾の余白",
-      "lead": "次も見逃さないでね。",
-      "reannounce": "先まで見てみよう。"
+      "continuation": "っ子に最後のプリンを譲りました。",
+      "join": "末っ子"
     },
     {
       "id": "sue_013",
       "prefix": "末",
-      "continuation": "尾までもう少しです。",
-      "join": "末尾まで",
-      "lead": "先の話をしましょう。",
-      "reannounce": "続きを追いましょう。"
+      "continuation": "永く続いてほしいのはおやつの時間です。",
+      "join": "末永く"
     },
     {
       "id": "sue_014",
       "prefix": "末",
-      "continuation": "尾からは読まないでね。",
-      "join": "末尾から",
-      "lead": "文字の行方を見よう。",
-      "reannounce": "まだ答えは出しません。"
+      "continuation": "広がりの扇子を開いたら、猫が逃げました。",
+      "join": "末広がり"
     },
     {
       "id": "sue_015",
       "prefix": "末",
-      "continuation": "尾には答えが待っています。",
-      "join": "末尾には",
-      "lead": "続きにご注目ください。",
-      "reannounce": "この先に進もう。"
+      "continuation": "尾に名前を書き忘れることがあります。",
+      "join": "末尾"
     },
     {
       "id": "sue_016",
       "prefix": "末",
-      "continuation": "っ子のように、紙もかわいがってね。",
-      "join": "末っ子",
-      "lead": "先端を見ていてね。",
-      "reannounce": "またお待ちください。"
+      "continuation": "日になると家賃を思い出します。",
+      "join": "末日"
     },
     {
       "id": "sue_017",
       "prefix": "末",
-      "continuation": "っ子の順番は最後です。",
-      "join": "末っ子の順番",
-      "lead": "この後も読んでね。",
-      "reannounce": "順にお見せします。"
+      "continuation": "端の社員にもお土産をお願いします。",
+      "join": "末端"
     },
     {
       "id": "sue_018",
       "prefix": "末",
-      "continuation": "っ子気分で待ちましょう。",
-      "join": "末っ子気分",
-      "lead": "先の文字を出します。",
-      "reannounce": "次の発表に進みます。"
+      "continuation": "席に座ったつもりが猫の席でした。",
+      "join": "末席"
     },
     {
       "id": "sue_019",
       "prefix": "末",
-      "continuation": "っ子扱いで、紙にも優しくしよう。",
-      "join": "末っ子扱い",
-      "lead": "まだ先があるよ。",
-      "reannounce": "紙の続きを読もう。"
+      "continuation": "っ子も今では家族で一番の早起きです。",
+      "join": "末っ子"
     },
     {
       "id": "sue_020",
       "prefix": "末",
-      "continuation": "っ子の番はこれからです。",
-      "join": "末っ子の番",
-      "lead": "この先をのぞこう。",
-      "reannounce": "引き続き見守ってね。"
+      "continuation": "永く使いたい靴に限って雨に降られます。",
+      "join": "末永く"
     },
     {
       "id": "sue_021",
       "prefix": "末",
-      "continuation": "永くお付き合いください。",
-      "join": "末永く",
-      "lead": "長い目で見ましょう。",
-      "reannounce": "また文字が出ます。"
+      "continuation": "広がりの扇子が鞄に入りません。",
+      "join": "末広がり"
     },
     {
       "id": "sue_022",
       "prefix": "末",
-      "continuation": "永い縁を願います。",
-      "join": "末永い縁",
-      "lead": "続きを見届けてね。",
-      "reannounce": "今度の文字を見よう。"
+      "continuation": "尾の一行が気になって寝られません。",
+      "join": "末尾"
     },
     {
       "id": "sue_023",
       "prefix": "末",
-      "continuation": "長く残る一枚にしよう。",
-      "join": "末長く",
-      "lead": "先に字が出てきます。",
-      "reannounce": "少しずつ進めます。"
+      "continuation": "日まで使える券を冷蔵庫に貼りました。",
+      "join": "末日"
     },
     {
       "id": "sue_024",
       "prefix": "末",
-      "continuation": "永い友情を願います。",
-      "join": "末永い友情",
-      "lead": "おしまいはまだです。",
-      "reannounce": "次の予告をどうぞ。"
+      "continuation": "端まで流れてきた噂は別の話でした。",
+      "join": "末端"
     },
     {
       "id": "sue_025",
       "prefix": "末",
-      "continuation": "広がりの扇子はいかが？",
-      "join": "末広がり",
-      "lead": "続きの字を見てね。",
-      "reannounce": "ここで仕切り直そう。"
+      "continuation": "席からなら全員の顔がよく見えます。",
+      "join": "末席"
     },
     {
       "id": "sue_026",
       "prefix": "末",
-      "continuation": "広がりの形。八の字です。",
-      "join": "末広がりの形",
-      "lead": "先まで見届けよう。",
-      "reannounce": "紙を追ってみましょう。"
+      "continuation": "っ子だと思っていた猫がお兄ちゃんになります。",
+      "join": "末っ子"
     },
     {
       "id": "sue_027",
       "prefix": "末",
-      "continuation": "端まで文字を運びます。",
-      "join": "末端まで",
-      "lead": "この先にご注目ください。",
-      "reannounce": "もう少し続けよう。"
+      "continuation": "永く付き合える枕を探しています。",
+      "join": "末永く"
     },
     {
       "id": "sue_028",
       "prefix": "末",
-      "continuation": "端の紙にも目を向けて。",
-      "join": "末端の紙",
-      "lead": "次の字を出します。",
-      "reannounce": "運勢の話に戻ります。"
+      "continuation": "広がりのお皿には餃子がよく並びます。",
+      "join": "末広がり"
     },
     {
       "id": "sue_029",
       "prefix": "末",
-      "continuation": "日まで待つ必要はありません。",
-      "join": "末日まで",
-      "lead": "先の先も気になりますね。",
-      "reannounce": "次を見てみよう。"
+      "continuation": "尾に追伸を足すと手紙が長くなります。",
+      "join": "末尾"
     },
     {
       "id": "sue_030",
       "prefix": "末",
-      "continuation": "席から紙がご挨拶します。",
-      "join": "末席から",
-      "lead": "続きから読んでみよう。",
-      "reannounce": "今のは小話でした。"
+      "continuation": "日はカレンダーをめくる手が忙しいです。",
+      "join": "末日"
     },
     {
       "id": "kippou",
       "prefix": "吉",
-      "continuation": "報は寝て待つことにしよう。",
-      "join": "吉報",
-      "lead": "よい字が見えます。",
-      "reannounce": "続きを発表します。"
+      "continuation": "報より先にお菓子の配達が来ました。",
+      "join": "吉報"
     },
     {
       "id": "kichirei",
       "prefix": "吉",
-      "continuation": "例です。まずは予告から。",
-      "join": "吉例",
-      "lead": "この字をどうぞ。",
-      "reannounce": "お次をご覧ください。"
+      "continuation": "例にならって、まず乾杯しましょう。",
+      "join": "吉例"
     },
     {
       "id": "kichi_003",
       "prefix": "吉",
-      "continuation": "日。日取りの話です。",
-      "join": "吉日",
-      "lead": "よい響きですね。",
-      "reannounce": "もう少し見ていてね。"
+      "continuation": "兆でしょうか、靴にてんとう虫がいます。",
+      "join": "吉兆"
     },
     {
       "id": "kichi_004",
       "prefix": "吉",
-      "continuation": "祥。縁起のよい響きですね。",
-      "join": "吉祥",
-      "lead": "期待して読もう。",
-      "reannounce": "焦らずに待ってね。"
+      "continuation": "日を選ぶより起きられる日を選びます。",
+      "join": "吉日"
     },
     {
       "id": "kichi_005",
       "prefix": "吉",
-      "continuation": "兆かどうかはまだ分かりません。",
-      "join": "吉兆",
-      "lead": "嬉しい予感がします。",
-      "reannounce": "次も気楽にどうぞ。"
+      "continuation": "祥寺で待ち合わせて道に迷いました。",
+      "join": "吉祥寺"
     },
     {
       "id": "kichi_006",
       "prefix": "吉",
-      "continuation": "夢。どんな夢でしたか。",
-      "join": "吉夢",
-      "lead": "よい便りでしょうか？",
-      "reannounce": "では、続きを読もう。"
+      "continuation": "野の桜を見ながらお弁当を食べたいです。",
+      "join": "吉野"
     },
     {
       "id": "kichi_007",
       "prefix": "吉",
-      "continuation": "田さんへのご伝言？",
-      "join": "吉田",
-      "lead": "見ていると笑顔になるね。",
-      "reannounce": "改めて紙を見てね。"
+      "continuation": "備団子があれば犬とも仲良くなれますか？",
+      "join": "吉備団子"
     },
     {
       "id": "kichi_008",
       "prefix": "吉",
-      "continuation": "野。桜を思い出します。",
-      "join": "吉野",
-      "lead": "よさそうな字が出ます。",
-      "reannounce": "また予想してみてね。"
+      "continuation": "田さん、ハンカチを落としましたよ。",
+      "join": "吉田"
     },
     {
       "id": "kichi_009",
       "prefix": "吉",
-      "continuation": "野山。山の話でした。",
-      "join": "吉野山",
-      "lead": "字だけ先に見せます。",
-      "reannounce": "答えを探していこう。"
+      "continuation": "報を聞いてお茶が一段とおいしいです。",
+      "join": "吉報"
     },
     {
       "id": "kichi_010",
       "prefix": "吉",
-      "continuation": "祥寺の駅で待ち合わせよう。",
-      "join": "吉祥寺",
-      "lead": "嬉しくなる字かな？",
-      "reannounce": "続きが出てきます。"
+      "continuation": "兆を探していたら四つ葉が見つかりました。",
+      "join": "吉兆"
     },
     {
       "id": "kichi_011",
       "prefix": "吉",
-      "continuation": "備。団子が気になります。",
-      "join": "吉備",
-      "lead": "この字に願いを込めよう。",
-      "reannounce": "一緒に見ていこう。"
+      "continuation": "日だからといって寝坊は許されません。",
+      "join": "吉日"
     },
     {
       "id": "kichi_012",
       "prefix": "吉",
-      "continuation": "報待ちの間に、ひと休みしよう。",
-      "join": "吉報待ち",
-      "lead": "よい方へ想像してみよう。",
-      "reannounce": "次の文字を待とう。"
+      "continuation": "祥寺の駅前には誘惑が多いですね。",
+      "join": "吉祥寺"
     },
     {
       "id": "kichi_013",
       "prefix": "吉",
-      "continuation": "日を選ぶには、暦を見よう。",
-      "join": "吉日",
-      "lead": "ひとまず期待しよう。",
-      "reannounce": "まだ発表の途中です。"
+      "continuation": "野家に寄ると夕飯の予定が変わります。",
+      "join": "吉野家"
     },
     {
       "id": "kichi_014",
       "prefix": "吉",
-      "continuation": "兆探しはまだ早いよ。",
-      "join": "吉兆探し",
-      "lead": "この字をよく見てね。",
-      "reannounce": "また先へ進みます。"
+      "continuation": "田さんのお土産はいつもおいしいです。",
+      "join": "吉田"
     },
     {
       "id": "kichi_015",
       "prefix": "吉",
-      "continuation": "夢の話を聞かせてね。",
-      "join": "吉夢の話",
-      "lead": "朗らかに待ちましょう。",
-      "reannounce": "いったん落ち着こう。"
+      "continuation": "例の餅つきは筋肉痛も連れてきます。",
+      "join": "吉例"
     },
     {
       "id": "kichi_016",
       "prefix": "吉",
-      "continuation": "祥文様。柄の話です。",
-      "join": "吉祥文様",
-      "lead": "明るい気持ちで見よう。",
-      "reannounce": "おみくじを続けます。"
+      "continuation": "報は猫にも伝えました。",
+      "join": "吉報"
     },
     {
       "id": "kichi_017",
       "prefix": "吉",
-      "continuation": "野の桜。春が待ち遠しい。",
-      "join": "吉野の桜",
-      "lead": "希望を持って読もう。",
-      "reannounce": "続きをどうぞ。"
+      "continuation": "兆かどうかは猫に聞いてみましょう。",
+      "join": "吉兆"
     },
     {
       "id": "kichi_018",
       "prefix": "吉",
-      "continuation": "田さんを呼んだわけではありません。",
-      "join": "吉田さん",
-      "lead": "にこっと見守ってね。",
-      "reannounce": "では、次へ進もう。"
+      "continuation": "日には新しい靴を履きたくなります。",
+      "join": "吉日"
     },
     {
       "id": "kichi_019",
       "prefix": "吉",
-      "continuation": "報の前にお茶を飲もう。",
-      "join": "吉報の前",
-      "lead": "嬉しい響きがしますね。",
-      "reannounce": "もう少し見守ろう。"
+      "continuation": "野の春までに歩く練習をしましょう。",
+      "join": "吉野"
     },
     {
       "id": "kichi_020",
       "prefix": "吉",
-      "continuation": "例の挨拶はこのくらいにしよう。",
-      "join": "吉例の挨拶",
-      "lead": "この字に期待しますね。",
-      "reannounce": "発表を続けます。"
+      "continuation": "備団子はお供を連れる前に食べきりました。",
+      "join": "吉備団子"
     },
     {
       "id": "kyouki",
       "prefix": "凶",
-      "continuation": "器はありません。紙だけです。",
-      "join": "凶器",
-      "lead": "慌てないでね。",
-      "reannounce": "続きます。"
+      "continuation": "器は冷凍したバナナかもしれません。",
+      "join": "凶器"
     },
     {
       "id": "kyousou",
       "prefix": "凶",
-      "continuation": "相かどうか、鏡を見てみよう。",
-      "join": "凶相",
-      "lead": "驚かないでね。",
-      "reannounce": "続きを見ましょう。"
+      "continuation": "相に見えますが、ただの寝起きです。",
+      "join": "凶相"
     },
     {
       "id": "kyou_003",
       "prefix": "凶",
-      "continuation": "兆かどうかはまだ分かりません。",
-      "join": "凶兆",
-      "lead": "気になる字が出ます。",
-      "reannounce": "次に進みます。"
+      "continuation": "暴な顔の猫が膝で眠っています。",
+      "join": "凶暴"
     },
     {
       "id": "kyou_004",
       "prefix": "凶",
-      "continuation": "暴な眠気が来ましたか。",
-      "join": "凶暴",
-      "lead": "落ち着いて読もう。",
-      "reannounce": "仕切り直します。"
+      "continuation": "作でもベランダの豆苗は元気です。",
+      "join": "凶作"
     },
     {
       "id": "kyou_005",
       "prefix": "凶",
-      "continuation": "悪な寝ぐせと対決しよう。",
-      "join": "凶悪",
-      "lead": "見ても早とちりしないで。",
-      "reannounce": "もう一度どうぞ。"
+      "continuation": "悪な目つきなのは眩しいからです。",
+      "join": "凶悪"
     },
     {
       "id": "kyou_006",
       "prefix": "凶",
-      "continuation": "作。家庭菜園の話でした。",
-      "join": "凶作",
-      "lead": "続きまで読んでね。",
-      "reannounce": "お話を戻します。"
+      "continuation": "星の話より今夜の献立が気になります。",
+      "join": "凶星"
     },
     {
       "id": "kyou_007",
       "prefix": "凶",
-      "continuation": "夢を見たなら、起きてひと休みしよう。",
-      "join": "凶夢",
-      "lead": "どきっとする字です。",
-      "reannounce": "占いに戻ります。"
+      "continuation": "夢のせいで目覚ましより先に起きました。",
+      "join": "凶夢"
     },
     {
       "id": "kyou_008",
       "prefix": "凶",
-      "continuation": "器より文房具を手に取ろう。",
-      "join": "凶器",
-      "lead": "一字で決めないでね。",
-      "reannounce": "この先も読んでね。"
+      "continuation": "事に備える前に傘を持ちましょう。",
+      "join": "凶事"
     },
     {
       "id": "kyou_009",
       "prefix": "凶",
-      "continuation": "相はやめて、笑顔で読もう。",
-      "join": "凶相",
-      "lead": "まず深呼吸しよう。",
-      "reannounce": "まだ続きます。"
+      "continuation": "兆かと思った影は洗濯物でした。",
+      "join": "凶兆"
     },
     {
       "id": "kyou_010",
       "prefix": "凶",
-      "continuation": "兆かと思った？まだ文字だけです。",
-      "join": "凶兆",
-      "lead": "身構えなくて大丈夫です。",
-      "reannounce": "次も見てね。"
+      "continuation": "行を防いだのは猫の一鳴きでした。",
+      "join": "凶行"
     },
     {
       "id": "kyou_011",
       "prefix": "凶",
-      "continuation": "暴な猫も寝ると静かです。",
-      "join": "凶暴な猫",
-      "lead": "字には続きがあります。",
-      "reannounce": "話を続けます。"
+      "continuation": "器になるほど硬いパンをスープに浸します。",
+      "join": "凶器"
     },
     {
       "id": "kyou_012",
       "prefix": "凶",
-      "continuation": "悪な目覚ましに起こされましたか？",
-      "join": "凶悪な目覚まし",
-      "lead": "早合点せず見ていてね。",
-      "reannounce": "気を取り直そう。"
+      "continuation": "相の面を外すと優しいおじいさんでした。",
+      "join": "凶相"
     },
     {
       "id": "kyou_013",
       "prefix": "凶",
-      "continuation": "作の畑。お水は足りた？",
-      "join": "凶作の畑",
-      "lead": "その先が大事です。",
-      "reannounce": "ここから続けます。"
+      "continuation": "暴な犬という噂ですが、尻尾が忙しいです。",
+      "join": "凶暴"
     },
     {
       "id": "kyou_014",
       "prefix": "凶",
-      "continuation": "夢の続きは見ずに起きよう。",
-      "join": "凶夢の続き",
-      "lead": "よく見てくださいね。",
-      "reannounce": "先に進みましょう。"
+      "continuation": "悪な寝癖とは毎朝戦っています。",
+      "join": "凶悪"
     },
     {
       "id": "kyou_015",
       "prefix": "凶",
-      "continuation": "器の出番はありません。",
-      "join": "凶器の出番",
-      "lead": "心を落ち着けて読もう。",
-      "reannounce": "発表を再開します。"
+      "continuation": "星より星形のクッキーを見つめています。",
+      "join": "凶星"
     },
     {
       "id": "kyou_016",
       "prefix": "凶",
-      "continuation": "相の写真。撮り直そう。",
-      "join": "凶相の写真",
-      "lead": "一息ついて見てね。",
-      "reannounce": "もう少し待ってね。"
+      "continuation": "夢を忘れるために朝ご飯を食べましょう。",
+      "join": "凶夢"
     },
     {
       "id": "kyou_017",
       "prefix": "凶",
-      "continuation": "暴な風。紙を押さえて。",
-      "join": "凶暴な風",
-      "lead": "心配するのはまだ早いよ。",
-      "reannounce": "続きをお見せします。"
+      "continuation": "兆ではありません、ただお腹が鳴っただけです。",
+      "join": "凶兆"
     },
     {
       "id": "kyou_018",
       "prefix": "凶",
-      "continuation": "悪な空腹には、まずご飯をどうぞ。",
-      "join": "凶悪な空腹",
-      "lead": "最後まで確かめよう。",
-      "reannounce": "おみくじに戻ろう。"
+      "continuation": "作の年も種をまく人がいます。",
+      "join": "凶作"
     },
     {
       "id": "kyou_019",
       "prefix": "凶",
-      "continuation": "兆を探す前に深呼吸しよう。",
-      "join": "凶兆を探す",
-      "lead": "続く字も見てみよう。",
-      "reannounce": "次をご覧ください。"
+      "continuation": "器に見えたものは大きな麩菓子でした。",
+      "join": "凶器"
     },
     {
       "id": "kyou_020",
       "prefix": "凶",
-      "continuation": "暴な雨には大きな傘で備えよう。",
-      "join": "凶暴な雨",
-      "lead": "驚くのはまだ先です。",
-      "reannounce": "また予告します。"
+      "continuation": "暴そうなサボテンにも花が咲きます。",
+      "join": "凶暴"
     },
     {
       "id": "undou",
       "prefix": "運",
-      "continuation": "動。まず背伸びをしよう。",
-      "join": "運動",
-      "lead": "運の字が出ます。",
-      "reannounce": "改めて見てみよう。"
+      "continuation": "動の前に背伸びをしましょう。",
+      "join": "運動"
     },
     {
       "id": "unten",
       "prefix": "運",
-      "continuation": "転中なら、停車して読もう。",
-      "join": "運転",
-      "lead": "未来を見てみよう。",
-      "reannounce": "答えを探しましょう。"
+      "continuation": "転する日は眠気にご注意ください。",
+      "join": "運転"
     },
     {
       "id": "unpan",
       "prefix": "運",
-      "continuation": "搬中。答えをお届けします。",
-      "join": "運搬",
-      "lead": "何かが出てきます。",
-      "reannounce": "続きも見守ってね。"
+      "continuation": "搬中のケーキだけは水平にどうぞ。",
+      "join": "運搬"
     },
     {
       "id": "unyou",
       "prefix": "運",
-      "continuation": "用は計画的に。紙を大切にしよう。",
-      "join": "運用",
-      "lead": "次の流れを見よう。",
-      "reannounce": "次は何でしょう？"
+      "continuation": "用を考える前に貯金箱を探しましょう。",
+      "join": "運用"
     },
     {
       "id": "un_005",
       "prefix": "運",
-      "continuation": "営では紙担当が奮闘しています。",
-      "join": "運営",
-      "lead": "どんな字が届くかな？",
-      "reannounce": "ゆっくり進めます。"
+      "continuation": "河のほとりでおやつにしましょう。",
+      "join": "運河"
     },
     {
       "id": "un_006",
       "prefix": "運",
-      "continuation": "送中。結果はまだ届きません。",
-      "join": "運送",
-      "lead": "何か動いていますね。",
-      "reannounce": "お次もどうぞ。"
+      "continuation": "賃を調べたら徒歩も悪くない気がします。",
+      "join": "運賃"
     },
     {
       "id": "un_007",
       "prefix": "運",
-      "continuation": "賃。紙の旅のお話です。",
-      "join": "運賃",
-      "lead": "字が運ばれてきます。",
-      "reannounce": "先を読んでみよう。"
+      "continuation": "休の日に限って早起きできました。",
+      "join": "運休"
     },
     {
       "id": "un_008",
       "prefix": "運",
-      "continuation": "行中。次の駅は結果の手前です。",
-      "join": "運行",
-      "lead": "巡り合わせを見よう。",
-      "reannounce": "期待して見ていてね。"
+      "continuation": "営の人にもお菓子を一つどうぞ。",
+      "join": "運営"
     },
     {
       "id": "un_009",
       "prefix": "運",
-      "continuation": "航中。行き先は紙の先です。",
-      "join": "運航中",
-      "lead": "先に字が見えてきます。",
-      "reannounce": "まだ終わりません。"
+      "continuation": "動会のお弁当だけは忘れられません。",
+      "join": "運動会"
     },
     {
       "id": "un_010",
       "prefix": "運",
-      "continuation": "休ではなく、一休みしています。",
-      "join": "運休",
-      "lead": "字が動いてきました。",
-      "reannounce": "本題に戻ろう。"
+      "continuation": "送屋さんに猫が挨拶しています。",
+      "join": "運送"
     },
     {
       "id": "un_011",
       "prefix": "運",
-      "continuation": "試しの結果はこの先です。",
-      "join": "運試し",
-      "lead": "運の行方を見ましょう。",
-      "reannounce": "続きをお届けします。"
+      "continuation": "転手さんの休憩中はそっと待ちましょう。",
+      "join": "運転手"
     },
     {
       "id": "un_012",
       "prefix": "運",
-      "continuation": "任せで、続きをどうぞ。",
-      "join": "運任せ",
-      "lead": "この一字をご覧ください。",
-      "reannounce": "紙の先を見てね。"
+      "continuation": "動不足には散歩がいちばんです。",
+      "join": "運動不足"
     },
     {
       "id": "un_013",
       "prefix": "運",
-      "continuation": "転手に行き先を伝えよう。",
-      "join": "運転手",
-      "lead": "文字が巡ってきます。",
-      "reannounce": "もう少し付き合ってね。"
+      "continuation": "航予定を見て旅に出たくなりました。",
+      "join": "運航"
     },
     {
       "id": "un_014",
       "prefix": "運",
-      "continuation": "転席ではあなたが主役です。",
-      "join": "運転席",
-      "lead": "流れに任せて読もう。",
-      "reannounce": "発表は続きます。"
+      "continuation": "動靴を履くと少し遠回りしたくなります。",
+      "join": "運動靴"
     },
     {
       "id": "un_015",
       "prefix": "運",
-      "continuation": "動会。紙も一列に並びます。",
-      "join": "運動会",
-      "lead": "次へ進む字を見てね。",
-      "reannounce": "落ち着いて見よう。"
+      "continuation": "動場の隅で四つ葉を探しています。",
+      "join": "運動場"
     },
     {
       "id": "un_016",
       "prefix": "運",
-      "continuation": "動場。紙の走路です。",
-      "join": "運動場",
-      "lead": "字を運んできますよ。",
-      "reannounce": "次はどうなるかな？"
+      "continuation": "搬する荷物の中で一番重いのは本です。",
+      "join": "運搬"
     },
     {
       "id": "un_017",
       "prefix": "運",
-      "continuation": "動靴を履いて散歩に出よう。",
-      "join": "運動靴",
-      "lead": "先を見てみましょう。",
-      "reannounce": "改めてご注目ください。"
+      "continuation": "転席に座ったら姿勢を直しましょう。",
+      "join": "運転"
     },
     {
       "id": "un_018",
       "prefix": "運",
-      "continuation": "動不足。肩を回そう。",
-      "join": "運動不足",
-      "lead": "動き出す字を見よう。",
-      "reannounce": "続きを読んでください。"
+      "continuation": "休なら近くの喫茶店でひと休みです。",
+      "join": "運休"
     },
     {
       "id": "un_019",
       "prefix": "運",
-      "continuation": "動部を紙が応援します。",
-      "join": "運動部",
-      "lead": "何が巡ってくるかな？",
-      "reannounce": "運勢を見ていこう。"
+      "continuation": "河沿いのベンチでパンを食べました。",
+      "join": "運河"
     },
     {
       "id": "un_020",
       "prefix": "運",
-      "continuation": "動着への着替えは後にしよう。",
-      "join": "運動着",
-      "lead": "運の話をしましょう。",
-      "reannounce": "先を見届けましょう。"
+      "continuation": "賃の端数を見ると歩く距離を考えます。",
+      "join": "運賃"
     },
     {
       "id": "un_021",
       "prefix": "運",
-      "continuation": "搬車に期待を積もう。",
-      "join": "運搬車",
-      "lead": "未来のヒントをどうぞ。",
-      "reannounce": "もう一度見てね。"
+      "continuation": "動会の応援でも喉が渇きます。",
+      "join": "運動会"
     },
     {
       "id": "un_022",
       "prefix": "運",
-      "continuation": "搬係。結果を運びます。",
-      "join": "運搬係",
-      "lead": "何か届きそうですね。",
-      "reannounce": "今のは前置きでした。"
+      "continuation": "送中の荷物より先に心が旅をしています。",
+      "join": "運送"
     },
     {
       "id": "un_023",
       "prefix": "運",
-      "continuation": "送屋。紙の便りです。",
-      "join": "運送屋",
-      "lead": "次の字に進みます。",
-      "reannounce": "寄り道をしました。"
+      "continuation": "営会議のお菓子が楽しみです。",
+      "join": "運営"
     },
     {
       "id": "un_024",
       "prefix": "運",
-      "continuation": "送便の宛先はあなたです。",
-      "join": "運送便",
-      "lead": "巡ってくる字を見よう。",
-      "reannounce": "次の字を見ましょう。"
+      "continuation": "用中の機械にも休憩をあげたいですね。",
+      "join": "運用"
     },
     {
       "id": "un_025",
       "prefix": "運",
-      "continuation": "行表によると、結果は次の駅です。",
-      "join": "運行表",
-      "lead": "紙も動いていますね。",
-      "reannounce": "続きも読んでね。"
+      "continuation": "転手さん、お財布を忘れました。",
+      "join": "運転手"
     },
     {
       "id": "un_026",
       "prefix": "運",
-      "continuation": "行状況を伝えます。紙は前進中です。",
-      "join": "運行状況",
-      "lead": "お届けする文字です。",
-      "reannounce": "お話はまだ続きます。"
+      "continuation": "動不足なのに筋肉痛になる日があります。",
+      "join": "運動不足"
     },
     {
       "id": "un_027",
       "prefix": "運",
-      "continuation": "航予定。まもなく出発します。",
-      "join": "運航予定",
-      "lead": "この字を運びます。",
-      "reannounce": "改めて占います。"
+      "continuation": "動靴の紐を結ぶだけで息を止めていました。",
+      "join": "運動靴"
     },
     {
       "id": "un_028",
       "prefix": "運",
-      "continuation": "航中。着陸までもう少しです。",
-      "join": "運航中",
-      "lead": "次の文字が届きます。",
-      "reannounce": "本題を続けます。"
+      "continuation": "航状況を確かめてから港へ向かいましょう。",
+      "join": "運航"
     },
     {
       "id": "un_029",
       "prefix": "運",
-      "continuation": "営係から紙でご案内します。",
-      "join": "運営係",
-      "lead": "運の字を見てね。",
-      "reannounce": "もう少し進みます。"
+      "continuation": "動場の白線をつい踏まずに歩きます。",
+      "join": "運動場"
     },
     {
       "id": "un_030",
       "prefix": "運",
-      "continuation": "営本部で結果を確認しています。",
-      "join": "運営本部",
-      "lead": "今日の行方を見よう。",
-      "reannounce": "このまま見守ってね。"
+      "continuation": "任せに選んだ定食が大盛りでした。",
+      "join": "運任せ"
     },
     {
       "id": "un_031",
       "prefix": "運",
-      "continuation": "用中も紙を節約します。",
-      "join": "運用中",
-      "lead": "運の字が出ます。",
-      "reannounce": "一息ついて続けよう。"
+      "continuation": "び屋の鞄からお菓子の匂いがします。",
+      "join": "運び屋"
     },
     {
       "id": "un_032",
       "prefix": "運",
-      "continuation": "用方法は、最後まで読むことです。",
-      "join": "運用方法",
-      "lead": "未来を見てみよう。",
-      "reannounce": "また見てみましょう。"
+      "continuation": "び方を考える前に荷物を減らしましょう。",
+      "join": "運び方"
     },
     {
       "id": "un_033",
       "prefix": "運",
-      "continuation": "び屋がお届けするのは文字です。",
-      "join": "運び屋",
-      "lead": "何かが出てきます。",
-      "reannounce": "さて、続きをどうぞ。"
+      "continuation": "ぶ途中でお団子を一本食べました。",
+      "join": "運ぶ"
     },
     {
       "id": "un_034",
       "prefix": "運",
-      "continuation": "び方は、まっすぐに限ります。",
-      "join": "運び方",
-      "lead": "次の流れを見よう。",
-      "reannounce": "次の文字が出ます。"
+      "continuation": "ばれてきた料理を撮る前に食べました。",
+      "join": "運ばれ"
     },
     {
       "id": "un_035",
       "prefix": "運",
-      "continuation": "ぶ途中で答えが近づいてきました。",
-      "join": "運ぶ途中",
-      "lead": "どんな字が届くかな？",
-      "reannounce": "まだ先があります。"
+      "continuation": "べるだけのお土産を買ったら歩けません。",
+      "join": "運べる"
     },
     {
       "id": "un_036",
       "prefix": "運",
-      "continuation": "ばれて来る文字を待とう。",
-      "join": "運ばれて",
-      "lead": "何か動いていますね。",
-      "reannounce": "答えに近づきましょう。"
+      "continuation": "んでくれた猫の獲物に困っています。",
+      "join": "運んで"
     },
     {
       "id": "un_037",
       "prefix": "運",
-      "continuation": "転免許は紙には不要です。",
-      "join": "運転免許",
-      "lead": "字が運ばれてきます。",
-      "reannounce": "次も楽しんでね。"
+      "continuation": "良く席が空いていました、猫の隣です。",
+      "join": "運良く"
     },
     {
       "id": "un_038",
       "prefix": "運",
-      "continuation": "転練習。まず前へ進もう。",
-      "join": "運転練習",
-      "lead": "巡り合わせを見よう。",
-      "reannounce": "ゆっくり見ていてね。"
+      "continuation": "悪く売り切れでしたが別のパンもおいしいです。",
+      "join": "運悪く"
     },
     {
       "id": "un_039",
       "prefix": "運",
-      "continuation": "試しの前に深呼吸しよう。",
-      "join": "運試しの前",
-      "lead": "先に字が見えてきます。",
-      "reannounce": "お話に戻りましょう。"
+      "continuation": "動会のリレーより場所取りが得意です。",
+      "join": "運動会"
     },
     {
       "id": "un_040",
       "prefix": "運",
-      "continuation": "任せの旅に紙と一緒に出かけよう。",
-      "join": "運任せの旅",
-      "lead": "字が動いてきました。",
-      "reannounce": "続きを待ちましょう。"
+      "continuation": "転の練習より車庫入れの練習が長いです。",
+      "join": "運転"
     },
     {
       "id": "ataruka",
       "prefix": "あた",
-      "continuation": "るかな？まだ秘密です。",
-      "join": "あたる",
-      "lead": "予想してみてね。",
-      "reannounce": "紙はまだ出ます。"
+      "continuation": "るかどうか、まず天気予報で腕試しです。",
+      "join": "あたる"
     },
     {
       "id": "atari_question",
       "prefix": "あた",
-      "continuation": "り、と思った？",
-      "join": "あたり",
-      "lead": "何が続くかな？",
-      "reannounce": "この先をご覧ください。"
+      "continuation": "りのアイス棒は捨てずに持ち帰りましょう。",
+      "join": "あたり"
     },
     {
       "id": "ataranai_tease",
       "prefix": "あた",
-      "continuation": "らないとは限りません。",
-      "join": "あたらない",
-      "lead": "期待が高まります。",
-      "reannounce": "発表に戻ります。"
+      "continuation": "らない天気予報を信じて傘を忘れました。",
+      "join": "あたらない"
     },
     {
       "id": "atatakai",
       "prefix": "あた",
-      "continuation": "たかいお茶をどうぞ。",
-      "join": "あたたかい",
-      "lead": "どう続くでしょう？",
-      "reannounce": "もう少し読んでみよう。"
+      "continuation": "たかいお茶にしましょう。",
+      "join": "あたたかい"
     },
     {
       "id": "atarashii",
       "prefix": "あた",
-      "continuation": "らしい朝。結果はこの先です。",
-      "join": "あたらしい",
-      "lead": "次を想像してみよう。",
-      "reannounce": "次の展開を見ましょう。"
+      "continuation": "まの上に眼鏡がありました。",
+      "join": "あたま"
     },
     {
       "id": "atama",
       "prefix": "あた",
-      "continuation": "まの中で予想した？",
-      "join": "あたま",
-      "lead": "これ、当たるかな？",
-      "reannounce": "もう一息です。"
+      "continuation": "らしい靴で遠回りしたくなりました。",
+      "join": "あたらしい"
     },
     {
       "id": "ata_007",
       "prefix": "あた",
-      "continuation": "たかいご飯が待っています。",
-      "join": "あたたかいご飯",
-      "lead": "ひらがなを見てね。",
-      "reannounce": "続きを楽しんでね。"
+      "continuation": "りまえに寝られる夜がうれしいですね。",
+      "join": "あたりまえ"
     },
     {
       "id": "ata_008",
       "prefix": "あた",
-      "continuation": "たかい風が吹いたら散歩に出よう。",
-      "join": "あたたかい風",
-      "lead": "この音を知っていますか？",
-      "reannounce": "ここからまた進もう。"
+      "continuation": "ふたする日はまずお茶を飲みましょう。",
+      "join": "あたふた"
     },
     {
       "id": "ata_009",
       "prefix": "あた",
-      "continuation": "たかい布団が恋しい。",
-      "join": "あたたかい布団",
-      "lead": "先頭は平仮名です。",
-      "reannounce": "次へ参りましょう。"
+      "continuation": "ためるとチーズが伸びます。",
+      "join": "あたためる"
     },
     {
       "id": "ata_010",
       "prefix": "あた",
-      "continuation": "たかい手で受け取ってね。",
-      "join": "あたたかい手",
-      "lead": "聞き覚えがありますか？",
-      "reannounce": "文字を追ってみよう。"
+      "continuation": "らずとも遠からず、駅はあの辺です。",
+      "join": "あたらず"
     },
     {
       "id": "ata_011",
       "prefix": "あた",
-      "continuation": "たかい光が窓辺に差し込みます。",
-      "join": "あたたかい光",
-      "lead": "あの言葉でしょうか？",
-      "reannounce": "引き続きご覧ください。"
+      "continuation": "り一面、猫の毛だらけです。",
+      "join": "あたり"
     },
     {
       "id": "ata_012",
       "prefix": "あた",
-      "continuation": "たかい声をかけよう。",
-      "join": "あたたかい声",
-      "lead": "二文字を出します。",
-      "reannounce": "続きを出します。"
+      "continuation": "まをひねる前に首を伸ばしましょう。",
+      "join": "あたま"
     },
     {
       "id": "ata_013",
       "prefix": "あた",
-      "continuation": "たかい部屋でひと息つこう。",
-      "join": "あたたかい部屋",
-      "lead": "続きは何でしょう？",
-      "reannounce": "さて、進めましょう。"
+      "continuation": "たかい布団からは出たくありません。",
+      "join": "あたたかい"
     },
     {
       "id": "ata_014",
       "prefix": "あた",
-      "continuation": "たかいスープをひと口どうぞ。",
-      "join": "あたたかいスープ",
-      "lead": "予想が当たるかな？",
-      "reannounce": "次は何が出るかな？"
+      "continuation": "らしい傘を買うと晴れる日が続きます。",
+      "join": "あたらしい"
     },
     {
       "id": "ata_015",
       "prefix": "あた",
-      "continuation": "たかい日なら外へ出よう。",
-      "join": "あたたかい日",
-      "lead": "うまく続くでしょうか？",
-      "reannounce": "まだ結論の前です。"
+      "continuation": "りまえのように猫が席を取っています。",
+      "join": "あたりまえ"
     },
     {
       "id": "ata_016",
       "prefix": "あた",
-      "continuation": "たかい気持ちをどうぞ。",
-      "join": "あたたかい気持ち",
-      "lead": "ここで文字を見てね。",
-      "reannounce": "紙に聞いてみます。"
+      "continuation": "ふた探した鍵は手に持っていました。",
+      "join": "あたふた"
     },
     {
       "id": "ata_017",
       "prefix": "あた",
-      "continuation": "ためるのはお弁当です。",
-      "join": "あたためる",
-      "lead": "当たってほしいですね。",
-      "reannounce": "答えを待ちましょう。"
+      "continuation": "ため直す間につまみ食いしました。",
+      "join": "あたため"
     },
     {
       "id": "ata_018",
       "prefix": "あた",
-      "continuation": "ため直そう、昨日のカレーを。",
-      "join": "あたため直そう",
-      "lead": "何かよい予感がします。",
-      "reannounce": "次も予想してみよう。"
+      "continuation": "るのは宝くじより雨粒の方が多いです。",
+      "join": "あたる"
     },
     {
       "id": "ata_019",
       "prefix": "あた",
-      "continuation": "ためた牛乳はいかが？",
-      "join": "あたためた",
-      "lead": "さて、どう続くかな？",
-      "reannounce": "話を進めます。"
+      "continuation": "りを見回すと猫も見回しています。",
+      "join": "あたり"
     },
     {
       "id": "ata_020",
       "prefix": "あた",
-      "continuation": "ためていた案を出そう。",
-      "join": "あたためて",
-      "lead": "期待が膨らみます。",
-      "reannounce": "ここで占いに戻ろう。"
+      "continuation": "まを使うとお腹が空きます。",
+      "join": "あたま"
     },
     {
       "id": "ata_021",
       "prefix": "あた",
-      "continuation": "らしい靴で一歩踏み出そう。",
-      "join": "あたらしい靴",
-      "lead": "読めるところから読もう。",
-      "reannounce": "もう一度予告します。"
+      "continuation": "たかい日は窓辺の席が人気です。",
+      "join": "あたたかい"
     },
     {
       "id": "ata_022",
       "prefix": "あた",
-      "continuation": "らしい服で気分を変えよう。",
-      "join": "あたらしい服",
-      "lead": "何を思い浮かべた？",
-      "reannounce": "先まで見てみよう。"
+      "continuation": "らしいノートの一ページ目は緊張します。",
+      "join": "あたらしい"
     },
     {
       "id": "ata_023",
       "prefix": "あた",
-      "continuation": "らしい本を開こう。",
-      "join": "あたらしい本",
-      "lead": "心当たりがありますか？",
-      "reannounce": "続きを追いましょう。"
+      "continuation": "りまえですが、おやつは別腹です。",
+      "join": "あたりまえ"
     },
     {
       "id": "ata_024",
       "prefix": "あた",
-      "continuation": "らしい道を歩こう。",
-      "join": "あたらしい道",
-      "lead": "その予想は当たるかな？",
-      "reannounce": "まだ答えは出しません。"
+      "continuation": "ふたしたのに電車には間に合いました。",
+      "join": "あたふた"
     },
     {
       "id": "ata_025",
       "prefix": "あた",
-      "continuation": "らしい友達に挨拶しよう。",
-      "join": "あたらしい友達",
-      "lead": "何か思い浮かべてね。",
-      "reannounce": "この先に進もう。"
+      "continuation": "ためた牛乳に膜が張りました。",
+      "join": "あたため"
     },
     {
       "id": "ata_026",
       "prefix": "あた",
-      "continuation": "らしい発見です。紙が出てきました。",
-      "join": "あたらしい発見",
-      "lead": "平仮名で予告します。",
-      "reannounce": "またお待ちください。"
+      "continuation": "る日差しを猫と分け合っています。",
+      "join": "あたる"
     },
     {
       "id": "ata_027",
       "prefix": "あた",
-      "continuation": "らしい趣味を探そう。",
-      "join": "あたらしい趣味",
-      "lead": "次の音が気になりますね。",
-      "reannounce": "順にお見せします。"
+      "continuation": "りに漂うパンの匂いを追いかけています。",
+      "join": "あたり"
     },
     {
       "id": "ata_028",
       "prefix": "あた",
-      "continuation": "らしいノートに何を書く？",
-      "join": "あたらしいノート",
-      "lead": "この二文字が出ます。",
-      "reannounce": "次の発表に進みます。"
+      "continuation": "まの中ではいつも旅をしています。",
+      "join": "あたま"
     },
     {
       "id": "ata_029",
       "prefix": "あた",
-      "continuation": "らしい一歩。紙も前へ進みます。",
-      "join": "あたらしい一歩",
-      "lead": "次の言葉を予想しよう。",
-      "reannounce": "紙の続きを読もう。"
+      "continuation": "たかいスープでひと息つきましょう。",
+      "join": "あたたかい"
     },
     {
       "id": "ata_030",
       "prefix": "あた",
-      "continuation": "らしい習慣に早寝はいかが？",
-      "join": "あたらしい習慣",
-      "lead": "続きが分かりそうですか？",
-      "reannounce": "引き続き見守ってね。"
+      "continuation": "らしい趣味の道具で部屋が狭くなりました。",
+      "join": "あたらしい"
     },
     {
       "id": "ata_031",
       "prefix": "あた",
-      "continuation": "まをほぐして待とう。",
-      "join": "あたま",
-      "lead": "予想してみてね。",
-      "reannounce": "また文字が出ます。"
+      "continuation": "りまえの景色も散歩すると違って見えます。",
+      "join": "あたりまえ"
     },
     {
       "id": "ata_032",
       "prefix": "あた",
-      "continuation": "まの中ではどんな結果を予想した？",
-      "join": "あたまの中",
-      "lead": "何が続くかな？",
-      "reannounce": "今度の文字を見よう。"
+      "continuation": "ふた支度をして靴下を間違えました。",
+      "join": "あたふた"
     },
     {
       "id": "ata_033",
       "prefix": "あた",
-      "continuation": "まの体操に、続きを予想しよう。",
-      "join": "あたまの体操",
-      "lead": "期待が高まります。",
-      "reannounce": "少しずつ進めます。"
+      "continuation": "ためすぎたお茶が飲めません。",
+      "join": "あたため"
     },
     {
       "id": "ata_034",
       "prefix": "あた",
-      "continuation": "まを上げる前に紙を見よう。",
-      "join": "あたまを上げる",
-      "lead": "どう続くでしょう？",
-      "reannounce": "次の予告をどうぞ。"
+      "continuation": "る風が気持ちよくて立ち止まりました。",
+      "join": "あたる"
     },
     {
       "id": "ata_035",
       "prefix": "あた",
-      "continuation": "まを使うほどの予告？",
-      "join": "あたまを使う",
-      "lead": "次を想像してみよう。",
-      "reannounce": "ここで仕切り直そう。"
+      "continuation": "りをつけて探したのに眼鏡がありません。",
+      "join": "あたり"
     },
     {
       "id": "ata_036",
       "prefix": "あた",
-      "continuation": "まを休める時間です。",
-      "join": "あたまを休める",
-      "lead": "これ、当たるかな？",
-      "reannounce": "紙を追ってみましょう。"
+      "continuation": "まに浮かんだ献立は全部揚げ物でした。",
+      "join": "あたま"
     },
     {
       "id": "ata_037",
       "prefix": "あた",
-      "continuation": "まに浮かぶ答えは何？",
-      "join": "あたまに浮かぶ",
-      "lead": "ひらがなを見てね。",
-      "reannounce": "もう少し続けよう。"
+      "continuation": "たかいポケットに飴が溶けていました。",
+      "join": "あたたかい"
     },
     {
       "id": "ata_038",
       "prefix": "あた",
-      "continuation": "まに入るのは文字です。",
-      "join": "あたまに入る",
-      "lead": "この音を知っていますか？",
-      "reannounce": "運勢の話に戻ります。"
+      "continuation": "らしい道を選んだら坂ばかりでした。",
+      "join": "あたらしい"
     },
     {
       "id": "ata_039",
       "prefix": "あた",
-      "continuation": "まから順に読もう。",
-      "join": "あたまから",
-      "lead": "先頭は平仮名です。",
-      "reannounce": "次を見てみよう。"
+      "continuation": "りまえですが、寝ている猫は起こせません。",
+      "join": "あたりまえ"
     },
     {
       "id": "ata_040",
       "prefix": "あた",
-      "continuation": "ま隠して紙隠さず。",
-      "join": "あたま隠して",
-      "lead": "聞き覚えがありますか？",
-      "reannounce": "今のは小話でした。"
+      "continuation": "ふたする店員さんに猫が見入っています。",
+      "join": "あたふた"
     },
     {
       "id": "ata_041",
       "prefix": "あた",
-      "continuation": "ふたせずに待とう。",
-      "join": "あたふた",
-      "lead": "あの言葉でしょうか？",
-      "reannounce": "続きを発表します。"
+      "continuation": "ためたパンにバターをのせましょう。",
+      "join": "あたため"
     },
     {
       "id": "ata_042",
       "prefix": "あた",
-      "continuation": "ふたするのは結果の後にしよう。",
-      "join": "あたふたする",
-      "lead": "二文字を出します。",
-      "reannounce": "お次をご覧ください。"
+      "continuation": "る場所を変えたら椅子が揺れなくなりました。",
+      "join": "あたる"
     },
     {
       "id": "ata_043",
       "prefix": "あた",
-      "continuation": "ふたしないで深呼吸しよう。",
-      "join": "あたふたしない",
-      "lead": "続きは何でしょう？",
-      "reannounce": "もう少し見ていてね。"
+      "continuation": "りが暗くなる前に帰りましょう。",
+      "join": "あたり"
     },
     {
       "id": "ata_044",
       "prefix": "あた",
-      "continuation": "ふたすると紙が折れます。",
-      "join": "あたふたすると",
-      "lead": "予想が当たるかな？",
-      "reannounce": "焦らずに待ってね。"
+      "continuation": "まを撫でられた猫が目を細めています。",
+      "join": "あたま"
     },
     {
       "id": "ata_045",
       "prefix": "あた",
-      "continuation": "ふたしそうならお茶を飲もう。",
-      "join": "あたふたしそう",
-      "lead": "うまく続くでしょうか？",
-      "reannounce": "次も気楽にどうぞ。"
+      "continuation": "たかい靴下が今日は頼りです。",
+      "join": "あたたかい"
     },
     {
       "id": "ata_046",
       "prefix": "あた",
-      "continuation": "りまえ、と思った？",
-      "join": "あたりまえ",
-      "lead": "ここで文字を見てね。",
-      "reannounce": "では、続きを読もう。"
+      "continuation": "らしいマグカップでお茶を飲みます。",
+      "join": "あたらしい"
     },
     {
       "id": "ata_047",
       "prefix": "あた",
-      "continuation": "りまえの朝も大切にしよう。",
-      "join": "あたりまえの朝",
-      "lead": "当たってほしいですね。",
-      "reannounce": "改めて紙を見てね。"
+      "continuation": "りまえのようで、毎日のご飯はありがたいです。",
+      "join": "あたりまえ"
     },
     {
       "id": "ata_048",
       "prefix": "あた",
-      "continuation": "りまえのように紙が伸びます。",
-      "join": "あたりまえのように",
-      "lead": "何かよい予感がします。",
-      "reannounce": "また予想してみてね。"
+      "continuation": "ふたしてプリンを二つ頼みました。",
+      "join": "あたふた"
     },
     {
       "id": "ata_049",
       "prefix": "あた",
-      "continuation": "りまえのように予告します。",
-      "join": "あたりまえのように",
-      "lead": "さて、どう続くかな？",
-      "reannounce": "答えを探していこう。"
+      "continuation": "ため中のご飯の匂いがします。",
+      "join": "あたため"
     },
     {
       "id": "ata_050",
       "prefix": "あた",
-      "continuation": "りまえの日にも運を試してみよう。",
-      "join": "あたりまえの日",
-      "lead": "期待が膨らみます。",
-      "reannounce": "続きが出てきます。"
+      "continuation": "る予感がしても、まずはお茶にしましょう。",
+      "join": "あたる"
     },
     {
       "id": "ata_051",
       "prefix": "あた",
-      "continuation": "りを見回しても、紙は手元です。",
-      "join": "あたりを見回して",
-      "lead": "読めるところから読もう。",
-      "reannounce": "一緒に見ていこう。"
+      "continuation": "りの席に座れました、日当たり抜群です。",
+      "join": "あたり"
     },
     {
       "id": "ata_052",
       "prefix": "あた",
-      "continuation": "り一面、白い紙？",
-      "join": "あたり一面",
-      "lead": "何を思い浮かべた？",
-      "reannounce": "次の文字を待とう。"
+      "continuation": "まを空っぽにしたら眠くなりました。",
+      "join": "あたま"
     },
     {
       "id": "ata_053",
       "prefix": "あた",
-      "continuation": "りが暗いなら明かりをつけよう。",
-      "join": "あたりが暗い",
-      "lead": "心当たりがありますか？",
-      "reannounce": "まだ発表の途中です。"
+      "continuation": "たかい手で猫を撫でましょう。",
+      "join": "あたたかい"
     },
     {
       "id": "ata_054",
       "prefix": "あた",
-      "continuation": "りを探すなら、紙を見てね。",
-      "join": "あたりを探す",
-      "lead": "その予想は当たるかな？",
-      "reannounce": "また先へ進みます。"
+      "continuation": "らしい本の匂いが好きです。",
+      "join": "あたらしい"
     },
     {
       "id": "ata_055",
       "prefix": "あた",
-      "continuation": "りをつけて結果を予想しよう。",
-      "join": "あたりをつけて",
-      "lead": "何か思い浮かべてね。",
-      "reannounce": "いったん落ち着こう。"
+      "continuation": "りまえに見える空も毎日違います。",
+      "join": "あたりまえ"
     },
     {
       "id": "ata_056",
       "prefix": "あた",
-      "continuation": "る予感。予感だけです。",
-      "join": "あたる予感",
-      "lead": "平仮名で予告します。",
-      "reannounce": "おみくじを続けます。"
+      "continuation": "ふたした後のお茶はおいしいです。",
+      "join": "あたふた"
     },
     {
       "id": "ata_057",
       "prefix": "あた",
-      "continuation": "るかどうかはこの先で分かります。",
-      "join": "あたるかどうか",
-      "lead": "次の音が気になりますね。",
-      "reannounce": "続きをどうぞ。"
+      "continuation": "ためたお餅が思ったより伸びました。",
+      "join": "あたため"
     },
     {
       "id": "ata_058",
       "prefix": "あた",
-      "continuation": "らずとも遠からず？",
-      "join": "あたらずとも",
-      "lead": "この二文字が出ます。",
-      "reannounce": "では、次へ進もう。"
+      "continuation": "る光が眩しくて猫も目を細めています。",
+      "join": "あたる"
     },
     {
       "id": "ata_059",
       "prefix": "あた",
-      "continuation": "ってから喜びましょう。",
-      "join": "あたってから",
-      "lead": "次の言葉を予想しよう。",
-      "reannounce": "もう少し見守ろう。"
+      "continuation": "りを探したら足元にリモコンがありました。",
+      "join": "あたり"
     },
     {
       "id": "ata_060",
       "prefix": "あた",
-      "continuation": "ったと思うのはまだ早いよ。",
-      "join": "あたったと思う",
-      "lead": "続きが分かりそうですか？",
-      "reannounce": "発表を続けます。"
+      "continuation": "まの体操より先に背伸びをしましょう。",
+      "join": "あたま"
     }
   ],
   "result": [

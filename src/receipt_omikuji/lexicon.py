@@ -40,15 +40,12 @@ class Dodge:
     prefix: str
     continuation: str
     join: str
-    lead: str
-    reannounce: str
 
 
 @dataclass(frozen=True)
 class Lexicon:
     version: int
-    opening: tuple[str, ...]
-    final_announce: tuple[str, ...]
+    announce: tuple[str, ...]
     dodge: tuple[Dodge, ...]
     result: tuple[str, ...]
     dots: tuple[str, ...]
@@ -78,14 +75,7 @@ class Lexicon:
             dodge = Dodge(
                 *(
                     _text(entry.get(key))
-                    for key in (
-                        "id",
-                        "prefix",
-                        "continuation",
-                        "join",
-                        "lead",
-                        "reannounce",
-                    )
+                    for key in ("id", "prefix", "continuation", "join")
                 )
             )
             if (
@@ -96,28 +86,17 @@ class Lexicon:
             ):
                 raise ValueError("肩透かしの接続が不正です: " + dodge.id)
             _sentence(dodge.prefix + dodge.continuation)
-            _sentence(dodge.lead)
-            _sentence(dodge.reannounce)
             ids.add(dodge.id)
             dodges.append(dodge)
         lexicon = cls(
             version,
-            tuple(_sentence(text) for text in _texts(data.get("opening"))),
-            tuple(_sentence(text) for text in _texts(data.get("final_announce"))),
+            tuple(_sentence(text) for text in _texts(data.get("announce"))),
             tuple(dodges),
             _texts(data.get("result")),
             _texts(data.get("dots")),
         )
-        speeches = list(lexicon.opening + lexicon.final_announce)
-        speeches.extend(
-            text
-            for dodge in dodges
-            for text in (
-                dodge.lead,
-                dodge.prefix + dodge.continuation,
-                dodge.reannounce,
-            )
-        )
+        speeches = list(lexicon.announce)
+        speeches.extend(dodge.prefix + dodge.continuation for dodge in dodges)
         for speech in speeches:
             # 「大吉から大凶まで」は範囲の予告。
             # 運勢名の有無ではなく、冒頭で結果を言い切る文を拒否する。
@@ -135,49 +114,42 @@ class SpeechGraph:
     def __init__(self, lexicon: Lexicon) -> None:
         self.lexicon = lexicon
         self.texts: dict[str, str] = {}
-        openings = tuple(
-            "opening:" + str(index) for index in range(len(lexicon.opening))
+        announcements = tuple(
+            "announce:" + str(index) for index in range(len(lexicon.announce))
         )
-        finals = tuple(
-            "final_announce:" + str(index)
-            for index in range(len(lexicon.final_announce))
+        prefixes = tuple(
+            dict.fromkeys(
+                [dodge.prefix for dodge in lexicon.dodge]
+                + [result[0] for result in lexicon.result]
+            )
         )
         self.edges: dict[str, tuple[str, ...]] = {
-            "start": openings,
-            "gate": finals + tuple("lead:" + dodge.id for dodge in lexicon.dodge),
+            "start": ("announce",),
+            "announce": announcements,
+            "gate": tuple("prefix:" + prefix for prefix in prefixes),
             "result": (),
         }
-        for node, text in zip(openings, lexicon.opening):
+        for node, text in zip(announcements, lexicon.announce):
             self.texts[node] = text
             self.edges[node] = ("gate",)
-        for node, text in zip(finals, lexicon.final_announce):
-            self.texts[node] = text
+        for prefix in prefixes:
+            node = "prefix:" + prefix
+            self.texts[node] = prefix
             self.edges[node] = tuple(
-                "final_prefix:" + result for result in lexicon.result
+                "dodge:" + dodge.id for dodge in lexicon.dodge if dodge.prefix == prefix
+            ) + tuple(
+                "confirmed:" + result
+                for result in lexicon.result
+                if result[0] == prefix
             )
         for result in lexicon.result:
-            prefix_id, result_id = "final_prefix:" + result, "confirmed:" + result
-            self.texts[prefix_id] = result[0]
+            result_id = "confirmed:" + result
             self.texts[result_id] = result[1:] + "！\n【確定】今日の運勢：" + result
-            self.edges[prefix_id] = (result_id,)
             self.edges[result_id] = ("result",)
         for dodge in lexicon.dodge:
-            lead_id, prefix_id, dodge_id, again_id = (
-                kind + ":" + dodge.id
-                for kind in ("lead", "prefix", "dodge", "reannounce")
-            )
-            self.texts.update(
-                {
-                    lead_id: dodge.lead,
-                    prefix_id: dodge.prefix,
-                    dodge_id: dodge.continuation,
-                    again_id: dodge.reannounce,
-                }
-            )
-            self.edges[lead_id] = (prefix_id,)
-            self.edges[prefix_id] = (dodge_id,)
-            self.edges[dodge_id] = (again_id,)
-            self.edges[again_id] = ("gate",)
+            node = "dodge:" + dodge.id
+            self.texts[node] = dodge.continuation
+            self.edges[node] = ("announce",)
 
     def dot(self) -> str:
         output = ["digraph omikuji {", "  rankdir=LR;"]

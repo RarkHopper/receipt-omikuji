@@ -4,12 +4,9 @@ from typing import Literal, TypedDict, Unpack
 
 Layout = Literal["horizontal", "vertical"]
 PrintKind = Literal[
-    "opening",
-    "lead",
+    "announce",
     "prefix",
     "dodge",
-    "reannounce",
-    "final_announce",
     "final_prefix",
     "result",
 ]

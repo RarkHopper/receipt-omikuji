@@ -1,24 +1,34 @@
 {
-  "version": 6,
+  "version": 7,
   "announce": [
+    "あなたの運勢を占います。",
+    "お告げが届きました。",
+    "今日の運勢をお伝えします。",
+    "神様からのお言葉です。",
+    "運命のお告げです。",
+    "おみくじの時間です。",
+    "今日の運勢を見てみましょう。",
+    "神様にお尋ねします。",
+    "運勢を占ってみましょう。",
+    "あなたにお告げがあります。",
+    "本日のお告げです。",
+    "今日のおみくじをどうぞ。",
     "運勢を占います。",
     "お告げです。",
     "今日の運勢です。",
     "神様のお言葉です。",
-    "運命のお告げです。",
     "おみくじをどうぞ。",
     "占ってみましょう。",
     "神様に聞きます。",
     "占います。",
     "期待してますね？",
-    "本日のお告げです。",
     "気になりますね？"
   ],
   "dodge": [
     {
       "id": "daijoubu",
       "prefix": "大",
-      "continuation": "丈夫！期待した答えとは違いましたか？",
+      "continuation": "丈夫！",
       "join": "大丈夫"
     },
     {
@@ -564,7 +574,7 @@
     {
       "id": "daikichi_question",
       "prefix": "大",
-      "continuation": "吉を期待しましたね？その顔で分かります。",
+      "continuation": "吉を引いた日の夕飯は何にしますか？",
       "join": "大吉"
     },
     {
@@ -678,7 +688,7 @@
     {
       "id": "chuuto",
       "prefix": "中",
-      "continuation": "途半端な期待ですね。もっと堂々とどうぞ。",
+      "continuation": "途半端に残ったお菓子は誰が食べますか？",
       "join": "中途半端"
     },
     {
@@ -918,7 +928,7 @@
     {
       "id": "koyasumi",
       "prefix": "小",
-      "continuation": "休止です。そんなに急いでも運勢は変わりません。",
+      "continuation": "休止です、お茶にしましょう。",
       "join": "小休止"
     },
     {
@@ -1338,7 +1348,7 @@
     {
       "id": "kippou",
       "prefix": "吉",
-      "continuation": "報を待ってますね？そんなに都合よくいきますか？",
+      "continuation": "報より先にお菓子の配達が来ました。",
       "join": "吉報"
     },
     {
@@ -1752,7 +1762,7 @@
     {
       "id": "un_030",
       "prefix": "運",
-      "continuation": "任せにするなら、文句もほどほどにどうぞ。",
+      "continuation": "任せに選んだ定食が大盛りでした。",
       "join": "運任せ"
     },
     {
@@ -1818,19 +1828,19 @@
     {
       "id": "ataruka",
       "prefix": "あた",
-      "continuation": "ると思いましたか？これはあたりはずれではありません。",
+      "continuation": "るかどうか、まず天気予報で腕試しです。",
       "join": "あたる"
     },
     {
       "id": "atari_question",
       "prefix": "あた",
-      "continuation": "りだと思いました？早とちりですね。",
+      "continuation": "りのアイス棒は捨てずに持ち帰りましょう。",
       "join": "あたり"
     },
     {
       "id": "ataranai_tease",
       "prefix": "あた",
-      "continuation": "らないと困ります？ここまで読んでおいて？",
+      "continuation": "らない天気予報を信じて傘を忘れました。",
       "join": "あたらない"
     },
     {
@@ -1854,13 +1864,13 @@
     {
       "id": "ata_007",
       "prefix": "あた",
-      "continuation": "りまえですが、おみくじに当選番号はありません。",
+      "continuation": "りまえに寝られる夜がうれしいですね。",
       "join": "あたりまえ"
     },
     {
       "id": "ata_008",
       "prefix": "あた",
-      "continuation": "ふたしないで。期待した顔、見えてますよ。",
+      "continuation": "ふたする日はまずお茶を飲みましょう。",
       "join": "あたふた"
     },
     {
@@ -1872,37 +1882,37 @@
     {
       "id": "ata_010",
       "prefix": "あた",
-      "continuation": "らずとも遠からず。そういうことにしておきますか？",
+      "continuation": "らずとも遠からず、駅はあの辺です。",
       "join": "あたらず"
     },
     {
       "id": "ata_011",
       "prefix": "あた",
-      "continuation": "りを引くつもりでした？おみくじですよ。",
+      "continuation": "り一面、猫の毛だらけです。",
       "join": "あたり"
     },
     {
       "id": "ata_012",
       "prefix": "あた",
-      "continuation": "まの中では大吉でした？気が早いですね。",
+      "continuation": "まをひねる前に首を伸ばしましょう。",
       "join": "あたま"
     },
     {
       "id": "ata_013",
       "prefix": "あた",
-      "continuation": "たかい目で見てください。今のは冗談です。",
+      "continuation": "たかい布団からは出たくありません。",
       "join": "あたたかい"
     },
     {
       "id": "ata_014",
       "prefix": "あた",
-      "continuation": "らしい予想をどうぞ。さっきのは外れましたね。",
+      "continuation": "らしい傘を買うと晴れる日が続きます。",
       "join": "あたらしい"
     },
     {
       "id": "ata_015",
       "prefix": "あた",
-      "continuation": "りまえに大吉が出ると思ってます？",
+      "continuation": "りまえのように猫が席を取っています。",
       "join": "あたりまえ"
     },
     {
@@ -1914,25 +1924,25 @@
     {
       "id": "ata_017",
       "prefix": "あた",
-      "continuation": "ため直しますか、その期待。",
+      "continuation": "ため直す間につまみ食いしました。",
       "join": "あたため"
     },
     {
       "id": "ata_018",
       "prefix": "あた",
-      "continuation": "るも八卦、あたらぬも八卦。便利な言葉ですね。",
+      "continuation": "るのは宝くじより雨粒の方が多いです。",
       "join": "あたる"
     },
     {
       "id": "ata_019",
       "prefix": "あた",
-      "continuation": "りを探しても景品はありませんよ。",
+      "continuation": "りを見回すと猫も見回しています。",
       "join": "あたり"
     },
     {
       "id": "ata_020",
       "prefix": "あた",
-      "continuation": "まを冷やしましょう。もう当たった顔をしていますね。",
+      "continuation": "まを使うとお腹が空きます。",
       "join": "あたま"
     },
     {
@@ -1950,7 +1960,7 @@
     {
       "id": "ata_023",
       "prefix": "あた",
-      "continuation": "りまえですが、願っただけでは大吉になりません。",
+      "continuation": "りまえですが、おやつは別腹です。",
       "join": "あたりまえ"
     },
     {
@@ -1968,13 +1978,13 @@
     {
       "id": "ata_026",
       "prefix": "あた",
-      "continuation": "る保証はしません。期待はしていいですよ。",
+      "continuation": "る日差しを猫と分け合っています。",
       "join": "あたる"
     },
     {
       "id": "ata_027",
       "prefix": "あた",
-      "continuation": "り判定はありません。ゲームだと思いました？",
+      "continuation": "りに漂うパンの匂いを追いかけています。",
       "join": "あたり"
     },
     {
@@ -1998,7 +2008,7 @@
     {
       "id": "ata_031",
       "prefix": "あた",
-      "continuation": "りまえですが、待っても大吉は増えません。",
+      "continuation": "りまえの景色も散歩すると違って見えます。",
       "join": "あたりまえ"
     },
     {
@@ -2016,7 +2026,7 @@
     {
       "id": "ata_034",
       "prefix": "あた",
-      "continuation": "ると思った瞬間が、一番楽しかったでしょう？",
+      "continuation": "る風が気持ちよくて立ち止まりました。",
       "join": "あたる"
     },
     {
@@ -2174,6 +2184,162 @@
       "prefix": "あた",
       "continuation": "まの体操より先に背伸びをしましょう。",
       "join": "あたま"
+    },
+    {
+      "id": "daijoubu_surprise",
+      "prefix": "大",
+      "continuation": "丈夫！期待した答えとは違いましたか？",
+      "join": "大丈夫"
+    },
+    {
+      "id": "daikichi_expectation",
+      "prefix": "大",
+      "continuation": "吉を期待しましたね？その顔で分かります。",
+      "join": "大吉"
+    },
+    {
+      "id": "chuuto_expectation",
+      "prefix": "中",
+      "continuation": "途半端な期待ですね。もっと堂々とどうぞ。",
+      "join": "中途半端"
+    },
+    {
+      "id": "koyasumi_impatience",
+      "prefix": "小",
+      "continuation": "休止です。そんなに急いでも運勢は変わりません。",
+      "join": "小休止"
+    },
+    {
+      "id": "kippou_expectation",
+      "prefix": "吉",
+      "continuation": "報を待ってますね？そんなに都合よくいきますか？",
+      "join": "吉報"
+    },
+    {
+      "id": "un_complaint",
+      "prefix": "運",
+      "continuation": "任せにするなら、文句もほどほどにどうぞ。",
+      "join": "運任せ"
+    },
+    {
+      "id": "ataru_expectation",
+      "prefix": "あた",
+      "continuation": "ると思いましたか？これはあたりはずれではありません。",
+      "join": "あたる"
+    },
+    {
+      "id": "atari_haste",
+      "prefix": "あた",
+      "continuation": "りだと思いました？早とちりですね。",
+      "join": "あたり"
+    },
+    {
+      "id": "ataranai_worry",
+      "prefix": "あた",
+      "continuation": "らないと困ります？ここまで読んでおいて？",
+      "join": "あたらない"
+    },
+    {
+      "id": "atarimae_no_number",
+      "prefix": "あた",
+      "continuation": "りまえですが、おみくじに当選番号はありません。",
+      "join": "あたりまえ"
+    },
+    {
+      "id": "atafuta_expectation",
+      "prefix": "あた",
+      "continuation": "ふたしないで。期待した顔、見えてますよ。",
+      "join": "あたふた"
+    },
+    {
+      "id": "atarazu_convenience",
+      "prefix": "あた",
+      "continuation": "らずとも遠からず。そういうことにしておきますか？",
+      "join": "あたらず"
+    },
+    {
+      "id": "atari_ticket",
+      "prefix": "あた",
+      "continuation": "りを引くつもりでした？おみくじですよ。",
+      "join": "あたり"
+    },
+    {
+      "id": "atama_daikichi",
+      "prefix": "あた",
+      "continuation": "まの中では大吉でした？気が早いですね。",
+      "join": "あたま"
+    },
+    {
+      "id": "atatakai_joke",
+      "prefix": "あた",
+      "continuation": "たかい目で見てください。今のは冗談です。",
+      "join": "あたたかい"
+    },
+    {
+      "id": "atarashii_guess",
+      "prefix": "あた",
+      "continuation": "らしい予想をどうぞ。さっきのは外れましたね。",
+      "join": "あたらしい"
+    },
+    {
+      "id": "atarimae_daikichi",
+      "prefix": "あた",
+      "continuation": "りまえに大吉が出ると思ってます？",
+      "join": "あたりまえ"
+    },
+    {
+      "id": "atatame_expectation",
+      "prefix": "あた",
+      "continuation": "ため直しますか、その期待。",
+      "join": "あたため"
+    },
+    {
+      "id": "ataru_hakke",
+      "prefix": "あた",
+      "continuation": "るも八卦、あたらぬも八卦。便利な言葉ですね。",
+      "join": "あたる"
+    },
+    {
+      "id": "atari_prize",
+      "prefix": "あた",
+      "continuation": "りを探しても景品はありませんよ。",
+      "join": "あたり"
+    },
+    {
+      "id": "atama_cool",
+      "prefix": "あた",
+      "continuation": "まを冷やしましょう。もう当たった顔をしていますね。",
+      "join": "あたま"
+    },
+    {
+      "id": "atarimae_wish",
+      "prefix": "あた",
+      "continuation": "りまえですが、願っただけでは大吉になりません。",
+      "join": "あたりまえ"
+    },
+    {
+      "id": "ataru_guarantee",
+      "prefix": "あた",
+      "continuation": "る保証はしません。期待はしていいですよ。",
+      "join": "あたる"
+    },
+    {
+      "id": "atari_game",
+      "prefix": "あた",
+      "continuation": "り判定はありません。ゲームだと思いました？",
+      "join": "あたり"
+    },
+    {
+      "id": "atarimae_wait",
+      "prefix": "あた",
+      "continuation": "りまえですが、待っても大吉は増えません。",
+      "join": "あたりまえ"
+    },
+    {
+      "id": "ataru_moment",
+      "prefix": "あた",
+      "continuation": "ると思った瞬間が、一番楽しかったでしょう？",
+      "join": "あたる"
     }
   ],
   "result": [

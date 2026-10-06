@@ -9,11 +9,11 @@ setup:
 	uv sync --locked
 
 format:
-	uv run --locked ruff format src step/impl
+	uv run --locked ruff format src spec/impl
 
 lint:
-	uv run --locked ruff format --check src step/impl
-	uv run --locked ruff check src step/impl
+	uv run --locked ruff format --check src spec/impl
+	uv run --locked ruff check src spec/impl
 	uv run --locked mypy
 
 check: lint test

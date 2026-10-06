@@ -188,7 +188,7 @@ def generate(graph: SpeechGraph, setting: Setting) -> Plan:
         if vertical
         else tuple(events)
     )
-    return Plan(setting, result, output, lexicon.version, tuple(path), tuple(chosen))
+    return Plan(setting, result, output, tuple(path), tuple(chosen))
 
 
 def sample_plan(setting: Setting) -> Plan:
@@ -200,4 +200,4 @@ def sample_plan(setting: Setting) -> Plan:
         setting.character_ms,
         setting.tail_feed_lines,
     )
-    return Plan(setting, "あいうえお", events, 0, (), ())
+    return Plan(setting, "あいうえお", events, (), ())

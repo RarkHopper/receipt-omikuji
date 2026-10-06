@@ -1,5 +1,4 @@
 {
-  "version": 5,
   "announce": [
     "あなたの運勢を占います。",
     "お告げが届きました。",
@@ -12,7 +11,17 @@
     "運勢を占ってみましょう。",
     "あなたにお告げがあります。",
     "本日のお告げです。",
-    "今日のおみくじをどうぞ。"
+    "今日のおみくじをどうぞ。",
+    "運勢を占います。",
+    "お告げです。",
+    "今日の運勢です。",
+    "神様のお言葉です。",
+    "おみくじをどうぞ。",
+    "占ってみましょう。",
+    "神様に聞きます。",
+    "占います。",
+    "期待してますね？",
+    "気になりますね？"
   ],
   "dodge": [
     {
@@ -2174,6 +2183,162 @@
       "prefix": "あた",
       "continuation": "まの体操より先に背伸びをしましょう。",
       "join": "あたま"
+    },
+    {
+      "id": "daijoubu_surprise",
+      "prefix": "大",
+      "continuation": "丈夫！期待した答えとは違いましたか？",
+      "join": "大丈夫"
+    },
+    {
+      "id": "daikichi_expectation",
+      "prefix": "大",
+      "continuation": "吉を期待しましたね？その顔で分かります。",
+      "join": "大吉"
+    },
+    {
+      "id": "chuuto_expectation",
+      "prefix": "中",
+      "continuation": "途半端な期待ですね。もっと堂々とどうぞ。",
+      "join": "中途半端"
+    },
+    {
+      "id": "koyasumi_impatience",
+      "prefix": "小",
+      "continuation": "休止です。そんなに急いでも運勢は変わりません。",
+      "join": "小休止"
+    },
+    {
+      "id": "kippou_expectation",
+      "prefix": "吉",
+      "continuation": "報を待ってますね？そんなに都合よくいきますか？",
+      "join": "吉報"
+    },
+    {
+      "id": "un_complaint",
+      "prefix": "運",
+      "continuation": "任せにするなら、文句もほどほどにどうぞ。",
+      "join": "運任せ"
+    },
+    {
+      "id": "ataru_expectation",
+      "prefix": "あた",
+      "continuation": "ると思いましたか？これはあたりはずれではありません。",
+      "join": "あたる"
+    },
+    {
+      "id": "atari_haste",
+      "prefix": "あた",
+      "continuation": "りだと思いました？早とちりですね。",
+      "join": "あたり"
+    },
+    {
+      "id": "ataranai_worry",
+      "prefix": "あた",
+      "continuation": "らないと困ります？ここまで読んでおいて？",
+      "join": "あたらない"
+    },
+    {
+      "id": "atarimae_no_number",
+      "prefix": "あた",
+      "continuation": "りまえですが、おみくじに当選番号はありません。",
+      "join": "あたりまえ"
+    },
+    {
+      "id": "atafuta_expectation",
+      "prefix": "あた",
+      "continuation": "ふたしないで。期待した顔、見えてますよ。",
+      "join": "あたふた"
+    },
+    {
+      "id": "atarazu_convenience",
+      "prefix": "あた",
+      "continuation": "らずとも遠からず。そういうことにしておきますか？",
+      "join": "あたらず"
+    },
+    {
+      "id": "atari_ticket",
+      "prefix": "あた",
+      "continuation": "りを引くつもりでした？おみくじですよ。",
+      "join": "あたり"
+    },
+    {
+      "id": "atama_daikichi",
+      "prefix": "あた",
+      "continuation": "まの中では大吉でした？気が早いですね。",
+      "join": "あたま"
+    },
+    {
+      "id": "atatakai_joke",
+      "prefix": "あた",
+      "continuation": "たかい目で見てください。今のは冗談です。",
+      "join": "あたたかい"
+    },
+    {
+      "id": "atarashii_guess",
+      "prefix": "あた",
+      "continuation": "らしい予想をどうぞ。さっきのは外れましたね。",
+      "join": "あたらしい"
+    },
+    {
+      "id": "atarimae_daikichi",
+      "prefix": "あた",
+      "continuation": "りまえに大吉が出ると思ってます？",
+      "join": "あたりまえ"
+    },
+    {
+      "id": "atatame_expectation",
+      "prefix": "あた",
+      "continuation": "ため直しますか、その期待。",
+      "join": "あたため"
+    },
+    {
+      "id": "ataru_hakke",
+      "prefix": "あた",
+      "continuation": "るも八卦、あたらぬも八卦。便利な言葉ですね。",
+      "join": "あたる"
+    },
+    {
+      "id": "atari_prize",
+      "prefix": "あた",
+      "continuation": "りを探しても景品はありませんよ。",
+      "join": "あたり"
+    },
+    {
+      "id": "atama_cool",
+      "prefix": "あた",
+      "continuation": "まを冷やしましょう。もう当たった顔をしていますね。",
+      "join": "あたま"
+    },
+    {
+      "id": "atarimae_wish",
+      "prefix": "あた",
+      "continuation": "りまえですが、願っただけでは大吉になりません。",
+      "join": "あたりまえ"
+    },
+    {
+      "id": "ataru_guarantee",
+      "prefix": "あた",
+      "continuation": "る保証はしません。期待はしていいですよ。",
+      "join": "あたる"
+    },
+    {
+      "id": "atari_game",
+      "prefix": "あた",
+      "continuation": "り判定はありません。ゲームだと思いました？",
+      "join": "あたり"
+    },
+    {
+      "id": "atarimae_wait",
+      "prefix": "あた",
+      "continuation": "りまえですが、待っても大吉は増えません。",
+      "join": "あたりまえ"
+    },
+    {
+      "id": "ataru_moment",
+      "prefix": "あた",
+      "continuation": "ると思った瞬間が、一番楽しかったでしょう？",
+      "join": "あたる"
     }
   ],
   "result": [

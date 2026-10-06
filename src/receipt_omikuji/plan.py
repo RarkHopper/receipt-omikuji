@@ -209,7 +209,6 @@ class Plan:
     setting: Setting
     result: str
     events: tuple[Event, ...]
-    lexicon_version: int
     path: tuple[str, ...]
     dodge_ids: tuple[str, ...]
 
@@ -226,7 +225,6 @@ class Plan:
     def to_dict(self) -> dict[str, object]:
         return {
             "schema": 1,
-            "lexicon_version": self.lexicon_version,
             "settings": {
                 **asdict(self.setting),
                 "result": self.setting.result.value

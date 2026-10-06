@@ -44,7 +44,6 @@ class Dodge:
 
 @dataclass(frozen=True)
 class Lexicon:
-    version: int
     announce: tuple[str, ...]
     dodge: tuple[Dodge, ...]
     result: tuple[str, ...]
@@ -62,9 +61,6 @@ class Lexicon:
     @classmethod
     def from_dict(cls, value: object) -> "Lexicon":
         data = _mapping(value)
-        version = data.get("version")
-        if type(version) is not int:
-            raise ValueError("語彙のversionは整数にしてください")
         raw_dodge = data.get("dodge")
         if not isinstance(raw_dodge, list) or not raw_dodge:
             raise ValueError("肩透かしを登録してください")
@@ -89,7 +85,6 @@ class Lexicon:
             ids.add(dodge.id)
             dodges.append(dodge)
         lexicon = cls(
-            version,
             tuple(_sentence(text) for text in _texts(data.get("announce"))),
             tuple(dodges),
             _texts(data.get("result")),

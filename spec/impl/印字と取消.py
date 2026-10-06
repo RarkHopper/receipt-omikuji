@@ -106,7 +106,6 @@ def wire_plan(fail_render: bool = False) -> Plan:
                 "result", "result", "あ" if fail_render else "RESULT: DAIKICHI", 1, 0
             ),
         ),
-        0,
         (),
         (),
     )

@@ -1,0 +1,2196 @@
+{
+  "version": 5,
+  "announce": [
+    "あなたの運勢を占います。",
+    "お告げが届きました。",
+    "今日の運勢をお伝えします。",
+    "神様からのお言葉です。",
+    "運命のお告げです。",
+    "おみくじの時間です。",
+    "今日の運勢を見てみましょう。",
+    "神様にお尋ねします。",
+    "運勢を占ってみましょう。",
+    "あなたにお告げがあります。",
+    "本日のお告げです。",
+    "今日のおみくじをどうぞ。"
+  ],
+  "dodge": [
+    {
+      "id": "daijoubu",
+      "prefix": "大",
+      "continuation": "丈夫！",
+      "join": "大丈夫"
+    },
+    {
+      "id": "taisetsu",
+      "prefix": "大",
+      "continuation": "切なことは、だいたい寝ると思い出します。",
+      "join": "大切"
+    },
+    {
+      "id": "daikon",
+      "prefix": "大",
+      "continuation": "根はおでんに限ります。",
+      "join": "大根"
+    },
+    {
+      "id": "ooame",
+      "prefix": "大",
+      "continuation": "雨の日ほど傘を忘れますね。",
+      "join": "大雨"
+    },
+    {
+      "id": "daisouji",
+      "prefix": "大",
+      "continuation": "盛りにするか、まだ迷っています。",
+      "join": "大盛り"
+    },
+    {
+      "id": "daiichi",
+      "prefix": "大",
+      "continuation": "人になっても駄菓子は好きです。",
+      "join": "大人"
+    },
+    {
+      "id": "daikokai",
+      "prefix": "大",
+      "continuation": "掃除は引き出し一つで力尽きます。",
+      "join": "大掃除"
+    },
+    {
+      "id": "daimanten",
+      "prefix": "大",
+      "continuation": "仏も肩が凝るのでしょうか。",
+      "join": "大仏"
+    },
+    {
+      "id": "ooatari",
+      "prefix": "大",
+      "continuation": "福を一つ、余分に買いました。",
+      "join": "大福"
+    },
+    {
+      "id": "dai_010",
+      "prefix": "大",
+      "continuation": "好物は別腹です。",
+      "join": "大好物"
+    },
+    {
+      "id": "dai_011",
+      "prefix": "大",
+      "continuation": "の字で寝たい日もあります。",
+      "join": "大の字"
+    },
+    {
+      "id": "dai_012",
+      "prefix": "大",
+      "continuation": "声で笑うとお腹が空きます。",
+      "join": "大声"
+    },
+    {
+      "id": "dai_013",
+      "prefix": "大",
+      "continuation": "自然の中でも電波を探しています。",
+      "join": "大自然"
+    },
+    {
+      "id": "dai_014",
+      "prefix": "大",
+      "continuation": "目に見てください、おかわりしただけです。",
+      "join": "大目"
+    },
+    {
+      "id": "dai_015",
+      "prefix": "大",
+      "continuation": "豆は枝豆の未来です。",
+      "join": "大豆"
+    },
+    {
+      "id": "dai_016",
+      "prefix": "大",
+      "continuation": "事な用事ほど靴下が片方ありません。",
+      "join": "大事"
+    },
+    {
+      "id": "dai_017",
+      "prefix": "大",
+      "continuation": "急ぎの日に限って信号が赤です。",
+      "join": "大急ぎ"
+    },
+    {
+      "id": "dai_018",
+      "prefix": "大",
+      "continuation": "冒険の第一歩は玄関です。",
+      "join": "大冒険"
+    },
+    {
+      "id": "dai_019",
+      "prefix": "大",
+      "continuation": "判焼きは何と呼びますか？",
+      "join": "大判焼き"
+    },
+    {
+      "id": "dai_020",
+      "prefix": "大",
+      "continuation": "団円の前にトイレへどうぞ。",
+      "join": "大団円"
+    },
+    {
+      "id": "dai_021",
+      "prefix": "大",
+      "continuation": "回りしてパン屋に寄りました。",
+      "join": "大回り"
+    },
+    {
+      "id": "dai_022",
+      "prefix": "大",
+      "continuation": "忙しでもおやつの時間は守ります。",
+      "join": "大忙し"
+    },
+    {
+      "id": "dai_023",
+      "prefix": "大",
+      "continuation": "笑いした理由はもう忘れました。",
+      "join": "大笑い"
+    },
+    {
+      "id": "dai_024",
+      "prefix": "大",
+      "continuation": "晦日の予定は今年もこたつです。",
+      "join": "大晦日"
+    },
+    {
+      "id": "dai_025",
+      "prefix": "大",
+      "continuation": "皿の唐揚げを一人で守っています。",
+      "join": "大皿"
+    },
+    {
+      "id": "dai_026",
+      "prefix": "大",
+      "continuation": "行列の先が気になって並びました。",
+      "join": "大行列"
+    },
+    {
+      "id": "dai_027",
+      "prefix": "大",
+      "continuation": "雑把に切ったケーキが一番大きいです。",
+      "join": "大雑把"
+    },
+    {
+      "id": "dai_028",
+      "prefix": "大",
+      "continuation": "昔の話でも昨日のように話します。",
+      "join": "大昔"
+    },
+    {
+      "id": "dai_029",
+      "prefix": "大",
+      "continuation": "風呂敷を広げたら畳めなくなりました。",
+      "join": "大風呂敷"
+    },
+    {
+      "id": "dai_030",
+      "prefix": "大",
+      "continuation": "辞典より冷蔵庫をよく開きます。",
+      "join": "大辞典"
+    },
+    {
+      "id": "dai_031",
+      "prefix": "大",
+      "continuation": "穴を狙う前に靴下の穴を塞ぎます。",
+      "join": "大穴"
+    },
+    {
+      "id": "dai_032",
+      "prefix": "大",
+      "continuation": "舞台でもお腹は鳴ります。",
+      "join": "大舞台"
+    },
+    {
+      "id": "dai_033",
+      "prefix": "大",
+      "continuation": "人数になるとピザが足りません。",
+      "join": "大人数"
+    },
+    {
+      "id": "dai_034",
+      "prefix": "大",
+      "continuation": "荷物の半分は念のためです。",
+      "join": "大荷物"
+    },
+    {
+      "id": "dai_035",
+      "prefix": "大",
+      "continuation": "作を書く前に机を片付け始めました。",
+      "join": "大作"
+    },
+    {
+      "id": "dai_036",
+      "prefix": "大",
+      "continuation": "空を見上げたらくしゃみが出ました。",
+      "join": "大空"
+    },
+    {
+      "id": "dai_037",
+      "prefix": "大",
+      "continuation": "将、いつものをお願いします。",
+      "join": "大将"
+    },
+    {
+      "id": "dai_038",
+      "prefix": "大",
+      "continuation": "移動の途中でお土産が増えました。",
+      "join": "大移動"
+    },
+    {
+      "id": "dai_039",
+      "prefix": "大",
+      "continuation": "通りを渡ったら目的の店を通り過ぎました。",
+      "join": "大通り"
+    },
+    {
+      "id": "dai_040",
+      "prefix": "大",
+      "continuation": "雪の日の足跡は寄り道を隠せません。",
+      "join": "大雪"
+    },
+    {
+      "id": "dai_041",
+      "prefix": "大",
+      "continuation": "好きな曲ほど歌詞がうろ覚えです。",
+      "join": "大好き"
+    },
+    {
+      "id": "dai_042",
+      "prefix": "大",
+      "continuation": "成功のご褒美は昼寝にしましょう。",
+      "join": "大成功"
+    },
+    {
+      "id": "dai_043",
+      "prefix": "大",
+      "continuation": "騒ぎの原因は小さな虫でした。",
+      "join": "大騒ぎ"
+    },
+    {
+      "id": "dai_044",
+      "prefix": "大",
+      "continuation": "輪の花より団子に目が行きます。",
+      "join": "大輪"
+    },
+    {
+      "id": "dai_045",
+      "prefix": "大",
+      "continuation": "船に乗ったつもりが酔いました。",
+      "join": "大船"
+    },
+    {
+      "id": "dai_046",
+      "prefix": "大",
+      "continuation": "半の心配は、お茶の後にしましょう。",
+      "join": "大半"
+    },
+    {
+      "id": "dai_047",
+      "prefix": "大",
+      "continuation": "泣きした後は水を飲みましょう。",
+      "join": "大泣き"
+    },
+    {
+      "id": "dai_048",
+      "prefix": "大",
+      "continuation": "食いの動画を見てお腹が空きました。",
+      "join": "大食い"
+    },
+    {
+      "id": "dai_049",
+      "prefix": "大",
+      "continuation": "発見です、ポケットに飴がありました。",
+      "join": "大発見"
+    },
+    {
+      "id": "dai_050",
+      "prefix": "大",
+      "continuation": "都会でも迷子になるのは得意です。",
+      "join": "大都会"
+    },
+    {
+      "id": "dai_051",
+      "prefix": "大",
+      "continuation": "満足のはずがデザートを頼みました。",
+      "join": "大満足"
+    },
+    {
+      "id": "dai_052",
+      "prefix": "大",
+      "continuation": "歓迎します、お菓子もあります。",
+      "join": "大歓迎"
+    },
+    {
+      "id": "dai_053",
+      "prefix": "大",
+      "continuation": "浴場ではつい声が響きます。",
+      "join": "大浴場"
+    },
+    {
+      "id": "dai_054",
+      "prefix": "大",
+      "continuation": "前提として、まずご飯を食べましょう。",
+      "join": "大前提"
+    },
+    {
+      "id": "dai_055",
+      "prefix": "大",
+      "continuation": "差で勝っても洗い物は残ります。",
+      "join": "大差"
+    },
+    {
+      "id": "dai_056",
+      "prefix": "大",
+      "continuation": "逆転より先に充電が切れました。",
+      "join": "大逆転"
+    },
+    {
+      "id": "dai_057",
+      "prefix": "大",
+      "continuation": "観覧車の頂上でくしゃみを我慢しました。",
+      "join": "大観覧車"
+    },
+    {
+      "id": "dai_058",
+      "prefix": "大",
+      "continuation": "きな夢と小さな財布があります。",
+      "join": "大きな"
+    },
+    {
+      "id": "dai_059",
+      "prefix": "大",
+      "continuation": "きく伸びをしてから考えましょう。",
+      "join": "大きく"
+    },
+    {
+      "id": "dai_060",
+      "prefix": "大",
+      "continuation": "きめの服は食後に頼もしいです。",
+      "join": "大きめ"
+    },
+    {
+      "id": "dai_061",
+      "prefix": "大",
+      "continuation": "きさよりも、おかわりできるかが大事です。",
+      "join": "大きさ"
+    },
+    {
+      "id": "dai_062",
+      "prefix": "大",
+      "continuation": "広間の隅が一番落ち着きます。",
+      "join": "大広間"
+    },
+    {
+      "id": "dai_063",
+      "prefix": "大",
+      "continuation": "役を任されると急に喉が渇きます。",
+      "join": "大役"
+    },
+    {
+      "id": "dai_064",
+      "prefix": "大",
+      "continuation": "根おろしを作ると腕も鍛えられます。",
+      "join": "大根おろし"
+    },
+    {
+      "id": "dai_065",
+      "prefix": "大",
+      "continuation": "器晩成なので、今日は寝ます。",
+      "join": "大器晩成"
+    },
+    {
+      "id": "dai_066",
+      "prefix": "大",
+      "continuation": "物を狙って釣れたのは長靴でした。",
+      "join": "大物"
+    },
+    {
+      "id": "dai_067",
+      "prefix": "大",
+      "continuation": "風に洗濯物の行き先を任せました。",
+      "join": "大風"
+    },
+    {
+      "id": "dai_068",
+      "prefix": "大",
+      "continuation": "海原より家のお風呂が落ち着きます。",
+      "join": "大海原"
+    },
+    {
+      "id": "dai_069",
+      "prefix": "大",
+      "continuation": "赤字の原因は限定のお菓子でした。",
+      "join": "大赤字"
+    },
+    {
+      "id": "dai_070",
+      "prefix": "大",
+      "continuation": "盤振る舞いした翌日はおにぎりです。",
+      "join": "大盤振る舞い"
+    },
+    {
+      "id": "dai_071",
+      "prefix": "大",
+      "continuation": "衆食堂の定食が恋しくなりました。",
+      "join": "大衆食堂"
+    },
+    {
+      "id": "dai_072",
+      "prefix": "大",
+      "continuation": "先輩もコピー機の前で迷っています。",
+      "join": "大先輩"
+    },
+    {
+      "id": "dai_073",
+      "prefix": "大",
+      "continuation": "抵のことは明日の自分に期待します。",
+      "join": "大抵"
+    },
+    {
+      "id": "dai_074",
+      "prefix": "大",
+      "continuation": "手柄です、なくした鍵が見つかりました。",
+      "join": "大手柄"
+    },
+    {
+      "id": "dai_075",
+      "prefix": "大",
+      "continuation": "人気の店より空いている店に惹かれます。",
+      "join": "大人気"
+    },
+    {
+      "id": "dai_076",
+      "prefix": "大",
+      "continuation": "げさに喜ぶとケーキがもう一切れ出ます。",
+      "join": "大げさ"
+    },
+    {
+      "id": "dai_077",
+      "prefix": "大",
+      "continuation": "工さんの鉛筆は耳にも収まります。",
+      "join": "大工"
+    },
+    {
+      "id": "dai_078",
+      "prefix": "大",
+      "continuation": "口を開けてもハンバーガーが入りません。",
+      "join": "大口"
+    },
+    {
+      "id": "dai_079",
+      "prefix": "大",
+      "continuation": "間違いでした、今日は火曜日です。",
+      "join": "大間違い"
+    },
+    {
+      "id": "dai_080",
+      "prefix": "大",
+      "continuation": "売り出しの日に財布を忘れました。",
+      "join": "大売り出し"
+    },
+    {
+      "id": "dai_081",
+      "prefix": "大",
+      "continuation": "相撲を見ながらつい踏ん張ってしまいます。",
+      "join": "大相撲"
+    },
+    {
+      "id": "dai_082",
+      "prefix": "大",
+      "continuation": "根役者でもおでん屋なら活躍できますか？",
+      "join": "大根役者"
+    },
+    {
+      "id": "dai_083",
+      "prefix": "大",
+      "continuation": "陸を渡る前に横断歩道を渡りましょう。",
+      "join": "大陸"
+    },
+    {
+      "id": "dai_084",
+      "prefix": "大",
+      "continuation": "興奮した猫がカーテンを登っています。",
+      "join": "大興奮"
+    },
+    {
+      "id": "dai_085",
+      "prefix": "大",
+      "continuation": "容量のお菓子ほどすぐなくなります。",
+      "join": "大容量"
+    },
+    {
+      "id": "dai_086",
+      "prefix": "大",
+      "continuation": "富豪になってもポイントを貯めたいです。",
+      "join": "大富豪"
+    },
+    {
+      "id": "dai_087",
+      "prefix": "大",
+      "continuation": "往生するまで好きなものを食べたいですね。",
+      "join": "大往生"
+    },
+    {
+      "id": "dai_088",
+      "prefix": "大",
+      "continuation": "晦日の掃除は来年への持ち越しです。",
+      "join": "大晦日の"
+    },
+    {
+      "id": "dai_089",
+      "prefix": "大",
+      "continuation": "当たりのアイス棒を捨てそうになりました。",
+      "join": "大当たり"
+    },
+    {
+      "id": "dai_090",
+      "prefix": "大",
+      "continuation": "騒動の末、リモコンはソファの下でした。",
+      "join": "大騒動"
+    },
+    {
+      "id": "daikichi_range",
+      "prefix": "大",
+      "continuation": "吉から大凶までの間で出ます。",
+      "join": "大吉から大凶まで"
+    },
+    {
+      "id": "daikichi_question",
+      "prefix": "大",
+      "continuation": "吉を引いた日の夕飯は何にしますか？",
+      "join": "大吉"
+    },
+    {
+      "id": "daikichi_003",
+      "prefix": "大",
+      "continuation": "吉でも早起きには目覚ましが要ります。",
+      "join": "大吉"
+    },
+    {
+      "id": "daikichi_004",
+      "prefix": "大",
+      "continuation": "吉を引く練習なら何度でもできます。",
+      "join": "大吉"
+    },
+    {
+      "id": "daikichi_005",
+      "prefix": "大",
+      "continuation": "吉を引いても洗濯物は溜まります。",
+      "join": "大吉"
+    },
+    {
+      "id": "daikichi_006",
+      "prefix": "大",
+      "continuation": "吉を待つ間にお茶が冷めました。",
+      "join": "大吉"
+    },
+    {
+      "id": "daikichi_007",
+      "prefix": "大",
+      "continuation": "吉を引いたら猫にも自慢したくなります。",
+      "join": "大吉"
+    },
+    {
+      "id": "daikichi_008",
+      "prefix": "大",
+      "continuation": "吉を引いても宿題は消えません。",
+      "join": "大吉"
+    },
+    {
+      "id": "daikichi_009",
+      "prefix": "大",
+      "continuation": "吉の翌日もご飯はおいしいです。",
+      "join": "大吉"
+    },
+    {
+      "id": "daikichi_010",
+      "prefix": "大",
+      "continuation": "吉を目指す前に深呼吸しましょう。",
+      "join": "大吉"
+    },
+    {
+      "id": "daikichi_011",
+      "prefix": "大",
+      "continuation": "吉を引いたら誰に見せますか？",
+      "join": "大吉"
+    },
+    {
+      "id": "daikichi_012",
+      "prefix": "大",
+      "continuation": "吉を引いても電車は待ってくれません。",
+      "join": "大吉"
+    },
+    {
+      "id": "daikichi_013",
+      "prefix": "大",
+      "continuation": "吉の夢を見たので二度寝しました。",
+      "join": "大吉"
+    },
+    {
+      "id": "daikichi_014",
+      "prefix": "大",
+      "continuation": "吉を探すより眼鏡を探すのが先でした。",
+      "join": "大吉"
+    },
+    {
+      "id": "daikichi_015",
+      "prefix": "大",
+      "continuation": "吉の隣で猫があくびをしています。",
+      "join": "大吉"
+    },
+    {
+      "id": "daikichi_016",
+      "prefix": "大",
+      "continuation": "吉でも雨の日には傘が要ります。",
+      "join": "大吉"
+    },
+    {
+      "id": "daikichi_017",
+      "prefix": "大",
+      "continuation": "吉なら唐揚げを一つ増やしましょうか？",
+      "join": "大吉"
+    },
+    {
+      "id": "daikichi_018",
+      "prefix": "大",
+      "continuation": "吉を願う声よりお腹の音が響きました。",
+      "join": "大吉"
+    },
+    {
+      "id": "daikichi_019",
+      "prefix": "大",
+      "continuation": "吉の予感がしますが、鼻もむずむずします。",
+      "join": "大吉"
+    },
+    {
+      "id": "daikichi_020",
+      "prefix": "大",
+      "continuation": "吉を引く手にもハンドクリームをどうぞ。",
+      "join": "大吉"
+    },
+    {
+      "id": "chuuto",
+      "prefix": "中",
+      "continuation": "途半端に残ったお菓子は誰が食べますか？",
+      "join": "中途半端"
+    },
+    {
+      "id": "chuukei",
+      "prefix": "中",
+      "continuation": "継先からは猫の寝顔をお届けします。",
+      "join": "中継"
+    },
+    {
+      "id": "chuukan",
+      "prefix": "中",
+      "continuation": "間地点でおやつ休憩にしましょう。",
+      "join": "中間"
+    },
+    {
+      "id": "chuudoku",
+      "prefix": "中",
+      "continuation": "毒になるほど好きな曲をまた流します。",
+      "join": "中毒"
+    },
+    {
+      "id": "chu_005",
+      "prefix": "中",
+      "continuation": "華にするか、カレーにするか迷っています。",
+      "join": "中華"
+    },
+    {
+      "id": "chu_006",
+      "prefix": "中",
+      "continuation": "身は秘密ですが、たぶんお菓子です。",
+      "join": "中身"
+    },
+    {
+      "id": "chu_007",
+      "prefix": "中",
+      "continuation": "庭の猫には予定がありません。",
+      "join": "中庭"
+    },
+    {
+      "id": "chu_008",
+      "prefix": "中",
+      "continuation": "腰のまま探し物をすると腰に来ます。",
+      "join": "中腰"
+    },
+    {
+      "id": "chu_009",
+      "prefix": "中",
+      "continuation": "火のつもりが強火でした。",
+      "join": "中火"
+    },
+    {
+      "id": "chu_010",
+      "prefix": "中",
+      "continuation": "古の本から昔のレシートが出てきました。",
+      "join": "中古"
+    },
+    {
+      "id": "chu_011",
+      "prefix": "中",
+      "continuation": "指だけ手袋の先が余ります。",
+      "join": "中指"
+    },
+    {
+      "id": "chu_012",
+      "prefix": "中",
+      "continuation": "休みにはお茶をどうぞ。",
+      "join": "中休み"
+    },
+    {
+      "id": "chu_013",
+      "prefix": "中",
+      "continuation": "華まんを二つ買うか迷う季節です。",
+      "join": "中華まん"
+    },
+    {
+      "id": "chu_014",
+      "prefix": "中",
+      "continuation": "学生の頃の髪型は秘密です。",
+      "join": "中学生"
+    },
+    {
+      "id": "chu_015",
+      "prefix": "中",
+      "continuation": "敷きを替えたら靴が少し好きになりました。",
+      "join": "中敷き"
+    },
+    {
+      "id": "chu_016",
+      "prefix": "中",
+      "continuation": "心から切ったはずのケーキが不揃いです。",
+      "join": "中心"
+    },
+    {
+      "id": "chu_017",
+      "prefix": "中",
+      "continuation": "辛でも水のおかわりが止まりません。",
+      "join": "中辛"
+    },
+    {
+      "id": "chu_018",
+      "prefix": "中",
+      "continuation": "立の立場から両方のケーキを食べます。",
+      "join": "中立"
+    },
+    {
+      "id": "chu_019",
+      "prefix": "中",
+      "continuation": "止になった予定の代わりに昼寝をします。",
+      "join": "中止"
+    },
+    {
+      "id": "chu_020",
+      "prefix": "中",
+      "continuation": "旬になると月末がもう気になります。",
+      "join": "中旬"
+    },
+    {
+      "id": "chu_021",
+      "prefix": "中",
+      "continuation": "華鍋を振ったら具が一つ逃げました。",
+      "join": "中華鍋"
+    },
+    {
+      "id": "chu_022",
+      "prefix": "中",
+      "continuation": "耳炎になったら耳鼻科へ行きましょう。",
+      "join": "中耳炎"
+    },
+    {
+      "id": "chu_023",
+      "prefix": "中",
+      "continuation": "盤で犯人が分かっても黙っていましょう。",
+      "join": "中盤"
+    },
+    {
+      "id": "chu_024",
+      "prefix": "中",
+      "continuation": "秋の名月より団子が気になります。",
+      "join": "中秋"
+    },
+    {
+      "id": "chu_025",
+      "prefix": "中",
+      "continuation": "型のスーツケースにもお土産を詰めすぎます。",
+      "join": "中型"
+    },
+    {
+      "id": "chu_026",
+      "prefix": "中",
+      "continuation": "継ぎ投手にもお茶休憩をあげたいです。",
+      "join": "中継ぎ"
+    },
+    {
+      "id": "chu_027",
+      "prefix": "中",
+      "continuation": "程まで読んで、しおりをなくしました。",
+      "join": "中程"
+    },
+    {
+      "id": "chu_028",
+      "prefix": "中",
+      "continuation": "の人もそろそろお腹が空いています。",
+      "join": "中の"
+    },
+    {
+      "id": "chu_029",
+      "prefix": "中",
+      "continuation": "でも一番好きなのは端のカリカリです。",
+      "join": "中でも"
+    },
+    {
+      "id": "chu_030",
+      "prefix": "中",
+      "continuation": "に入ると、出たくなくなるのがこたつです。",
+      "join": "中に"
+    },
+    {
+      "id": "chu_031",
+      "prefix": "中",
+      "continuation": "へどうぞ、猫が席を取っています。",
+      "join": "中へ"
+    },
+    {
+      "id": "chu_032",
+      "prefix": "中",
+      "continuation": "から出てきたのは去年の手袋でした。",
+      "join": "中から"
+    },
+    {
+      "id": "chu_033",
+      "prefix": "中",
+      "continuation": "まで火が通るのを待ちましょう。",
+      "join": "中まで"
+    },
+    {
+      "id": "chu_034",
+      "prefix": "中",
+      "continuation": "抜けしてプリンを買いに行ったら売り切れでした。",
+      "join": "中抜け"
+    },
+    {
+      "id": "chu_035",
+      "prefix": "中",
+      "continuation": "道を行くつもりがパン屋に寄りました。",
+      "join": "中道"
+    },
+    {
+      "id": "chu_036",
+      "prefix": "中",
+      "continuation": "枢を担う人にもおやつが要ります。",
+      "join": "中枢"
+    },
+    {
+      "id": "chu_037",
+      "prefix": "中",
+      "continuation": "点を打つ場所で少し迷っています。",
+      "join": "中点"
+    },
+    {
+      "id": "chu_038",
+      "prefix": "中",
+      "continuation": "年になっても給食の話で盛り上がります。",
+      "join": "中年"
+    },
+    {
+      "id": "chu_039",
+      "prefix": "中",
+      "continuation": "華そばのスープをどこまで飲むか悩みます。",
+      "join": "中華そば"
+    },
+    {
+      "id": "chu_040",
+      "prefix": "中",
+      "continuation": "二階の席は少し秘密基地に似ています。",
+      "join": "中二階"
+    },
+    {
+      "id": "koyasumi",
+      "prefix": "小",
+      "continuation": "休止です、お茶にしましょう。",
+      "join": "小休止"
+    },
+    {
+      "id": "kogoe",
+      "prefix": "小",
+      "continuation": "声で話してもお腹の音は隠せません。",
+      "join": "小声"
+    },
+    {
+      "id": "kobara",
+      "prefix": "小",
+      "continuation": "腹が空いてきましたね。",
+      "join": "小腹"
+    },
+    {
+      "id": "koneta",
+      "prefix": "小",
+      "continuation": "ネタを思いつく頃には会話が終わっています。",
+      "join": "小ネタ"
+    },
+    {
+      "id": "sho_005",
+      "prefix": "小",
+      "continuation": "鳥にも朝寝坊の日はありますか？",
+      "join": "小鳥"
+    },
+    {
+      "id": "sho_006",
+      "prefix": "小",
+      "continuation": "銭を探すとレシートばかり出てきます。",
+      "join": "小銭"
+    },
+    {
+      "id": "sho_007",
+      "prefix": "小",
+      "continuation": "雨なら大丈夫、と歩いたら本降りになりました。",
+      "join": "小雨"
+    },
+    {
+      "id": "sho_008",
+      "prefix": "小",
+      "continuation": "豆は煮るまでが長いですね。",
+      "join": "小豆"
+    },
+    {
+      "id": "sho_009",
+      "prefix": "小",
+      "continuation": "道を選んだら猫に会えました。",
+      "join": "小道"
+    },
+    {
+      "id": "sho_010",
+      "prefix": "小",
+      "continuation": "麦粉を出すと台所が少し白くなります。",
+      "join": "小麦粉"
+    },
+    {
+      "id": "sho_011",
+      "prefix": "小",
+      "continuation": "学生の頃の宝物は今どこでしょう？",
+      "join": "小学生"
+    },
+    {
+      "id": "sho_012",
+      "prefix": "小",
+      "continuation": "説の続きが気になって夜更かししました。",
+      "join": "小説"
+    },
+    {
+      "id": "sho_013",
+      "prefix": "小",
+      "continuation": "皿に取ると何度もおかわりしてしまいます。",
+      "join": "小皿"
+    },
+    {
+      "id": "sho_014",
+      "prefix": "小",
+      "continuation": "包の中身より箱が猫に人気です。",
+      "join": "小包"
+    },
+    {
+      "id": "sho_015",
+      "prefix": "小",
+      "continuation": "春日和には洗濯も昼寝も捗ります。",
+      "join": "小春日和"
+    },
+    {
+      "id": "sho_016",
+      "prefix": "小",
+      "continuation": "石が靴に入ると世界がそこに集まります。",
+      "join": "小石"
+    },
+    {
+      "id": "sho_017",
+      "prefix": "小",
+      "continuation": "魚のおやつも食べ始めると止まりません。",
+      "join": "小魚"
+    },
+    {
+      "id": "sho_018",
+      "prefix": "小",
+      "continuation": "指をぶつけた痛みは声になります。",
+      "join": "小指"
+    },
+    {
+      "id": "sho_019",
+      "prefix": "小",
+      "continuation": "切手よりお菓子の引換券が欲しいです。",
+      "join": "小切手"
+    },
+    {
+      "id": "sho_020",
+      "prefix": "小",
+      "continuation": "心者なので最後の一個を遠慮します。",
+      "join": "小心者"
+    },
+    {
+      "id": "sho_021",
+      "prefix": "小",
+      "continuation": "松菜を買いに行ってお菓子も買いました。",
+      "join": "小松菜"
+    },
+    {
+      "id": "sho_022",
+      "prefix": "小",
+      "continuation": "鉢が増えると洗い物も増えます。",
+      "join": "小鉢"
+    },
+    {
+      "id": "sho_023",
+      "prefix": "小",
+      "continuation": "判がなくても猫は気にしません。",
+      "join": "小判"
+    },
+    {
+      "id": "sho_024",
+      "prefix": "小",
+      "continuation": "劇場の最前列ではくしゃみも緊張します。",
+      "join": "小劇場"
+    },
+    {
+      "id": "sho_025",
+      "prefix": "小",
+      "continuation": "旅行のつもりがお土産で大荷物です。",
+      "join": "小旅行"
+    },
+    {
+      "id": "sho_026",
+      "prefix": "小",
+      "continuation": "脇に抱えたパンからいい匂いがします。",
+      "join": "小脇"
+    },
+    {
+      "id": "sho_027",
+      "prefix": "小",
+      "continuation": "競り合いの原因は最後の唐揚げでした。",
+      "join": "小競り合い"
+    },
+    {
+      "id": "sho_028",
+      "prefix": "小",
+      "continuation": "刻みに眠る猫を見ていたら眠くなりました。",
+      "join": "小刻み"
+    },
+    {
+      "id": "sho_029",
+      "prefix": "小",
+      "continuation": "まめに休むのも得意技です。",
+      "join": "小まめ"
+    },
+    {
+      "id": "sho_030",
+      "prefix": "小",
+      "continuation": "ぶりなケーキなら二つ食べられますね。",
+      "join": "小ぶり"
+    },
+    {
+      "id": "sho_031",
+      "prefix": "小",
+      "continuation": "さな幸せはポケットの飴でした。",
+      "join": "小さな"
+    },
+    {
+      "id": "sho_032",
+      "prefix": "小",
+      "continuation": "さく切れば、たくさん食べた気がします。",
+      "join": "小さく"
+    },
+    {
+      "id": "sho_033",
+      "prefix": "小",
+      "continuation": "さめの傘では肩が濡れます。",
+      "join": "小さめ"
+    },
+    {
+      "id": "sho_034",
+      "prefix": "小",
+      "continuation": "さじ一杯のはずが山盛りでした。",
+      "join": "小さじ"
+    },
+    {
+      "id": "sho_035",
+      "prefix": "小",
+      "continuation": "遣い帳をつける前にお菓子を買いました。",
+      "join": "小遣い"
+    },
+    {
+      "id": "sho_036",
+      "prefix": "小",
+      "continuation": "数点の位置で値段が大きく変わります。",
+      "join": "小数点"
+    },
+    {
+      "id": "sho_037",
+      "prefix": "小",
+      "continuation": "型の扇風機を猫に取られました。",
+      "join": "小型"
+    },
+    {
+      "id": "sho_038",
+      "prefix": "小",
+      "continuation": "気味よい包丁の音にお腹が鳴ります。",
+      "join": "小気味よい"
+    },
+    {
+      "id": "sho_039",
+      "prefix": "小",
+      "continuation": "料理屋の暖簾が気になる夜です。",
+      "join": "小料理屋"
+    },
+    {
+      "id": "sho_040",
+      "prefix": "小",
+      "continuation": "躍りしたいけれど隣の人が近いです。",
+      "join": "小躍り"
+    },
+    {
+      "id": "suenagaku",
+      "prefix": "末",
+      "continuation": "永くお幸せに。",
+      "join": "末永く"
+    },
+    {
+      "id": "mattan",
+      "prefix": "末",
+      "continuation": "端の冷えには暖かい靴下をどうぞ。",
+      "join": "末端"
+    },
+    {
+      "id": "suehiro",
+      "prefix": "末",
+      "continuation": "広がりの扇子で涼みましょう。",
+      "join": "末広がり"
+    },
+    {
+      "id": "sue_004",
+      "prefix": "末",
+      "continuation": "っ子のつまみ食いが見つかりました。",
+      "join": "末っ子"
+    },
+    {
+      "id": "sue_005",
+      "prefix": "末",
+      "continuation": "尾まで読んでからお返事しましょう。",
+      "join": "末尾"
+    },
+    {
+      "id": "sue_006",
+      "prefix": "末",
+      "continuation": "日の締め切りを来月と間違えました。",
+      "join": "末日"
+    },
+    {
+      "id": "sue_007",
+      "prefix": "末",
+      "continuation": "席でもお菓子には手が届きます。",
+      "join": "末席"
+    },
+    {
+      "id": "sue_008",
+      "prefix": "末",
+      "continuation": "路が気になって最終回だけ見ました。",
+      "join": "末路"
+    },
+    {
+      "id": "sue_009",
+      "prefix": "末",
+      "continuation": "梢まで温まるお風呂が恋しいです。",
+      "join": "末梢"
+    },
+    {
+      "id": "sue_010",
+      "prefix": "末",
+      "continuation": "期の水より今のお茶を大事にしましょう。",
+      "join": "末期"
+    },
+    {
+      "id": "sue_011",
+      "prefix": "末",
+      "continuation": "裔にも先祖のくしゃみは似るのでしょうか。",
+      "join": "末裔"
+    },
+    {
+      "id": "sue_012",
+      "prefix": "末",
+      "continuation": "っ子に最後のプリンを譲りました。",
+      "join": "末っ子"
+    },
+    {
+      "id": "sue_013",
+      "prefix": "末",
+      "continuation": "永く続いてほしいのはおやつの時間です。",
+      "join": "末永く"
+    },
+    {
+      "id": "sue_014",
+      "prefix": "末",
+      "continuation": "広がりの扇子を開いたら、猫が逃げました。",
+      "join": "末広がり"
+    },
+    {
+      "id": "sue_015",
+      "prefix": "末",
+      "continuation": "尾に名前を書き忘れることがあります。",
+      "join": "末尾"
+    },
+    {
+      "id": "sue_016",
+      "prefix": "末",
+      "continuation": "日になると家賃を思い出します。",
+      "join": "末日"
+    },
+    {
+      "id": "sue_017",
+      "prefix": "末",
+      "continuation": "端の社員にもお土産をお願いします。",
+      "join": "末端"
+    },
+    {
+      "id": "sue_018",
+      "prefix": "末",
+      "continuation": "席に座ったつもりが猫の席でした。",
+      "join": "末席"
+    },
+    {
+      "id": "sue_019",
+      "prefix": "末",
+      "continuation": "っ子も今では家族で一番の早起きです。",
+      "join": "末っ子"
+    },
+    {
+      "id": "sue_020",
+      "prefix": "末",
+      "continuation": "永く使いたい靴に限って雨に降られます。",
+      "join": "末永く"
+    },
+    {
+      "id": "sue_021",
+      "prefix": "末",
+      "continuation": "広がりの扇子が鞄に入りません。",
+      "join": "末広がり"
+    },
+    {
+      "id": "sue_022",
+      "prefix": "末",
+      "continuation": "尾の一行が気になって寝られません。",
+      "join": "末尾"
+    },
+    {
+      "id": "sue_023",
+      "prefix": "末",
+      "continuation": "日まで使える券を冷蔵庫に貼りました。",
+      "join": "末日"
+    },
+    {
+      "id": "sue_024",
+      "prefix": "末",
+      "continuation": "端まで流れてきた噂は別の話でした。",
+      "join": "末端"
+    },
+    {
+      "id": "sue_025",
+      "prefix": "末",
+      "continuation": "席からなら全員の顔がよく見えます。",
+      "join": "末席"
+    },
+    {
+      "id": "sue_026",
+      "prefix": "末",
+      "continuation": "っ子だと思っていた猫がお兄ちゃんになります。",
+      "join": "末っ子"
+    },
+    {
+      "id": "sue_027",
+      "prefix": "末",
+      "continuation": "永く付き合える枕を探しています。",
+      "join": "末永く"
+    },
+    {
+      "id": "sue_028",
+      "prefix": "末",
+      "continuation": "広がりのお皿には餃子がよく並びます。",
+      "join": "末広がり"
+    },
+    {
+      "id": "sue_029",
+      "prefix": "末",
+      "continuation": "尾に追伸を足すと手紙が長くなります。",
+      "join": "末尾"
+    },
+    {
+      "id": "sue_030",
+      "prefix": "末",
+      "continuation": "日はカレンダーをめくる手が忙しいです。",
+      "join": "末日"
+    },
+    {
+      "id": "kippou",
+      "prefix": "吉",
+      "continuation": "報より先にお菓子の配達が来ました。",
+      "join": "吉報"
+    },
+    {
+      "id": "kichirei",
+      "prefix": "吉",
+      "continuation": "例にならって、まず乾杯しましょう。",
+      "join": "吉例"
+    },
+    {
+      "id": "kichi_003",
+      "prefix": "吉",
+      "continuation": "兆でしょうか、靴にてんとう虫がいます。",
+      "join": "吉兆"
+    },
+    {
+      "id": "kichi_004",
+      "prefix": "吉",
+      "continuation": "日を選ぶより起きられる日を選びます。",
+      "join": "吉日"
+    },
+    {
+      "id": "kichi_005",
+      "prefix": "吉",
+      "continuation": "祥寺で待ち合わせて道に迷いました。",
+      "join": "吉祥寺"
+    },
+    {
+      "id": "kichi_006",
+      "prefix": "吉",
+      "continuation": "野の桜を見ながらお弁当を食べたいです。",
+      "join": "吉野"
+    },
+    {
+      "id": "kichi_007",
+      "prefix": "吉",
+      "continuation": "備団子があれば犬とも仲良くなれますか？",
+      "join": "吉備団子"
+    },
+    {
+      "id": "kichi_008",
+      "prefix": "吉",
+      "continuation": "田さん、ハンカチを落としましたよ。",
+      "join": "吉田"
+    },
+    {
+      "id": "kichi_009",
+      "prefix": "吉",
+      "continuation": "報を聞いてお茶が一段とおいしいです。",
+      "join": "吉報"
+    },
+    {
+      "id": "kichi_010",
+      "prefix": "吉",
+      "continuation": "兆を探していたら四つ葉が見つかりました。",
+      "join": "吉兆"
+    },
+    {
+      "id": "kichi_011",
+      "prefix": "吉",
+      "continuation": "日だからといって寝坊は許されません。",
+      "join": "吉日"
+    },
+    {
+      "id": "kichi_012",
+      "prefix": "吉",
+      "continuation": "祥寺の駅前には誘惑が多いですね。",
+      "join": "吉祥寺"
+    },
+    {
+      "id": "kichi_013",
+      "prefix": "吉",
+      "continuation": "野家に寄ると夕飯の予定が変わります。",
+      "join": "吉野家"
+    },
+    {
+      "id": "kichi_014",
+      "prefix": "吉",
+      "continuation": "田さんのお土産はいつもおいしいです。",
+      "join": "吉田"
+    },
+    {
+      "id": "kichi_015",
+      "prefix": "吉",
+      "continuation": "例の餅つきは筋肉痛も連れてきます。",
+      "join": "吉例"
+    },
+    {
+      "id": "kichi_016",
+      "prefix": "吉",
+      "continuation": "報は猫にも伝えました。",
+      "join": "吉報"
+    },
+    {
+      "id": "kichi_017",
+      "prefix": "吉",
+      "continuation": "兆かどうかは猫に聞いてみましょう。",
+      "join": "吉兆"
+    },
+    {
+      "id": "kichi_018",
+      "prefix": "吉",
+      "continuation": "日には新しい靴を履きたくなります。",
+      "join": "吉日"
+    },
+    {
+      "id": "kichi_019",
+      "prefix": "吉",
+      "continuation": "野の春までに歩く練習をしましょう。",
+      "join": "吉野"
+    },
+    {
+      "id": "kichi_020",
+      "prefix": "吉",
+      "continuation": "備団子はお供を連れる前に食べきりました。",
+      "join": "吉備団子"
+    },
+    {
+      "id": "kyouki",
+      "prefix": "凶",
+      "continuation": "器は冷凍したバナナかもしれません。",
+      "join": "凶器"
+    },
+    {
+      "id": "kyousou",
+      "prefix": "凶",
+      "continuation": "相に見えますが、ただの寝起きです。",
+      "join": "凶相"
+    },
+    {
+      "id": "kyou_003",
+      "prefix": "凶",
+      "continuation": "暴な顔の猫が膝で眠っています。",
+      "join": "凶暴"
+    },
+    {
+      "id": "kyou_004",
+      "prefix": "凶",
+      "continuation": "作でもベランダの豆苗は元気です。",
+      "join": "凶作"
+    },
+    {
+      "id": "kyou_005",
+      "prefix": "凶",
+      "continuation": "悪な目つきなのは眩しいからです。",
+      "join": "凶悪"
+    },
+    {
+      "id": "kyou_006",
+      "prefix": "凶",
+      "continuation": "星の話より今夜の献立が気になります。",
+      "join": "凶星"
+    },
+    {
+      "id": "kyou_007",
+      "prefix": "凶",
+      "continuation": "夢のせいで目覚ましより先に起きました。",
+      "join": "凶夢"
+    },
+    {
+      "id": "kyou_008",
+      "prefix": "凶",
+      "continuation": "事に備える前に傘を持ちましょう。",
+      "join": "凶事"
+    },
+    {
+      "id": "kyou_009",
+      "prefix": "凶",
+      "continuation": "兆かと思った影は洗濯物でした。",
+      "join": "凶兆"
+    },
+    {
+      "id": "kyou_010",
+      "prefix": "凶",
+      "continuation": "行を防いだのは猫の一鳴きでした。",
+      "join": "凶行"
+    },
+    {
+      "id": "kyou_011",
+      "prefix": "凶",
+      "continuation": "器になるほど硬いパンをスープに浸します。",
+      "join": "凶器"
+    },
+    {
+      "id": "kyou_012",
+      "prefix": "凶",
+      "continuation": "相の面を外すと優しいおじいさんでした。",
+      "join": "凶相"
+    },
+    {
+      "id": "kyou_013",
+      "prefix": "凶",
+      "continuation": "暴な犬という噂ですが、尻尾が忙しいです。",
+      "join": "凶暴"
+    },
+    {
+      "id": "kyou_014",
+      "prefix": "凶",
+      "continuation": "悪な寝癖とは毎朝戦っています。",
+      "join": "凶悪"
+    },
+    {
+      "id": "kyou_015",
+      "prefix": "凶",
+      "continuation": "星より星形のクッキーを見つめています。",
+      "join": "凶星"
+    },
+    {
+      "id": "kyou_016",
+      "prefix": "凶",
+      "continuation": "夢を忘れるために朝ご飯を食べましょう。",
+      "join": "凶夢"
+    },
+    {
+      "id": "kyou_017",
+      "prefix": "凶",
+      "continuation": "兆ではありません、ただお腹が鳴っただけです。",
+      "join": "凶兆"
+    },
+    {
+      "id": "kyou_018",
+      "prefix": "凶",
+      "continuation": "作の年も種をまく人がいます。",
+      "join": "凶作"
+    },
+    {
+      "id": "kyou_019",
+      "prefix": "凶",
+      "continuation": "器に見えたものは大きな麩菓子でした。",
+      "join": "凶器"
+    },
+    {
+      "id": "kyou_020",
+      "prefix": "凶",
+      "continuation": "暴そうなサボテンにも花が咲きます。",
+      "join": "凶暴"
+    },
+    {
+      "id": "undou",
+      "prefix": "運",
+      "continuation": "動の前に背伸びをしましょう。",
+      "join": "運動"
+    },
+    {
+      "id": "unten",
+      "prefix": "運",
+      "continuation": "転する日は眠気にご注意ください。",
+      "join": "運転"
+    },
+    {
+      "id": "unpan",
+      "prefix": "運",
+      "continuation": "搬中のケーキだけは水平にどうぞ。",
+      "join": "運搬"
+    },
+    {
+      "id": "unyou",
+      "prefix": "運",
+      "continuation": "用を考える前に貯金箱を探しましょう。",
+      "join": "運用"
+    },
+    {
+      "id": "un_005",
+      "prefix": "運",
+      "continuation": "河のほとりでおやつにしましょう。",
+      "join": "運河"
+    },
+    {
+      "id": "un_006",
+      "prefix": "運",
+      "continuation": "賃を調べたら徒歩も悪くない気がします。",
+      "join": "運賃"
+    },
+    {
+      "id": "un_007",
+      "prefix": "運",
+      "continuation": "休の日に限って早起きできました。",
+      "join": "運休"
+    },
+    {
+      "id": "un_008",
+      "prefix": "運",
+      "continuation": "営の人にもお菓子を一つどうぞ。",
+      "join": "運営"
+    },
+    {
+      "id": "un_009",
+      "prefix": "運",
+      "continuation": "動会のお弁当だけは忘れられません。",
+      "join": "運動会"
+    },
+    {
+      "id": "un_010",
+      "prefix": "運",
+      "continuation": "送屋さんに猫が挨拶しています。",
+      "join": "運送"
+    },
+    {
+      "id": "un_011",
+      "prefix": "運",
+      "continuation": "転手さんの休憩中はそっと待ちましょう。",
+      "join": "運転手"
+    },
+    {
+      "id": "un_012",
+      "prefix": "運",
+      "continuation": "動不足には散歩がいちばんです。",
+      "join": "運動不足"
+    },
+    {
+      "id": "un_013",
+      "prefix": "運",
+      "continuation": "航予定を見て旅に出たくなりました。",
+      "join": "運航"
+    },
+    {
+      "id": "un_014",
+      "prefix": "運",
+      "continuation": "動靴を履くと少し遠回りしたくなります。",
+      "join": "運動靴"
+    },
+    {
+      "id": "un_015",
+      "prefix": "運",
+      "continuation": "動場の隅で四つ葉を探しています。",
+      "join": "運動場"
+    },
+    {
+      "id": "un_016",
+      "prefix": "運",
+      "continuation": "搬する荷物の中で一番重いのは本です。",
+      "join": "運搬"
+    },
+    {
+      "id": "un_017",
+      "prefix": "運",
+      "continuation": "転席に座ったら姿勢を直しましょう。",
+      "join": "運転"
+    },
+    {
+      "id": "un_018",
+      "prefix": "運",
+      "continuation": "休なら近くの喫茶店でひと休みです。",
+      "join": "運休"
+    },
+    {
+      "id": "un_019",
+      "prefix": "運",
+      "continuation": "河沿いのベンチでパンを食べました。",
+      "join": "運河"
+    },
+    {
+      "id": "un_020",
+      "prefix": "運",
+      "continuation": "賃の端数を見ると歩く距離を考えます。",
+      "join": "運賃"
+    },
+    {
+      "id": "un_021",
+      "prefix": "運",
+      "continuation": "動会の応援でも喉が渇きます。",
+      "join": "運動会"
+    },
+    {
+      "id": "un_022",
+      "prefix": "運",
+      "continuation": "送中の荷物より先に心が旅をしています。",
+      "join": "運送"
+    },
+    {
+      "id": "un_023",
+      "prefix": "運",
+      "continuation": "営会議のお菓子が楽しみです。",
+      "join": "運営"
+    },
+    {
+      "id": "un_024",
+      "prefix": "運",
+      "continuation": "用中の機械にも休憩をあげたいですね。",
+      "join": "運用"
+    },
+    {
+      "id": "un_025",
+      "prefix": "運",
+      "continuation": "転手さん、お財布を忘れました。",
+      "join": "運転手"
+    },
+    {
+      "id": "un_026",
+      "prefix": "運",
+      "continuation": "動不足なのに筋肉痛になる日があります。",
+      "join": "運動不足"
+    },
+    {
+      "id": "un_027",
+      "prefix": "運",
+      "continuation": "動靴の紐を結ぶだけで息を止めていました。",
+      "join": "運動靴"
+    },
+    {
+      "id": "un_028",
+      "prefix": "運",
+      "continuation": "航状況を確かめてから港へ向かいましょう。",
+      "join": "運航"
+    },
+    {
+      "id": "un_029",
+      "prefix": "運",
+      "continuation": "動場の白線をつい踏まずに歩きます。",
+      "join": "運動場"
+    },
+    {
+      "id": "un_030",
+      "prefix": "運",
+      "continuation": "任せに選んだ定食が大盛りでした。",
+      "join": "運任せ"
+    },
+    {
+      "id": "un_031",
+      "prefix": "運",
+      "continuation": "び屋の鞄からお菓子の匂いがします。",
+      "join": "運び屋"
+    },
+    {
+      "id": "un_032",
+      "prefix": "運",
+      "continuation": "び方を考える前に荷物を減らしましょう。",
+      "join": "運び方"
+    },
+    {
+      "id": "un_033",
+      "prefix": "運",
+      "continuation": "ぶ途中でお団子を一本食べました。",
+      "join": "運ぶ"
+    },
+    {
+      "id": "un_034",
+      "prefix": "運",
+      "continuation": "ばれてきた料理を撮る前に食べました。",
+      "join": "運ばれ"
+    },
+    {
+      "id": "un_035",
+      "prefix": "運",
+      "continuation": "べるだけのお土産を買ったら歩けません。",
+      "join": "運べる"
+    },
+    {
+      "id": "un_036",
+      "prefix": "運",
+      "continuation": "んでくれた猫の獲物に困っています。",
+      "join": "運んで"
+    },
+    {
+      "id": "un_037",
+      "prefix": "運",
+      "continuation": "良く席が空いていました、猫の隣です。",
+      "join": "運良く"
+    },
+    {
+      "id": "un_038",
+      "prefix": "運",
+      "continuation": "悪く売り切れでしたが別のパンもおいしいです。",
+      "join": "運悪く"
+    },
+    {
+      "id": "un_039",
+      "prefix": "運",
+      "continuation": "動会のリレーより場所取りが得意です。",
+      "join": "運動会"
+    },
+    {
+      "id": "un_040",
+      "prefix": "運",
+      "continuation": "転の練習より車庫入れの練習が長いです。",
+      "join": "運転"
+    },
+    {
+      "id": "ataruka",
+      "prefix": "あた",
+      "continuation": "るかどうか、まず天気予報で腕試しです。",
+      "join": "あたる"
+    },
+    {
+      "id": "atari_question",
+      "prefix": "あた",
+      "continuation": "りのアイス棒は捨てずに持ち帰りましょう。",
+      "join": "あたり"
+    },
+    {
+      "id": "ataranai_tease",
+      "prefix": "あた",
+      "continuation": "らない天気予報を信じて傘を忘れました。",
+      "join": "あたらない"
+    },
+    {
+      "id": "atatakai",
+      "prefix": "あた",
+      "continuation": "たかいお茶にしましょう。",
+      "join": "あたたかい"
+    },
+    {
+      "id": "atarashii",
+      "prefix": "あた",
+      "continuation": "まの上に眼鏡がありました。",
+      "join": "あたま"
+    },
+    {
+      "id": "atama",
+      "prefix": "あた",
+      "continuation": "らしい靴で遠回りしたくなりました。",
+      "join": "あたらしい"
+    },
+    {
+      "id": "ata_007",
+      "prefix": "あた",
+      "continuation": "りまえに寝られる夜がうれしいですね。",
+      "join": "あたりまえ"
+    },
+    {
+      "id": "ata_008",
+      "prefix": "あた",
+      "continuation": "ふたする日はまずお茶を飲みましょう。",
+      "join": "あたふた"
+    },
+    {
+      "id": "ata_009",
+      "prefix": "あた",
+      "continuation": "ためるとチーズが伸びます。",
+      "join": "あたためる"
+    },
+    {
+      "id": "ata_010",
+      "prefix": "あた",
+      "continuation": "らずとも遠からず、駅はあの辺です。",
+      "join": "あたらず"
+    },
+    {
+      "id": "ata_011",
+      "prefix": "あた",
+      "continuation": "り一面、猫の毛だらけです。",
+      "join": "あたり"
+    },
+    {
+      "id": "ata_012",
+      "prefix": "あた",
+      "continuation": "まをひねる前に首を伸ばしましょう。",
+      "join": "あたま"
+    },
+    {
+      "id": "ata_013",
+      "prefix": "あた",
+      "continuation": "たかい布団からは出たくありません。",
+      "join": "あたたかい"
+    },
+    {
+      "id": "ata_014",
+      "prefix": "あた",
+      "continuation": "らしい傘を買うと晴れる日が続きます。",
+      "join": "あたらしい"
+    },
+    {
+      "id": "ata_015",
+      "prefix": "あた",
+      "continuation": "りまえのように猫が席を取っています。",
+      "join": "あたりまえ"
+    },
+    {
+      "id": "ata_016",
+      "prefix": "あた",
+      "continuation": "ふた探した鍵は手に持っていました。",
+      "join": "あたふた"
+    },
+    {
+      "id": "ata_017",
+      "prefix": "あた",
+      "continuation": "ため直す間につまみ食いしました。",
+      "join": "あたため"
+    },
+    {
+      "id": "ata_018",
+      "prefix": "あた",
+      "continuation": "るのは宝くじより雨粒の方が多いです。",
+      "join": "あたる"
+    },
+    {
+      "id": "ata_019",
+      "prefix": "あた",
+      "continuation": "りを見回すと猫も見回しています。",
+      "join": "あたり"
+    },
+    {
+      "id": "ata_020",
+      "prefix": "あた",
+      "continuation": "まを使うとお腹が空きます。",
+      "join": "あたま"
+    },
+    {
+      "id": "ata_021",
+      "prefix": "あた",
+      "continuation": "たかい日は窓辺の席が人気です。",
+      "join": "あたたかい"
+    },
+    {
+      "id": "ata_022",
+      "prefix": "あた",
+      "continuation": "らしいノートの一ページ目は緊張します。",
+      "join": "あたらしい"
+    },
+    {
+      "id": "ata_023",
+      "prefix": "あた",
+      "continuation": "りまえですが、おやつは別腹です。",
+      "join": "あたりまえ"
+    },
+    {
+      "id": "ata_024",
+      "prefix": "あた",
+      "continuation": "ふたしたのに電車には間に合いました。",
+      "join": "あたふた"
+    },
+    {
+      "id": "ata_025",
+      "prefix": "あた",
+      "continuation": "ためた牛乳に膜が張りました。",
+      "join": "あたため"
+    },
+    {
+      "id": "ata_026",
+      "prefix": "あた",
+      "continuation": "る日差しを猫と分け合っています。",
+      "join": "あたる"
+    },
+    {
+      "id": "ata_027",
+      "prefix": "あた",
+      "continuation": "りに漂うパンの匂いを追いかけています。",
+      "join": "あたり"
+    },
+    {
+      "id": "ata_028",
+      "prefix": "あた",
+      "continuation": "まの中ではいつも旅をしています。",
+      "join": "あたま"
+    },
+    {
+      "id": "ata_029",
+      "prefix": "あた",
+      "continuation": "たかいスープでひと息つきましょう。",
+      "join": "あたたかい"
+    },
+    {
+      "id": "ata_030",
+      "prefix": "あた",
+      "continuation": "らしい趣味の道具で部屋が狭くなりました。",
+      "join": "あたらしい"
+    },
+    {
+      "id": "ata_031",
+      "prefix": "あた",
+      "continuation": "りまえの景色も散歩すると違って見えます。",
+      "join": "あたりまえ"
+    },
+    {
+      "id": "ata_032",
+      "prefix": "あた",
+      "continuation": "ふた支度をして靴下を間違えました。",
+      "join": "あたふた"
+    },
+    {
+      "id": "ata_033",
+      "prefix": "あた",
+      "continuation": "ためすぎたお茶が飲めません。",
+      "join": "あたため"
+    },
+    {
+      "id": "ata_034",
+      "prefix": "あた",
+      "continuation": "る風が気持ちよくて立ち止まりました。",
+      "join": "あたる"
+    },
+    {
+      "id": "ata_035",
+      "prefix": "あた",
+      "continuation": "りをつけて探したのに眼鏡がありません。",
+      "join": "あたり"
+    },
+    {
+      "id": "ata_036",
+      "prefix": "あた",
+      "continuation": "まに浮かんだ献立は全部揚げ物でした。",
+      "join": "あたま"
+    },
+    {
+      "id": "ata_037",
+      "prefix": "あた",
+      "continuation": "たかいポケットに飴が溶けていました。",
+      "join": "あたたかい"
+    },
+    {
+      "id": "ata_038",
+      "prefix": "あた",
+      "continuation": "らしい道を選んだら坂ばかりでした。",
+      "join": "あたらしい"
+    },
+    {
+      "id": "ata_039",
+      "prefix": "あた",
+      "continuation": "りまえですが、寝ている猫は起こせません。",
+      "join": "あたりまえ"
+    },
+    {
+      "id": "ata_040",
+      "prefix": "あた",
+      "continuation": "ふたする店員さんに猫が見入っています。",
+      "join": "あたふた"
+    },
+    {
+      "id": "ata_041",
+      "prefix": "あた",
+      "continuation": "ためたパンにバターをのせましょう。",
+      "join": "あたため"
+    },
+    {
+      "id": "ata_042",
+      "prefix": "あた",
+      "continuation": "る場所を変えたら椅子が揺れなくなりました。",
+      "join": "あたる"
+    },
+    {
+      "id": "ata_043",
+      "prefix": "あた",
+      "continuation": "りが暗くなる前に帰りましょう。",
+      "join": "あたり"
+    },
+    {
+      "id": "ata_044",
+      "prefix": "あた",
+      "continuation": "まを撫でられた猫が目を細めています。",
+      "join": "あたま"
+    },
+    {
+      "id": "ata_045",
+      "prefix": "あた",
+      "continuation": "たかい靴下が今日は頼りです。",
+      "join": "あたたかい"
+    },
+    {
+      "id": "ata_046",
+      "prefix": "あた",
+      "continuation": "らしいマグカップでお茶を飲みます。",
+      "join": "あたらしい"
+    },
+    {
+      "id": "ata_047",
+      "prefix": "あた",
+      "continuation": "りまえのようで、毎日のご飯はありがたいです。",
+      "join": "あたりまえ"
+    },
+    {
+      "id": "ata_048",
+      "prefix": "あた",
+      "continuation": "ふたしてプリンを二つ頼みました。",
+      "join": "あたふた"
+    },
+    {
+      "id": "ata_049",
+      "prefix": "あた",
+      "continuation": "ため中のご飯の匂いがします。",
+      "join": "あたため"
+    },
+    {
+      "id": "ata_050",
+      "prefix": "あた",
+      "continuation": "る予感がしても、まずはお茶にしましょう。",
+      "join": "あたる"
+    },
+    {
+      "id": "ata_051",
+      "prefix": "あた",
+      "continuation": "りの席に座れました、日当たり抜群です。",
+      "join": "あたり"
+    },
+    {
+      "id": "ata_052",
+      "prefix": "あた",
+      "continuation": "まを空っぽにしたら眠くなりました。",
+      "join": "あたま"
+    },
+    {
+      "id": "ata_053",
+      "prefix": "あた",
+      "continuation": "たかい手で猫を撫でましょう。",
+      "join": "あたたかい"
+    },
+    {
+      "id": "ata_054",
+      "prefix": "あた",
+      "continuation": "らしい本の匂いが好きです。",
+      "join": "あたらしい"
+    },
+    {
+      "id": "ata_055",
+      "prefix": "あた",
+      "continuation": "りまえに見える空も毎日違います。",
+      "join": "あたりまえ"
+    },
+    {
+      "id": "ata_056",
+      "prefix": "あた",
+      "continuation": "ふたした後のお茶はおいしいです。",
+      "join": "あたふた"
+    },
+    {
+      "id": "ata_057",
+      "prefix": "あた",
+      "continuation": "ためたお餅が思ったより伸びました。",
+      "join": "あたため"
+    },
+    {
+      "id": "ata_058",
+      "prefix": "あた",
+      "continuation": "る光が眩しくて猫も目を細めています。",
+      "join": "あたる"
+    },
+    {
+      "id": "ata_059",
+      "prefix": "あた",
+      "continuation": "りを探したら足元にリモコンがありました。",
+      "join": "あたり"
+    },
+    {
+      "id": "ata_060",
+      "prefix": "あた",
+      "continuation": "まの体操より先に背伸びをしましょう。",
+      "join": "あたま"
+    }
+  ],
+  "result": [
+    "大吉",
+    "吉",
+    "中吉",
+    "小吉",
+    "末吉",
+    "凶",
+    "大凶"
+  ],
+  "dots": [
+    "…",
+    "……",
+    "………",
+    ".",
+    "..",
+    "..."
+  ]
+}
